@@ -27,7 +27,14 @@ function getlist() {
               
            $(".ui-icon-loading").hide();
            
-       }
+       };
+       
+       error: function(request,error) 	{
+		   $('.ui-content ul').append ("<li>" + error + "</li>" );
+		}
+       
+       
+       
   });
     
 }
