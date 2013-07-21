@@ -708,7 +708,7 @@ a.ui-link-inherit {
 /* loading icon */
 .ui-icon-loading {
 	background: transparent url(../images/350.gif) no-repeat center center;
-	position:absolute; top:100px; width:100%; height:100px; z-index:100; display:none;
+	position:absolute; top:100px; width:100%; height:100px; z-index:100;z
 }
 /* Button corner class
 -----------------------------------------------------------------------------------------------------------*/
