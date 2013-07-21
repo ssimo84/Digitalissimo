@@ -7,7 +7,7 @@ function getlist() {
        dataType:"jsonp",
        success:function(result){
            posts = result.posts;
-           console.log(posts);
+           //console.log(posts);
 
            
            $('.ui-content ul li').remove();
@@ -27,7 +27,7 @@ function getlist() {
               
            $(".ui-icon-loading").hide();
            
-       };
+       },
        
        error: function(request,error) 	{
 		   $('.ui-content ul').append ("<li>" + error + "</li>" );
