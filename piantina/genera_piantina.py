@@ -148,6 +148,12 @@ opening(5.37, 6.13 - 0.01, 6.17, 6.13 + T + 0.01, [(5.37, 6.13, 5.37, 6.13 + T),
 opening(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, [(6.73, 7.33, 6.73, 7.33 + T), (7.63, 7.33, 7.63, 7.33 + T)])
 rect(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, fill="none")
 
+# ---- basi delle vetrine: lunghe quanto la vetrina, profonde 1,00
+for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
+    rect(a, 0.0, b, 1.0, fill="#ece6d8", stroke="#000", w=0.3)
+    line(a, 0.0, b, 1.0, "#bbb39f", 0.15)
+    line(a, 1.0, b, 0.0, "#bbb39f", 0.15)
+
 # ---- pilastro centrale 0,32 x 1,04 (X' 4,33-4,65 ; Y' 4,03-5,07)
 rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
 line(4.33, 4.03, 4.65, 5.07, "#555", 0.2)
@@ -172,8 +178,8 @@ ptext(X(W - 0.14), Y(6.00) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
 text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
 
 # ---- etichette ambienti/aperture
-text(1.57, 0.42, "vetrina", 2.4, GREY, style="italic")
-text(5.53, 0.42, "vetrina", 2.4, GREY, style="italic")
+text(1.57, 0.55, "base vetrina 2,16 × 1,00", 2.4, "#000", style="italic")
+text(5.53, 0.55, "base vetrina 3,08 × 1,00", 2.4, "#000", style="italic")
 text(3.15, 0.62, "porta ingresso", 2.4, GREY, style="italic")
 text(3.82, 0.78, "portaombrelli*", 2.0, ORANGE, anchor="start", style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
@@ -269,6 +275,8 @@ notes = [
     "8. Sotto il termosifone sinistro c'è un elemento",
     "    0,51 × 0,25 (radiatore? nicchia?): da identificare.",
     "    Profondità del termosifone 0,10* stimata.",
+    "9. Basi vetrine: lunghe come la vetrina, profonde 1,00.",
+    "    A destra restano 3 cm dalla porta laterale aperta.",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
