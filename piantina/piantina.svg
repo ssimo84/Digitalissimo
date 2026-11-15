@@ -64,11 +64,11 @@
 <line x1="46.00" y1="131.40" x2="48.00" y2="131.40" stroke="#d2691e" stroke-width="0.2"/>
 <line x1="46.00" y1="133.20" x2="48.00" y2="133.20" stroke="#d2691e" stroke-width="0.2"/>
 <line x1="46.00" y1="135.00" x2="48.00" y2="135.00" stroke="#d2691e" stroke-width="0.2"/>
-<rect x="198.20" y="136.00" width="2.40" height="24.00" fill="#fff" stroke="#d2691e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
-<text x="196.60" y="148.00" font-size="2.2" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 196.60 148.00)">termosifone*</text>
-<circle cx="197.80" cy="170.00" r="1.1" fill="#fff" stroke="#d2691e" stroke-width="0.35"/>
-<text x="197.80" y="170.80" font-size="1.9" fill="#d2691e" text-anchor="middle" font-weight="bold">T</text>
-<text x="191.60" y="167.60" font-size="2.0" fill="#d2691e" text-anchor="end" font-weight="normal" font-style="normal">termostato*</text>
+<rect x="198.20" y="148.60" width="2.40" height="24.00" fill="#fff" stroke="#d2691e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
+<text x="196.60" y="160.60" font-size="2.2" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 196.60 160.60)">termosifone*</text>
+<circle cx="197.80" cy="176.00" r="1.1" fill="#fff" stroke="#d2691e" stroke-width="0.35"/>
+<text x="197.80" y="176.80" font-size="1.9" fill="#d2691e" text-anchor="middle" font-weight="bold">T</text>
+<text x="191.60" y="177.60" font-size="2.0" fill="#d2691e" text-anchor="end" font-weight="normal" font-style="normal">termostato*</text>
 <text x="77.40" y="61.00" font-size="2.4" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">base vetrina 2,16 × 0,70</text>
 <text x="156.60" y="61.00" font-size="2.4" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">base vetrina 3,08 × 0,70</text>
 <text x="108.50" y="70.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta ingresso 0,95</text>
@@ -260,11 +260,12 @@
 <text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono la colonna, 6 cm di scarto.</text>
 <text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. Rientranza: lati 1,30 e 1,40, il muro</text>
 <text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    superiore risulta fuori squadra di ~5 cm.</text>
-<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Termosifone e termostato a destra:</text>
-<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    solo posizione indicativa. Termosifone sinistro:</text>
-<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    profondità 0,10* stimata.</text>
-<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°</text>
-<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    (tratteggio rimosso, 0,25 aggiunto alla quota).</text>
-<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Basi vetrine: lunghe come la vetrina, profonde 0,70.</text>
-<text x="262.00" y="210.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Dalla porta laterale aperta restano 1,23 m di spazio.</text>
+<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,</text>
+<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    lunghezza 1,20 stimata) e termostato: posizione</text>
+<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    indicativa. Termosifone sinistro:</text>
+<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    profondità 0,10* stimata.</text>
+<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°</text>
+<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    (tratteggio rimosso, 0,25 aggiunto alla quota).</text>
+<text x="262.00" y="210.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Basi vetrine: lunghe come la vetrina, profonde 0,70.</text>
+<text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Dalla porta laterale aperta restano 1,23 m di spazio.</text>
 </svg>

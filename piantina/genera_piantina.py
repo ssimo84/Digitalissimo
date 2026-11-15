@@ -176,12 +176,12 @@ for i in range(1, 15):
     yy = 2.99 + i * 1.35 / 15
     line(0.0, yy, 0.10, yy, ORANGE, 0.2)
 # termosifone lato destro (stima di posizione)
-rect(W - 0.12, 4.30, W, 5.50, fill="#fff", stroke=ORANGE, w=0.35, dash="1.2 0.8")
-text(W - 0.20, 4.90, "termosifone*", 2.2, ORANGE, anchor="middle", rot=-90)
+rect(W - 0.12, 4.93, W, 6.13, fill="#fff", stroke=ORANGE, w=0.35, dash="1.2 0.8")
+text(W - 0.20, 5.53, "termosifone*", 2.2, ORANGE, anchor="middle", rot=-90)
 # termostato (stima)
-add(f'<circle cx="{f(X(W-0.14))}" cy="{f(Y(6.00))}" r="1.1" fill="#fff" stroke="{ORANGE}" stroke-width="0.35"/>')
-ptext(X(W - 0.14), Y(6.00) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
-text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
+add(f'<circle cx="{f(X(W-0.14))}" cy="{f(Y(6.30))}" r="1.1" fill="#fff" stroke="{ORANGE}" stroke-width="0.35"/>')
+ptext(X(W - 0.14), Y(6.30) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
+text(W - 0.45, 6.38, "termostato*", 2.0, ORANGE, anchor="end")
 
 # ---- etichette ambienti/aperture
 text(1.57, 0.55, "base vetrina 2,16 × 0,70", 2.4, "#000", style="italic")
@@ -273,8 +273,9 @@ notes = [
     "    31 cm: 25 sono la colonna, 6 cm di scarto.",
     "6. Rientranza: lati 1,30 e 1,40, il muro",
     "    superiore risulta fuori squadra di ~5 cm.",
-    "7. Termosifone e termostato a destra:",
-    "    solo posizione indicativa. Termosifone sinistro:",
+    "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
+    "    lunghezza 1,20 stimata) e termostato: posizione",
+    "    indicativa. Termosifone sinistro:",
     "    profondità 0,10* stimata.",
     "8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°",
     "    (tratteggio rimosso, 0,25 aggiunto alla quota).",
