@@ -236,7 +236,7 @@ add(f'<line x1="{px}" y1="26.5" x2="{px+10}" y2="26.5" stroke="{BLUE}" stroke-wi
 ptext(px + 13, 27.8, "misura presa dallo schizzo", 3.2)
 ptext(px + 1, 33.8, "1,34°", 3.2, BLUE, weight="bold")
 ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
-ptext(px + 1, 40.0, "1,26*", 3.2, ORANGE, weight="bold")
+ptext(px + 1, 40.0, "0,10*", 3.2, ORANGE, weight="bold")
 ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
 add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>')
 ptext(px + 13, 46.5, "colonna (tratteggiata nello schizzo)", 3.2)

@@ -229,7 +229,7 @@
 <text x="275.00" y="27.80" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">misura presa dallo schizzo</text>
 <text x="263.00" y="33.80" font-size="3.2" fill="#1f4e8c" text-anchor="start" font-weight="bold">1,34°</text>
 <text x="275.00" y="33.80" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">ricavata per differenza (calcolata)</text>
-<text x="263.00" y="40.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="bold">1,26*</text>
+<text x="263.00" y="40.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="bold">0,10*</text>
 <text x="275.00" y="40.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">stimata: nello schizzo non c'era la quota</text>
 <rect x="262" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>
 <text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">colonna (tratteggiata nello schizzo)</text>
