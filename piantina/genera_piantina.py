@@ -279,7 +279,7 @@ notes = [
     "8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°",
     "    (tratteggio rimosso, 0,25 aggiunto alla quota).",
     "9. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
-    "    A destra restano 33 cm dalla porta laterale aperta.",
+    "    Dalla porta laterale aperta restano 1,23 m di spazio.",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
