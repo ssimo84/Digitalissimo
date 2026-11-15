@@ -205,41 +205,62 @@ if not FURN:
     text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
 text(5.52, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
-text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
-text(2.6, 2.6, f"{net:.1f} m² netti", 3.0, "#999")
+if not FURN:
+    text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
+    text(2.6, 2.6, f"{net:.1f} m² netti", 3.0, "#999")
 
-# ---------------------------------------------------------------- ARREDI (proposta)
+# ---------------------------------------------------------------- ARREDI (dal tuo schizzo)
 if FURN:
-    WOOD, WOODD = "#d9c3a0", "#8a6d3b"
+    WOODD = "#8a6d3b"
+    BD = 0.40                         # Billy: profondita' 40 (80 x 40 x 202)
 
-    def billy(x1, y1, x2, y2):
-        rect(x1, y1, x2, y2, fill="#f4efe3", stroke=WOODD, w=0.35)
+    def billy_unit(x1, y1, x2, y2, w):
+        rect(x1, y1, x2, y2, fill="#f4efe3", stroke=WOODD, w=0.3)
         if (x2 - x1) > (y2 - y1):
-            line(x1, (y1 + y2) / 2, x2, (y1 + y2) / 2, "#c9b48a", 0.15)
+            text((x1 + x2) / 2, (y1 + y2) / 2 + 0.07, f"{int(round(w*100))}", 1.7, "#5b4524")
         else:
-            line((x1 + x2) / 2, y1, (x1 + x2) / 2, y2, "#c9b48a", 0.15)
+            text((x1 + x2) / 2 + 0.07, (y1 + y2) / 2, f"{int(round(w*100))}", 1.7, "#5b4524", rot=-90)
 
-    # scrivania 1,20 x 0,60 attaccata alla parete sinistra, sotto il pilastro a muro
-    rect(0.0, 4.88, 0.60, 6.08, fill=WOOD, stroke=WOODD, w=0.35)
-    text(0.30, 5.48, "scrivania 1,20 × 0,60", 2.0, "#000", rot=-90)
-    # bancone a L (1,05 + 1,20, profondo 0,70) davanti a scrivania e pilastro
-    lpts = [(1.00, 4.05), (2.05, 4.05), (2.05, 5.25), (1.35, 5.25), (1.35, 4.75), (1.00, 4.75)]
-    add('<polygon points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in lpts) + f'" fill="{WOOD}" stroke="{WOODD}" stroke-width="0.4"/>')
-    text(1.70, 5.55, "bancone a L", 2.3, "#000", weight="bold")
-    text(1.70, 5.80, "1,05 + 1,20 × 0,70", 2.0, "#000")
-    # Billy nella rientranza (2 moduli da 80 x 28 contro il fondo)
-    billy(0.88, 7.27, 1.68, 7.55)
-    billy(1.68, 7.27, 2.48, 7.55)
-    text(1.68, 7.05, "Billy ×2", 2.2, "#000")
-    # Billy lungo il muro lato bagno (3 moduli da 80)
-    for k in range(3):
-        billy(2.58 + 0.80 * k, 5.85, 3.38 + 0.80 * k, 6.13)
-    text(3.78, 5.65, "Billy ×3", 2.2, "#000")
-    # Billy lungo la parete destra, fino al termosifone (80 + 80 + 40)
-    billy(7.45, 2.80, 7.73, 3.60)
-    billy(7.45, 3.60, 7.73, 4.40)
-    billy(7.45, 4.40, 7.73, 4.80)
-    text(7.30, 3.80, "Billy 80 + 80 + 40", 2.0, "#000", rot=-90)
+    def run_x(x0, y0, mods):          # fila lungo X' (profondita' lungo Y')
+        x = x0
+        for w in mods:
+            billy_unit(x, y0, x + w, y0 + BD, w)
+            x += w
+
+    def run_y(x0, y0, mods):          # fila lungo Y' (profondita' lungo X')
+        y = y0
+        for w in mods:
+            billy_unit(x0, y, x0 + BD, y + w, w)
+            y += w
+
+    # Billy parete sinistra (tratto libero prima del termosifone): 3 x 80 + 40
+    run_y(0.0, 0.10, [0.8, 0.8, 0.8, 0.4])
+    # Billy parete sinistra sotto il pilastro a muro: 1 x 40
+    run_y(0.0, 5.68, [0.4])
+    # Billy lungo il muro del bagno, a partire da meta' rientranza: 4 x 80 + 20
+    run_x(1.60, 5.73, [0.8, 0.8, 0.8, 0.8, 0.2])
+    # Billy parete destra: 2 x 80 prima della porta laterale, poi 80 + 80 + 40 fino al termosifone
+    run_y(W - BD, 0.05, [0.8, 0.8])
+    run_y(W - BD, 2.78, [0.8, 0.8, 0.4])
+    # Billy "divisorio" dalla colonna centrale alla parete destra: 3 x 80 + 20
+    run_x(4.65, 4.35, [0.8, 0.8, 0.8, 0.2])
+    # Billy accanto alla colonna lato ingresso: 80 + 40
+    run_x(3.70, 3.63, [0.8, 0.4])
+
+    # rosa: scrivania 1,05 (attaccata alla colonna centrale) + bancone 1,20
+    PINK, PINKD = "#f6b3d4", "#b0346e"
+    rect(3.28, 4.25, 4.33, 4.85, fill=PINK, stroke=PINKD, w=0.4)
+    text(3.805, 4.52, "scrivania", 1.9, "#000", weight="bold")
+    text(3.805, 4.72, "1,05 × 0,60", 1.7, "#000")
+    rect(2.08, 4.20, 3.28, 4.90, fill=PINK, stroke=PINKD, w=0.4)
+    text(2.68, 4.52, "bancone", 1.9, "#000", weight="bold")
+    text(2.68, 4.72, "1,20 × 0,70", 1.7, "#000")
+
+    # arancione/rosso: ingombri disegnati ma non specificati (misure stimate dalla foto)
+    for (x1, y1, x2, y2, lab) in [(0.45, 0.50, 1.05, 1.65, "?"), (1.25, 1.10, 1.95, 2.80, "?"),
+                                  (5.65, 0.85, 6.55, 2.35, "?"), (0.0, 4.90, 0.28, 5.57, "?")]:
+        rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2481e", w=0.4, dash="1.4 0.8")
+        text((x1 + x2) / 2, (y1 + y2) / 2 + 0.07, lab, 3.0, "#d2481e", weight="bold")
 
 # ---------------------------------------------------------------- QUOTE
 # fronte ingresso (in alto)
@@ -334,11 +355,10 @@ if MODE == 'a3':
         ptext(px, 104 + i * 5.6, n, 3.1, "#222")
 
     if FURN:
-        ptext(px, 244, "ARREDI (proposta)", 4.2, "#000", weight="bold")
-        for i, t in enumerate(["Bancone a L 1,05 + 1,20, profondità 0,70",
-                               "Scrivania 1,20 × 0,60 attaccata al pilastro",
-                               "Billy 80 × 28: 2 in rientranza, 3 lato bagno,",
-                               "    80 + 80 + 40 sulla parete destra",
+        ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
+        for i, t in enumerate(["Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)",
+                               "Billy 202: 15 da 80, 4 da 40, 2 da 20 (profondità 40)",
+                               "Arancione/rosso (?): 4 ingombri, da definire",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
 else:
