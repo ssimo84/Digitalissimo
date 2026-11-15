@@ -220,12 +220,12 @@
 <line x1="65.20" y1="218.80" x2="68.80" y2="215.20" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="99.80" y1="218.80" x2="103.40" y2="215.20" stroke="#1f4e8c" stroke-width="0.4"/>
 <text x="84.30" y="215.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">1,73</text>
-<line x1="153.40" y1="181.20" x2="153.40" y2="191.40" stroke="#d2691e" stroke-width="0.18"/>
-<line x1="169.40" y1="181.20" x2="169.40" y2="191.40" stroke="#d2691e" stroke-width="0.18"/>
-<line x1="153.40" y1="189.00" x2="169.40" y2="189.00" stroke="#d2691e" stroke-width="0.25"/>
-<line x1="151.60" y1="190.80" x2="155.20" y2="187.20" stroke="#d2691e" stroke-width="0.4"/>
-<line x1="167.60" y1="190.80" x2="171.20" y2="187.20" stroke="#d2691e" stroke-width="0.4"/>
-<text x="161.40" y="187.00" font-size="2.6" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal">0,80*</text>
+<line x1="153.40" y1="181.20" x2="153.40" y2="191.40" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="169.40" y1="181.20" x2="169.40" y2="191.40" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="153.40" y1="189.00" x2="169.40" y2="189.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="151.60" y1="190.80" x2="155.20" y2="187.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="167.60" y1="190.80" x2="171.20" y2="187.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="161.40" y="187.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,80</text>
 <line x1="175.40" y1="205.20" x2="175.40" y2="219.40" stroke="#d2691e" stroke-width="0.18"/>
 <line x1="200.60" y1="205.20" x2="200.60" y2="219.40" stroke="#d2691e" stroke-width="0.18"/>
 <line x1="175.40" y1="217.00" x2="200.60" y2="217.00" stroke="#d2691e" stroke-width="0.25"/>
@@ -255,18 +255,17 @@
 <text x="262.00" y="115.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.</text>
 <text x="262.00" y="120.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">3. Nicchia in basso a destra: larghezza 1,26*,</text>
 <text x="262.00" y="126.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    profondità 1,20*, porta 0,90*: non quotate.</text>
-<text x="262.00" y="132.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">4. Porta bagno 0,80*: non quotata.</text>
-<text x="262.00" y="137.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">5. Quota 3,20 dello schizzo: non so dove</text>
-<text x="262.00" y="143.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    collocarla, non l'ho usata.</text>
-<text x="262.00" y="148.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. Lato sinistro: 1,35 + 2,99 = 4,34</text>
-<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    contro 4,31 scritto (3 cm di scarto).</text>
-<text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:</text>
-<text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono l'elemento da 0,25, 6 cm di scarto.</text>
-<text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Rientranza: lati 1,30 e 1,40, il muro</text>
-<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    superiore risulta fuori squadra di ~5 cm.</text>
-<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Termosifone e termostato a destra:</text>
-<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    solo posizione indicativa.</text>
-<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">10. Sotto il termosifone sinistro c'è un elemento</text>
-<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    0,51 × 0,25 (radiatore? nicchia?): da identificare.</text>
-<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Profondità del termosifone 0,10* stimata.</text>
+<text x="262.00" y="132.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">4. Quota 3,20 dello schizzo: non so dove</text>
+<text x="262.00" y="137.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    collocarla, non l'ho usata.</text>
+<text x="262.00" y="143.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">5. Lato sinistro: 1,35 + 2,99 = 4,34</text>
+<text x="262.00" y="148.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    contro 4,31 scritto (3 cm di scarto).</text>
+<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:</text>
+<text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono l'elemento da 0,25, 6 cm di scarto.</text>
+<text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Rientranza: lati 1,30 e 1,40, il muro</text>
+<text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    superiore risulta fuori squadra di ~5 cm.</text>
+<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Termosifone e termostato a destra:</text>
+<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    solo posizione indicativa.</text>
+<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Sotto il termosifone sinistro c'è un elemento</text>
+<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    0,51 × 0,25 (radiatore? nicchia?): da identificare.</text>
+<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Profondità del termosifone 0,10* stimata.</text>
 </svg>

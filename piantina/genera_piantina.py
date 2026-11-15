@@ -218,7 +218,7 @@ dim_v(6.13, 7.43, 2.42, "1,30", xobj=2.78)
 dim_h(1.05, 2.78, 8.35, "1,73", yobj=7.85)
 
 # porta bagno e nicchia (stima)
-dim_h(5.37, 6.17, 6.95, "0,80*", yobj=6.5, kind="e")
+dim_h(5.37, 6.17, 6.95, "0,80", yobj=6.5)
 dim_h(6.47, W, 8.35, "1,26*", yobj=7.70, kind="e")
 
 # ---------------------------------------------------------------- cartiglio
@@ -251,18 +251,17 @@ notes = [
     "2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.",
     "3. Nicchia in basso a destra: larghezza 1,26*,",
     "    profondità 1,20*, porta 0,90*: non quotate.",
-    "4. Porta bagno 0,80*: non quotata.",
-    "5. Quota 3,20 dello schizzo: non so dove",
+    "4. Quota 3,20 dello schizzo: non so dove",
     "    collocarla, non l'ho usata.",
-    "6. Lato sinistro: 1,35 + 2,99 = 4,34",
+    "5. Lato sinistro: 1,35 + 2,99 = 4,34",
     "    contro 4,31 scritto (3 cm di scarto).",
-    "7. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:",
+    "6. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:",
     "    31 cm: 25 sono l'elemento da 0,25, 6 cm di scarto.",
-    "8. Rientranza: lati 1,30 e 1,40, il muro",
+    "7. Rientranza: lati 1,30 e 1,40, il muro",
     "    superiore risulta fuori squadra di ~5 cm.",
-    "9. Termosifone e termostato a destra:",
+    "8. Termosifone e termostato a destra:",
     "    solo posizione indicativa.",
-    "10. Sotto il termosifone sinistro c'è un elemento",
+    "9. Sotto il termosifone sinistro c'è un elemento",
     "    0,51 × 0,25 (radiatore? nicchia?): da identificare.",
     "    Profondità del termosifone 0,10* stimata.",
 ]
