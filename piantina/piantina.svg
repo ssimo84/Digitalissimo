@@ -28,11 +28,11 @@
 <rect x="99.00" y="63.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
 <rect x="117.20" y="63.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
 <rect x="118.00" y="44.00" width="7.80" height="6.00" fill="#3b3b3b" stroke="none" stroke-width="0.25"/>
-<rect x="200.60" y="70.60" width="6.20" height="16.00" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
-<line x1="200.60" y1="70.60" x2="206.60" y2="70.60" stroke="#000" stroke-width="0.35"/>
-<line x1="200.60" y1="86.60" x2="206.60" y2="86.60" stroke="#000" stroke-width="0.35"/>
-<line x1="200.60" y1="70.60" x2="184.60" y2="70.60" stroke="#000" stroke-width="0.5"/>
-<path d="M 184.60 70.60 A 16.00 16.00 0 0 0 200.60 86.60" fill="none" stroke="#000" stroke-width="0.2" stroke-dasharray="1 0.8"/>
+<rect x="200.60" y="88.60" width="6.20" height="16.00" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="200.60" y1="88.60" x2="206.60" y2="88.60" stroke="#000" stroke-width="0.35"/>
+<line x1="200.60" y1="104.60" x2="206.60" y2="104.60" stroke="#000" stroke-width="0.35"/>
+<line x1="200.60" y1="88.60" x2="184.60" y2="88.60" stroke="#000" stroke-width="0.5"/>
+<path d="M 184.60 88.60 A 16.00 16.00 0 0 0 200.60 104.60" fill="none" stroke="#000" stroke-width="0.2" stroke-dasharray="1 0.8"/>
 <rect x="153.40" y="172.40" width="16.00" height="6.40" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
 <line x1="153.40" y1="172.60" x2="153.40" y2="178.60" stroke="#000" stroke-width="0.35"/>
 <line x1="169.40" y1="172.60" x2="169.40" y2="178.60" stroke="#000" stroke-width="0.35"/>
@@ -124,29 +124,29 @@
 <line x1="198.80" y1="22.80" x2="202.40" y2="19.20" stroke="#1f4e8c" stroke-width="0.4"/>
 <text x="123.30" y="19.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">7,73</text>
 <line x1="208.80" y1="50.00" x2="219.40" y2="50.00" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="208.80" y1="70.60" x2="219.40" y2="70.60" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="217.00" y1="50.00" x2="217.00" y2="70.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="208.80" y1="88.60" x2="219.40" y2="88.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="217.00" y1="50.00" x2="217.00" y2="88.60" stroke="#1f4e8c" stroke-width="0.25"/>
 <line x1="215.20" y1="51.80" x2="218.80" y2="48.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="215.20" y1="72.40" x2="218.80" y2="68.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="215.00" y="60.30" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 60.30)">1,03</text>
-<line x1="208.80" y1="70.60" x2="219.40" y2="70.60" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="208.80" y1="86.60" x2="219.40" y2="86.60" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="217.00" y1="70.60" x2="217.00" y2="86.60" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="215.20" y1="72.40" x2="218.80" y2="68.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="215.20" y1="88.40" x2="218.80" y2="84.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="215.00" y="78.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 78.60)">0,80°</text>
-<line x1="208.80" y1="86.60" x2="219.40" y2="86.60" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="208.80" y1="130.60" x2="219.40" y2="130.60" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="217.00" y1="86.60" x2="217.00" y2="130.60" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="215.20" y1="88.40" x2="218.80" y2="84.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="215.20" y1="132.40" x2="218.80" y2="128.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="215.00" y="108.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 108.60)">2,20</text>
-<line x1="208.80" y1="130.60" x2="219.40" y2="130.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="215.20" y1="90.40" x2="218.80" y2="86.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="215.00" y="69.30" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 69.30)">1,93</text>
+<line x1="208.80" y1="88.60" x2="219.40" y2="88.60" stroke="#d2691e" stroke-width="0.18"/>
+<line x1="208.80" y1="104.60" x2="219.40" y2="104.60" stroke="#d2691e" stroke-width="0.18"/>
+<line x1="217.00" y1="88.60" x2="217.00" y2="104.60" stroke="#d2691e" stroke-width="0.25"/>
+<line x1="215.20" y1="90.40" x2="218.80" y2="86.80" stroke="#d2691e" stroke-width="0.4"/>
+<line x1="215.20" y1="106.40" x2="218.80" y2="102.80" stroke="#d2691e" stroke-width="0.4"/>
+<text x="215.00" y="96.60" font-size="2.6" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 96.60)">0,80*</text>
+<line x1="208.80" y1="104.60" x2="219.40" y2="104.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="208.80" y1="148.60" x2="219.40" y2="148.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="217.00" y1="104.60" x2="217.00" y2="148.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="215.20" y1="106.40" x2="218.80" y2="102.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="215.20" y1="150.40" x2="218.80" y2="146.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="215.00" y="126.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 126.60)">2,20</text>
+<line x1="208.80" y1="148.60" x2="219.40" y2="148.60" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="208.80" y1="172.60" x2="219.40" y2="172.60" stroke="#1f4e8c" stroke-width="0.18"/>
-<line x1="217.00" y1="130.60" x2="217.00" y2="172.60" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="215.20" y1="132.40" x2="218.80" y2="128.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="217.00" y1="148.60" x2="217.00" y2="172.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="215.20" y1="150.40" x2="218.80" y2="146.80" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="215.20" y1="174.40" x2="218.80" y2="170.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="215.00" y="151.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 151.60)">2,10°</text>
+<text x="215.00" y="160.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 160.60)">1,20°</text>
 <line x1="37.80" y1="50.00" x2="26.60" y2="50.00" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="37.80" y1="109.80" x2="26.60" y2="109.80" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="29.00" y1="50.00" x2="29.00" y2="109.80" stroke="#1f4e8c" stroke-width="0.25"/>
@@ -250,20 +250,21 @@
 <text x="262.00" y="104.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −</text>
 <text x="262.00" y="109.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio</text>
 <text x="262.00" y="115.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    portaombrelli 0,39°. Profondità 0,70 come le basi.</text>
-<text x="262.00" y="120.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.</text>
-<text x="262.00" y="126.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">3. Quota 3,20 dello schizzo: non so dove</text>
-<text x="262.00" y="132.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    collocarla, non l'ho usata.</text>
-<text x="262.00" y="137.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">4. Lato sinistro: 1,35 + 2,99 = 4,34</text>
-<text x="262.00" y="143.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    contro 4,31 scritto (3 cm di scarto).</text>
-<text x="262.00" y="148.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">5. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:</text>
-<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono la colonna, 6 cm di scarto.</text>
-<text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. Rientranza: lati 1,30 e 1,40, il muro</text>
-<text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    superiore risulta fuori squadra di ~5 cm.</text>
-<text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Termosifone e termostato a destra:</text>
-<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    solo posizione indicativa. Termosifone sinistro:</text>
-<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    profondità 0,10* stimata.</text>
-<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°</text>
-<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    (tratteggio rimosso, 0,25 aggiunto alla quota).</text>
-<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Basi vetrine: lunghe come la vetrina, profonde 0,70.</text>
-<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    A destra restano 33 cm dalla porta laterale aperta.</text>
+<text x="262.00" y="120.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">2. Porta lato destro 0,80*: stimata dal disegno</text>
+<text x="262.00" y="126.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).</text>
+<text x="262.00" y="132.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">3. Quota 3,20 dello schizzo: non so dove</text>
+<text x="262.00" y="137.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    collocarla, non l'ho usata.</text>
+<text x="262.00" y="143.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">4. Lato sinistro: 1,35 + 2,99 = 4,34</text>
+<text x="262.00" y="148.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    contro 4,31 scritto (3 cm di scarto).</text>
+<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">5. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:</text>
+<text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono la colonna, 6 cm di scarto.</text>
+<text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. Rientranza: lati 1,30 e 1,40, il muro</text>
+<text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    superiore risulta fuori squadra di ~5 cm.</text>
+<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Termosifone e termostato a destra:</text>
+<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    solo posizione indicativa. Termosifone sinistro:</text>
+<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    profondità 0,10* stimata.</text>
+<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°</text>
+<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    (tratteggio rimosso, 0,25 aggiunto alla quota).</text>
+<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Basi vetrine: lunghe come la vetrina, profonde 0,70.</text>
+<text x="262.00" y="210.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    A destra restano 33 cm dalla porta laterale aperta.</text>
 </svg>

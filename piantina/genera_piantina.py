@@ -148,10 +148,10 @@ rect(3.56, 0.67, 3.60, 0.73, fill="#000")
 # spazio portaombrelli: X' 3,60 -> 3,99 (0,39 ricavata)
 # chiuso verso la strada: muro pieno sul fronte (X' 3,60 -> 3,99)
 rect(3.60, -T, 3.99, 0.0, fill=WALL)
-# porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
-opening(W, 1.03, W + T + 0.01, 1.83, [(W, 1.03, W + T, 1.03), (W, 1.83, W + T, 1.83)])
-line(W, 1.03, W - 0.80, 1.03, "#000", 0.5)
-add(f'<path d="M {f(X(W-0.80))} {f(Y(1.03))} A {f(S*0.8)} {f(S*0.8)} 0 0 0 {f(X(W))} {f(Y(1.83))}" '
+# porta lato destro: Y' 1,93 -> 2,73 (0,80 stimata), cerniera lato ingresso, apre verso l'interno
+opening(W, 1.93, W + T + 0.01, 2.73, [(W, 1.93, W + T, 1.93), (W, 2.73, W + T, 2.73)])
+line(W, 1.93, W - 0.80, 1.93, "#000", 0.5)
+add(f'<path d="M {f(X(W-0.80))} {f(Y(1.93))} A {f(S*0.8)} {f(S*0.8)} 0 0 0 {f(X(W))} {f(Y(2.73))}" '
     f'fill="none" stroke="#000" stroke-width="0.2" stroke-dasharray="1 0.8"/>')
 # porta bagno: X' 5,37 -> 6,17 (stima)
 opening(5.37, 6.13 - 0.01, 6.17, 6.13 + T + 0.01, [(5.37, 6.13, 5.37, 6.13 + T), (6.17, 6.13, 6.17, 6.13 + T)])
@@ -207,8 +207,8 @@ dim_h(0, 7.73, -1.45, "7,73", yobj=-T - 0.05)
 
 # lato destro (verso l'esterno)
 xl = 8.55
-for (a, b, lab, k) in [(0, 1.03, "1,03", "m"), (1.03, 1.83, "0,80°", "m"), (1.83, 4.03, "2,20", "m"),
-                       (4.03, 6.13, "2,10°", "m")]:
+for (a, b, lab, k) in [(0, 1.93, "1,93", "m"), (1.93, 2.73, "0,80*", "e"), (2.73, 4.93, "2,20", "m"),
+                       (4.93, 6.13, "1,20°", "m")]:
     dim_v(a, b, xl, lab, xobj=W + T + 0.05, kind=k)
 
 # lato sinistro
@@ -263,7 +263,8 @@ notes = [
     "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
     "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
     "    portaombrelli 0,39°. Profondità 0,70 come le basi.",
-    "2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.",
+    "2. Porta lato destro 0,80*: stimata dal disegno",
+    "    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).",
     "3. Quota 3,20 dello schizzo: non so dove",
     "    collocarla, non l'ho usata.",
     "4. Lato sinistro: 1,35 + 2,99 = 4,34",
