@@ -261,12 +261,18 @@ if FURN:
     text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
     text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
 
-    # arancione: mobili bassi (misure stimate dalla foto) - rosso: espositore Stabilo da 60
-    for (x1, y1, x2, y2, lab) in [(0.45, 0.50, 1.05, 1.65, "1,15 × 0,60"), (1.25, 1.10, 1.95, 2.80, "1,70 × 0,70"),
-                                  (5.65, 0.85, 6.55, 2.35, "1,50 × 0,90")]:
+    # arancione: mobili bassi, messi in modo da lasciare corridoi di almeno 0,90 per il passaggio delle persone
+    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 1.90, 2.05, "1,15 × 0,60"), (2.80, 1.00, 3.50, 2.70, "1,70 × 0,70"),
+                                  (5.00, 1.10, 5.90, 2.60, "1,50 × 0,90")]:
         rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2691e", w=0.4)
-        text((x1 + x2) / 2, (y1 + y2) / 2 - 0.05, "mobile basso", 1.9, "#8a3b0c", weight="bold")
-        text((x1 + x2) / 2, (y1 + y2) / 2 + 0.17, lab + "*", 1.7, "#8a3b0c")
+        text((x1 + x2) / 2 - 0.04, (y1 + y2) / 2, "mobile basso", 1.9, "#8a3b0c", weight="bold", rot=-90)
+        text((x1 + x2) / 2 + 0.16, (y1 + y2) / 2, lab + "*", 1.7, "#8a3b0c", rot=-90)
+    # corridoi di passaggio (misure libere)
+    dim_h(0.40, 1.30, 1.45, "0,90")      # parete sinistra - mobile 1
+    dim_h(1.90, 2.80, 1.45, "0,90")      # mobile 1 - mobile 2
+    dim_h(3.50, 5.00, 1.45, "1,50")      # mobile 2 - mobile 3
+    dim_h(5.90, 6.95, 2.10, "1,05")      # mobile 3 - porta laterale aperta
+    dim_v(2.70, 3.63, 3.40, "0,93")      # mobile 2 - librerie
     rect(0.0, 4.90, 0.30, 5.50, fill="#ffc2c2", stroke="#c62828", w=0.4)
     text(0.17, 5.20, "Stabilo 60", 1.7, "#7a1010", weight="bold", rot=-90)
 
@@ -366,7 +372,7 @@ if MODE == 'a3':
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
         for i, t in enumerate(["Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)",
                                "Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)",
-                               "Arancione: 3 mobili bassi (misure stimate dalla foto)",
+                               "Arancione: 3 mobili bassi, corridoi di passaggio da 0,90 a 1,50",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
