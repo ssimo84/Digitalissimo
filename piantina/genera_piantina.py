@@ -256,11 +256,14 @@ if FURN:
     text(2.68, 4.52, "bancone", 1.9, "#000", weight="bold")
     text(2.68, 4.72, "1,20 × 0,70", 1.7, "#000")
 
-    # arancione/rosso: ingombri disegnati ma non specificati (misure stimate dalla foto)
-    for (x1, y1, x2, y2, lab) in [(0.45, 0.50, 1.05, 1.65, "?"), (1.25, 1.10, 1.95, 2.80, "?"),
-                                  (5.65, 0.85, 6.55, 2.35, "?"), (0.0, 4.90, 0.28, 5.57, "?")]:
-        rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2481e", w=0.4, dash="1.4 0.8")
-        text((x1 + x2) / 2, (y1 + y2) / 2 + 0.07, lab, 3.0, "#d2481e", weight="bold")
+    # arancione: mobili bassi (misure stimate dalla foto) - rosso: espositore Stabilo da 60
+    for (x1, y1, x2, y2, lab) in [(0.45, 0.50, 1.05, 1.65, "1,15 × 0,60"), (1.25, 1.10, 1.95, 2.80, "1,70 × 0,70"),
+                                  (5.65, 0.85, 6.55, 2.35, "1,50 × 0,90")]:
+        rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2691e", w=0.4)
+        text((x1 + x2) / 2, (y1 + y2) / 2 - 0.05, "mobile basso", 1.9, "#8a3b0c", weight="bold")
+        text((x1 + x2) / 2, (y1 + y2) / 2 + 0.17, lab + "*", 1.7, "#8a3b0c")
+    rect(0.0, 4.90, 0.30, 5.50, fill="#ffc2c2", stroke="#c62828", w=0.4)
+    text(0.17, 5.20, "Stabilo 60", 1.7, "#7a1010", weight="bold", rot=-90)
 
 # ---------------------------------------------------------------- QUOTE
 # fronte ingresso (in alto)
@@ -358,7 +361,8 @@ if MODE == 'a3':
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
         for i, t in enumerate(["Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)",
                                "Billy 202: 15 da 80, 4 da 40, 2 da 20 (profondità 40)",
-                               "Arancione/rosso (?): 4 ingombri, da definire",
+                               "Arancione: 3 mobili bassi (misure stimate dalla foto)",
+                               "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
 else:
