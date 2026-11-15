@@ -139,14 +139,13 @@ for yy in (-T, -T / 2, 0):
 opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
 # rientranza d'ingresso: profonda 0,80 (come le basi delle vetrine), porta arretrata
 rect(2.65, 0.0, 3.99, 0.70, fill="#eaeef2")
-# vetrate laterali che chiudono la rientranza (spessore vetro ~6 cm)
-for xg in (2.65, 3.99):
+# vetrate: una a sinistra della porta e una tra porta e spazio portaombrelli (spazio libero verso la vetrina) (spessore vetro ~6 cm)
+for xg in (2.65, 3.60):
     rect(xg - 0.03, 0.0, xg + 0.03, 0.70, fill="#bfdcf2", stroke="#000", w=0.3)
 # porta d'ingresso 0,95 sul fondo della rientranza (Y' 0,80)
 line(2.65, 0.70, 3.60, 0.70, "#000", 0.6)
 rect(2.65, 0.67, 2.69, 0.73, fill="#000")
 rect(3.56, 0.67, 3.60, 0.73, fill="#000")
-line(3.60, 0.70, 3.99, 0.70, "#000", 0.3)
 # spazio portaombrelli: X' 3,60 -> 3,99 (0,39 ricavata)
 # porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
 opening(W, 1.03, W + T + 0.01, 1.83, [(W, 1.03, W + T, 1.03), (W, 1.83, W + T, 1.83)])
