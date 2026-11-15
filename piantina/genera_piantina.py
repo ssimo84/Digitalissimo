@@ -258,28 +258,25 @@ if FURN:
     rect(3.28, 4.03, 4.33, 4.63, fill=PINK, stroke=PINKD, w=0.4)
     text(3.805, 4.30, "scrivania", 1.9, "#000", weight="bold")
     text(3.805, 4.50, "1,05 × 0,60", 1.7, "#000")
-    lpts = [(1.38, 4.03), (3.28, 4.03), (3.28, 4.73), (2.08, 4.73), (2.08, 5.08), (1.38, 5.08)]
-    add('<polygon points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in lpts) + f'" fill="{PINK}" stroke="{PINKD}" stroke-width="0.4"/>')
-    rect(2.38, 4.03, 3.08, 4.73, fill="#fde3f0", stroke=PINKD, w=0.35, dash="1.2 0.8")   # ribalta 0,70 per entrare nel retro
-    text(2.73, 4.38, "ribalta", 1.7, "#000", style="italic")
-    text(2.73, 4.58, "0,70", 1.6, "#000")
-    text(1.73, 4.50, "bancone a L", 1.7, "#000", weight="bold", rot=-90)
-    text(1.95, 4.50, "1,20 + 1,05 × 0,70", 1.5, "#000", rot=-90)
-    # Billy che chiude il retro tra il ritorno del bancone e la libreria lato bagno (40 + 20)
-    run_y(1.38, 5.08, [0.4, 0.2])
+    rect(2.08, 4.03, 3.28, 4.73, fill=PINK, stroke=PINKD, w=0.4)       # il tuo bancone: dritto 1,20 x 0,70
+    text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
+    text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
+    # Billy che chiude il retro tra il bancone e la libreria lato bagno (80 + 20), senza ribalta
+    run_y(1.68, 4.73, [0.8, 0.2])
 
-    # arancione: mobili bassi, messi in modo da lasciare corridoi di almeno 0,90 per il passaggio delle persone
-    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 1.90, 2.05, "1,15 × 0,60"), (1.30, 2.20, 2.00, 3.90, "1,70 × 0,70"),
-                                  (5.00, 1.10, 5.90, 2.60, "1,50 × 0,90")]:
+    # arancione: mobili bassi messi in orizzontale (lato lungo parallelo alle vetrine), fuori dalla linea della porta
+    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 2.45, 1.50, "1,15 × 0,60"), (3.80, 1.00, 5.50, 1.70, "1,70 × 0,70"),
+                                  (5.00, 2.60, 6.50, 3.50, "1,50 × 0,90")]:
         rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2691e", w=0.4)
-        text((x1 + x2) / 2 - 0.04, (y1 + y2) / 2, "mobile basso", 1.9, "#8a3b0c", weight="bold", rot=-90)
-        text((x1 + x2) / 2 + 0.16, (y1 + y2) / 2, lab + "*", 1.7, "#8a3b0c", rot=-90)
-    # corridoi di passaggio (misure libere)
-    dim_h(0.40, 1.30, 1.45, "0,90")      # parete sinistra - mobile 1
-    dim_h(0.10, 1.30, 3.40, "1,20")      # termosifone - mobile 2
-    dim_h(1.90, 5.00, 1.45, "3,10 ingresso libero")   # corridoio centrale davanti alla porta
-    dim_h(5.90, 6.95, 2.10, "1,05")      # mobile 3 - porta laterale aperta
-    dim_v(2.60, 3.63, 5.04, "1,03")      # mobile 3 - librerie
+        text((x1 + x2) / 2, (y1 + y2) / 2 - 0.02, "mobile basso", 1.9, "#8a3b0c", weight="bold")
+        text((x1 + x2) / 2, (y1 + y2) / 2 + 0.20, lab + "*", 1.7, "#8a3b0c")
+    # corridoi di passaggio
+    dim_h(0.40, 1.30, 1.20, "0,90")                  # parete sinistra - mobile 1
+    dim_h(2.45, 3.80, 1.30, "1,35")                  # corridoio d'ingresso tra i due mobili
+    dim_v(1.70, 2.60, 5.20, "0,90")                  # mobile 2 - mobile 3
+    dim_h(6.50, W - 0.40, 3.05, "0,83")              # mobile 3 - libreria destra
+    dim_v(3.50, 4.35, 6.00, "0,85")                  # mobile 3 - libreria
+    dim_v(0.0, 1.00, 4.50, "1,00")                   # vetrina - mobile 2
     rect(0.0, 4.90, 0.30, 5.50, fill="#ffc2c2", stroke="#c62828", w=0.4)
     text(0.17, 5.20, "Stabilo 60", 1.7, "#7a1010", weight="bold", rot=-90)
 
@@ -377,10 +374,10 @@ if MODE == 'a3':
 
     if FURN:
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
-        for i, t in enumerate(["Rosa: scrivania 1,05 + bancone a L 1,20 + 1,05 con ribalta 0,70",
+        for i, t in enumerate(["Rosa: scrivania 1,05 + il tuo bancone dritto 1,20 × 0,70",
                                "Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)",
-                               "Arancione: 3 mobili bassi, ingresso libero (corridoio 3,10)",
-                               "Stabilo 60 dal lato clienti, retro chiuso (accesso dalla ribalta)",
+                               "Arancione: 3 mobili bassi in orizzontale, ingresso libero",
+                               "Stabilo 60 dal lato clienti; retro chiuso, si entra dall'uscita retro",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")

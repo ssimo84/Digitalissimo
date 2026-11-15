@@ -139,45 +139,46 @@
 <rect x="111.60" y="136.60" width="21.00" height="12.00" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
 <text x="122.10" y="142.00" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">scrivania</text>
 <text x="122.10" y="146.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,05 × 0,60</text>
-<polygon points="73.60,136.60 111.60,136.60 111.60,150.60 87.60,150.60 87.60,157.60 73.60,157.60" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
-<rect x="93.60" y="136.60" width="14.00" height="14.00" fill="#fde3f0" stroke="#b0346e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
-<text x="100.60" y="143.60" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">ribalta</text>
-<text x="100.60" y="147.60" font-size="1.6" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">0,70</text>
-<text x="80.60" y="146.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 80.60 146.00)">bancone a L</text>
-<text x="85.00" y="146.00" font-size="1.5" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 85.00 146.00)">1,20 + 1,05 × 0,70</text>
-<rect x="73.60" y="157.60" width="8.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="79.00" y="161.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 79.00 161.60)">40</text>
-<rect x="73.60" y="165.60" width="8.00" height="4.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="77.60" y="169.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
-<rect x="72.00" y="74.00" width="12.00" height="23.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
-<text x="77.20" y="85.50" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 77.20 85.50)">mobile basso</text>
-<text x="81.20" y="85.50" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 81.20 85.50)">1,15 × 0,60*</text>
-<rect x="72.00" y="100.00" width="14.00" height="34.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
-<text x="78.20" y="117.00" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 78.20 117.00)">mobile basso</text>
-<text x="82.20" y="117.00" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 82.20 117.00)">1,70 × 0,70*</text>
-<rect x="146.00" y="78.00" width="18.00" height="30.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
-<text x="154.20" y="93.00" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 154.20 93.00)">mobile basso</text>
-<text x="158.20" y="93.00" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 158.20 93.00)">1,50 × 0,90*</text>
-<line x1="54.00" y1="85.00" x2="72.00" y2="85.00" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="52.20" y1="86.80" x2="55.80" y2="83.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="70.20" y1="86.80" x2="73.80" y2="83.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="63.00" y="83.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,90</text>
-<line x1="48.00" y1="124.00" x2="72.00" y2="124.00" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="46.20" y1="125.80" x2="49.80" y2="122.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="70.20" y1="125.80" x2="73.80" y2="122.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="60.00" y="122.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">1,20</text>
-<line x1="84.00" y1="85.00" x2="146.00" y2="85.00" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="82.20" y1="86.80" x2="85.80" y2="83.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="144.20" y1="86.80" x2="147.80" y2="83.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="115.00" y="83.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">3,10 ingresso libero</text>
-<line x1="164.00" y1="98.00" x2="185.00" y2="98.00" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="162.20" y1="99.80" x2="165.80" y2="96.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="183.20" y1="99.80" x2="186.80" y2="96.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="174.50" y="96.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">1,05</text>
-<line x1="146.80" y1="108.00" x2="146.80" y2="128.60" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="145.00" y1="109.80" x2="148.60" y2="106.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="145.00" y1="130.40" x2="148.60" y2="126.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="144.80" y="118.30" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 144.80 118.30)">1,03</text>
+<rect x="87.60" y="136.60" width="24.00" height="14.00" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
+<text x="99.60" y="143.20" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">bancone</text>
+<text x="99.60" y="147.20" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,20 × 0,70</text>
+<rect x="79.60" y="150.60" width="8.00" height="16.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="85.00" y="158.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 85.00 158.60)">80</text>
+<rect x="79.60" y="166.60" width="8.00" height="4.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="83.60" y="170.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
+<rect x="72.00" y="74.00" width="23.00" height="12.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
+<text x="83.50" y="79.60" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
+<text x="83.50" y="84.00" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,15 × 0,60*</text>
+<rect x="122.00" y="76.00" width="34.00" height="14.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
+<text x="139.00" y="82.60" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
+<text x="139.00" y="87.00" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,70 × 0,70*</text>
+<rect x="146.00" y="108.00" width="30.00" height="18.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
+<text x="161.00" y="116.60" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
+<text x="161.00" y="121.00" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,50 × 0,90*</text>
+<line x1="54.00" y1="80.00" x2="72.00" y2="80.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="52.20" y1="81.80" x2="55.80" y2="78.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="70.20" y1="81.80" x2="73.80" y2="78.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="63.00" y="78.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,90</text>
+<line x1="95.00" y1="82.00" x2="122.00" y2="82.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="93.20" y1="83.80" x2="96.80" y2="80.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="120.20" y1="83.80" x2="123.80" y2="80.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="108.50" y="80.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">1,35</text>
+<line x1="150.00" y1="90.00" x2="150.00" y2="108.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="148.20" y1="91.80" x2="151.80" y2="88.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="148.20" y1="109.80" x2="151.80" y2="106.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="148.00" y="99.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 148.00 99.00)">0,90</text>
+<line x1="176.00" y1="117.00" x2="192.60" y2="117.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="174.20" y1="118.80" x2="177.80" y2="115.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="190.80" y1="118.80" x2="194.40" y2="115.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="184.30" y="115.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,83</text>
+<line x1="166.00" y1="126.00" x2="166.00" y2="143.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="164.20" y1="127.80" x2="167.80" y2="124.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="164.20" y1="144.80" x2="167.80" y2="141.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="164.00" y="134.50" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 164.00 134.50)">0,85</text>
+<line x1="136.00" y1="56.00" x2="136.00" y2="76.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="134.20" y1="57.80" x2="137.80" y2="54.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="134.20" y1="77.80" x2="137.80" y2="74.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="134.00" y="66.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 134.00 66.00)">1,00</text>
 <rect x="46.00" y="154.00" width="6.00" height="12.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.4"/>
 <text x="49.40" y="160.00" font-size="1.7" fill="#7a1010" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 49.40 160.00)">Stabilo 60</text>
 <line x1="46.00" y1="33.80" x2="46.00" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
@@ -328,10 +329,10 @@
 <text x="262.00" y="210.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Basi vetrine: lunghe come la vetrina, dentro,</text>
 <text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    dietro al vetro (profondità 0,70).</text>
 <text x="262.00" y="244.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">ARREDI (dal tuo schizzo)</text>
-<text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + bancone a L 1,20 + 1,05 con ribalta 0,70</text>
+<text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + il tuo bancone dritto 1,20 × 0,70</text>
 <text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)</text>
-<text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Arancione: 3 mobili bassi, ingresso libero (corridoio 3,10)</text>
-<text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Stabilo 60 dal lato clienti, retro chiuso (accesso dalla ribalta)</text>
+<text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Arancione: 3 mobili bassi in orizzontale, ingresso libero</text>
+<text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Stabilo 60 dal lato clienti; retro chiuso, si entra dall'uscita retro</text>
 <text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosso: espositore Stabilo da 60</text>
 <text x="262.00" y="279.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Quote interne nascoste per leggere meglio</text>
 </svg>
