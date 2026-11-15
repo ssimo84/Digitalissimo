@@ -134,6 +134,7 @@ for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
         line(a, yy, b, yy, "#000", 0.25)
 # rientranza della porta (aperta verso la strada): tolgo i pilastri neri laterali, restano vetrate
 rect(2.65, -0.70, 2.96, 0.0, fill="#fbfbf8")
+rect(2.655, -1.01, 2.97, -0.695, fill="#ffffff")  # tolto il quadratino nero all'angolo
 rect(3.68, -0.70, 3.99, 0.0, fill="#fbfbf8")
 # porta d'ingresso: apertura nello spessore del muro sulla linea Y' 0
 opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
