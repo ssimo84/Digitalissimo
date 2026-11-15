@@ -86,7 +86,7 @@ poly = [
     (2.78, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
     (2.78, 7.43), (1.05, 7.48),            # rientranza 1,30 / 1,73 / 1,40
     (1.05, 6.08), (0.25, 6.08),            # 0,80 fino al pilastro
-    (0.25, 2.99), (0.00, 2.99),            # colonna 0,25 x 3,09 (con il termosifone): e' come un muro
+    (0.25, 4.34), (0.00, 4.34),            # colonna stretta 0,51 (muro pieno) + colonna 1,23
 ]
 pts = " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in poly)
 
@@ -112,7 +112,9 @@ add(f'<polygon points="{pts}" fill="none" stroke="{WALL}" stroke-width="{f(2*T*S
 add(f'<polygon points="{pts}" fill="#fbfbf8" stroke="none"/>')
 
 # colonna lato sinistro (tratteggiata nello schizzo)
-rect(-T, 2.99, 0.25, 6.38, fill=WALL)
+rect(-T, 4.34, 0.25, 6.38, fill=WALL)
+rect(0.0, 4.85, 0.25, 6.08, fill="#fff")
+rect(0.0, 4.85, 0.25, 6.08, fill="url(#hatch)", stroke="#000", w=0.3)
 
 # bordo interno netto
 add(f'<polygon points="{pts}" fill="none" stroke="#000" stroke-width="0.45" stroke-linejoin="miter"/>')
@@ -167,7 +169,11 @@ rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
 line(4.33, 4.03, 4.65, 5.07, "#555", 0.2)
 line(4.65, 4.03, 4.33, 5.07, "#555", 0.2)
 
-# (il termosifone sinistro sta sulla colonna: nessun disegno a righe, la colonna e' muro pieno)
+# ---- termosifone lato sinistro: lungo 1,35 (Y' 2,99 -> 4,34), profondita' stimata 0,10
+rect(0.0, 2.99, 0.10, 4.34, fill="#fff", stroke=ORANGE, w=0.35)
+for i in range(1, 15):
+    yy = 2.99 + i * 1.35 / 15
+    line(0.0, yy, 0.10, yy, ORANGE, 0.2)
 # termosifone lato destro (stima di posizione)
 rect(W - 0.12, 4.30, W, 5.50, fill="#fff", stroke=ORANGE, w=0.35, dash="1.2 0.8")
 text(W - 0.20, 4.90, "termosifone*", 2.2, ORANGE, anchor="middle", rot=-90)
@@ -183,8 +189,9 @@ text(3.125, 1.02, "porta ingresso 0,95", 2.4, GREY, style="italic")
 text(3.125, 0.36, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, 0.40, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
-text(0.36, 3.70, "termosifone 1,35 (sulla colonna)", 2.2, GREY, anchor="start", style="italic")
-text(0.36, 5.00, "colonna 0,25 × 3,09", 2.2, GREY, anchor="start", style="italic")
+text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
+text(0.36, 4.83, "colonna 0,51", 2.0, GREY, anchor="start", style="italic")
+text(0.40, 5.05, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
@@ -216,10 +223,10 @@ dim_h(0.25, 4.33, 4.60, "4,02")
 dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
-line(0.0, 2.78, 0.25, 2.78, BLUE, 0.3)
-tick(0.0, 2.78, BLUE)
-tick(0.25, 2.78, BLUE)
-text(0.34, 2.76, "0,25", 2.6, BLUE, anchor="start")
+line(0.0, 5.50, 0.25, 5.50, BLUE, 0.3)
+tick(0.0, 5.50, BLUE)
+tick(0.25, 5.50, BLUE)
+text(0.34, 5.48, "0,25", 2.6, BLUE, anchor="start")
 # 0,80 e 2,59 lungo il muro in alto
 dim_h(0.25, 1.05, 5.72, "0,80", yobj=6.08)
 dim_h(2.78, 5.37, 5.85, "2,59", yobj=6.13, txt_x=3.55)
@@ -246,8 +253,8 @@ ptext(px + 1, 33.8, "1,34°", 3.2, BLUE, weight="bold")
 ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
 ptext(px + 1, 40.0, "0,10*", 3.2, ORANGE, weight="bold")
 ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
-add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>')
-ptext(px + 13, 46.5, "colonna sinistra: muro pieno 0,25 × 3,09", 3.2)
+add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>')
+ptext(px + 13, 46.5, "colonna (tratteggiata nello schizzo)", 3.2)
 
 ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
 ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
@@ -270,7 +277,8 @@ notes = [
     "6. Rientranza: lati 1,30 e 1,40, il muro",
     "    superiore risulta fuori squadra di ~5 cm.",
     "7. Termosifone e termostato a destra:",
-    "    solo posizione indicativa.",
+    "    solo posizione indicativa. Termosifone sinistro:",
+    "    profondità 0,10* stimata.",
     "8. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
     "    A destra restano 33 cm dalla porta laterale aperta.",
 ]
