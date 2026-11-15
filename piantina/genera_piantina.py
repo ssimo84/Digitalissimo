@@ -86,7 +86,7 @@ poly = [
     (2.78, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
     (2.78, 7.43), (1.05, 7.48),            # rientranza 1,30 / 1,73 / 1,40
     (1.05, 6.08), (0.25, 6.08),            # 0,80 fino al pilastro
-    (0.25, 4.85), (0.00, 4.85),            # pilastro 0,25 x 1,23
+    (0.25, 4.85), (0.00, 4.85),            # colonna 0,25 x 1,23
 ]
 pts = " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in poly)
 
@@ -109,7 +109,7 @@ add(f'<polygon points="{pts}" fill="none" stroke="{WALL}" stroke-width="{f(2*T*S
     f'stroke-linejoin="miter" stroke-miterlimit="10"/>')
 add(f'<polygon points="{pts}" fill="#fbfbf8" stroke="none"/>')
 
-# pilastro lato sinistro (tratteggiato nello schizzo)
+# colonna lato sinistro (tratteggiata nello schizzo)
 rect(-T, 4.85, 0.25, 6.38, fill=WALL)
 rect(0.0, 4.85, 0.25, 6.08, fill="#fff")
 rect(0.0, 4.85, 0.25, 6.08, fill="url(#hatch)", stroke="#000", w=0.3)
@@ -165,6 +165,7 @@ text(1.57, 0.42, "finestre", 2.4, GREY, style="italic")
 text(3.32, 0.42, "porta ingresso", 2.4, GREY, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.50, 4.12, "termosifone 0,51", 2.2, GREY, anchor="start", style="italic")
+text(0.40, 5.02, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "porta 0,90*", 2.4, ORANGE, style="italic")
 text(1.9, 5.15, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
@@ -196,7 +197,7 @@ dim_h(4.65, W, 4.20, "3,08")
 dim_h(0.31, 4.33, 4.60, "4,02")
 dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
-# pilastro lato sinistro: sporgenza 0,25
+# colonna lato sinistro: sporgenza 0,25
 line(0.0, 5.30, 0.25, 5.30, BLUE, 0.3)
 tick(0.0, 5.30, BLUE)
 tick(0.25, 5.30, BLUE)
@@ -229,7 +230,7 @@ ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
 ptext(px + 1, 40.0, "1,26*", 3.2, ORANGE, weight="bold")
 ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
 add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>')
-ptext(px + 13, 46.5, "pilastro tratteggiato nello schizzo", 3.2)
+ptext(px + 13, 46.5, "colonna (tratteggiata nello schizzo)", 3.2)
 
 ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
 ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)

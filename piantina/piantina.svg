@@ -47,6 +47,7 @@
 <text x="112.40" y="58.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta ingresso</text>
 <text x="117.00" y="160.00" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">pilastro 0,32 × 1,04</text>
 <text x="56.00" y="132.40" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">termosifone 0,51</text>
+<text x="54.00" y="150.40" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">colonna 0,25 × 1,23</text>
 <text x="161.40" y="198.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta bagno</text>
 <text x="189.60" y="208.40" font-size="2.4" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="italic">porta 0,90*</text>
 <text x="84.00" y="153.00" font-size="4.2" fill="#999" text-anchor="middle" font-weight="bold" font-style="normal">AMBIENTE PRINCIPALE</text>
@@ -226,7 +227,7 @@
 <text x="263.00" y="40.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="bold">1,26*</text>
 <text x="275.00" y="40.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">stimata: nello schizzo non c'era la quota</text>
 <rect x="262" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>
-<text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">pilastro tratteggiato nello schizzo</text>
+<text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">colonna (tratteggiata nello schizzo)</text>
 <text x="262.00" y="60.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DATI</text>
 <text x="262.00" y="66.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie interna lorda: 50,83 m²</text>
 <text x="262.00" y="72.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie netta (meno pilastro): 50,50 m²</text>
