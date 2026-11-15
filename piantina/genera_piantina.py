@@ -8,6 +8,7 @@ Lo schizzo originale e' ruotato di 180 gradi rispetto a questo disegno.
 import math
 import os
 
+CLEAN = os.environ.get('CLEAN', '0') == '1'   # 1 = solo disegno, senza titolo/legenda/note
 FURN = os.environ.get('FURN', '0') == '1'   # 1 = aggiunge gli arredi (proposta)
 MODE = os.environ.get('MODE', 'a3')   # 'a3' = tavola completa 1:50, 'a4' = solo piantina 1:60 su A4 verticale
 
@@ -395,10 +396,11 @@ if MODE == 'a3':
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
 else:
-    ptext(PAGE_W / 2, 24, "PIANTINA", 6.0, "#000", "middle", "bold")
-    ptext(PAGE_W / 2, 31, "Quote in metri · scala 1:60 · ° ricavata per differenza · * stimata", 3.0, "#333", "middle")
-    ptext(PAGE_W / 2, 280, f"Superficie netta {net:.1f} m² (meno colonna e basi vetrina)".replace(".", ","), 3.2, "#333", "middle")
+    if not CLEAN:
+        ptext(PAGE_W / 2, 24, "PIANTINA", 6.0, "#000", "middle", "bold")
+        ptext(PAGE_W / 2, 31, "Quote in metri · scala 1:60 · ° ricavata per differenza · * stimata", 3.0, "#333", "middle")
+        ptext(PAGE_W / 2, 280, f"Superficie netta {net:.1f} m² (meno colonna e basi vetrina)".replace(".", ","), 3.2, "#333", "middle")
 
 add('</svg>')
-open(("piantina_arredi" if FURN else "piantina") + (".svg" if MODE == "a3" else "_A4.svg"), "w", encoding="utf-8").write("\n".join(out))
+open(("piantina_arredi" if FURN else "piantina") + (".svg" if MODE == "a3" else ("_A4_pulita.svg" if CLEAN else "_A4.svg")), "w", encoding="utf-8").write("\n".join(out))
 print("ok")
