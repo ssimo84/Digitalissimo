@@ -134,7 +134,9 @@ opening(3.99, -T - 0.01, 7.07, 0.0, [(3.99, -T, 3.99, 0), (7.07, -T, 7.07, 0)])
 for yy in (-T, -T / 2, 0):
     line(3.99, yy, 7.07, yy, "#000", 0.25)
 # porta d'ingresso: X' 2,65 -> 3,99 (1,34 ricavata)
-opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
+opening(2.65, -T - 0.01, 3.65, 0.0, [(2.65, -T, 2.65, 0), (3.65, -T, 3.65, 0)])
+# spazio portaombrelli tra porta e vetrina larga: X' 3,65 -> 3,99 (stima)
+add(f'<circle cx="{f(X(3.82))}" cy="{f(Y(0.28))}" r="1.9" fill="#fff" stroke="{ORANGE}" stroke-width="0.35" stroke-dasharray="1 0.7"/>')
 # porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
 opening(W, 1.03, W + T + 0.01, 1.83, [(W, 1.03, W + T, 1.03), (W, 1.83, W + T, 1.83)])
 line(W, 1.03, W - 0.80, 1.03, "#000", 0.5)
@@ -172,7 +174,8 @@ text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
 # ---- etichette ambienti/aperture
 text(1.57, 0.42, "vetrina", 2.4, GREY, style="italic")
 text(5.53, 0.42, "vetrina", 2.4, GREY, style="italic")
-text(3.32, 0.42, "porta ingresso", 2.4, GREY, style="italic")
+text(3.15, 0.62, "porta ingresso", 2.4, GREY, style="italic")
+text(3.82, 0.78, "portaombrelli*", 2.0, ORANGE, anchor="start", style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.32, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 text(0.36, 4.80, "elemento 0,51 × 0,25", 2.0, GREY, anchor="start", style="italic")
@@ -185,7 +188,7 @@ text(2.6, 2.6, f"{area - pillar_area:.1f} m² netti", 3.0, "#999")
 # ---------------------------------------------------------------- QUOTE
 # fronte ingresso (in alto)
 yl = -0.85
-for (a, b, lab, k) in [(0, 0.49, "0,49", "m"), (0.49, 2.65, "2,16", "m"), (2.65, 3.99, "1,34°", "m"),
+for (a, b, lab, k) in [(0, 0.49, "0,49", "m"), (0.49, 2.65, "2,16", "m"), (2.65, 3.65, "1,00*", "e"), (3.65, 3.99, "0,34*", "e"),
                        (3.99, 7.07, "3,08", "m"), (7.07, 7.73, "0,66", "m")]:
     dim_h(a, b, yl, lab, yobj=-T - 0.05, kind=k)
 dim_h(0, 7.73, -1.45, "7,73", yobj=-T - 0.05)
@@ -249,8 +252,9 @@ ptext(px, 83, "Spessore muri 0,30 m: ipotizzato, non misurato", 3.2, ORANGE)
 
 ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
 notes = [
-    "1. Porta ingresso 1,34°: è per differenza",
-    "    (7,73 − 0,49 − 2,16 − 3,08 − 0,66).",
+    "1. Porta + spazio portaombrelli = 1,34° (per differenza:",
+    "    7,73 − 0,49 − 2,16 − 3,08 − 0,66). Come si divide",
+    "    è una stima: porta 1,00*, portaombrelli 0,34*.",
     "2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.",
     "3. Quota 3,20 dello schizzo: non so dove",
     "    collocarla, non l'ho usata.",
