@@ -242,10 +242,10 @@ if FURN:
     # Billy parete destra: 2 x 80 prima della porta laterale, poi 80 + 80 + 40 fino al termosifone
     run_y(W - BD, 0.05, [0.8, 0.8])
     run_y(W - BD, 2.78, [0.8, 0.8, 0.4])
-    # Billy "divisorio" dalla colonna centrale alla parete destra: 3 x 80 + 20
-    run_x(4.65, 4.35, [0.8, 0.8, 0.8, 0.2])
-    # Billy accanto alla colonna lato ingresso: 80 + 40
-    run_x(3.70, 3.63, [0.8, 0.4])
+    # Billy a destra della colonna: parte davanti alla scrivania e continua tutta insieme fino al muro destro
+    run_x(3.70, 3.63, [0.8, 0.2])          # davanti alla scrivania
+    run_y(4.70, 3.63, [0.8, 0.2])          # gira attorno alla colonna (lato opposto)
+    run_x(5.10, 4.35, [0.8, 0.8, 0.4, 0.2])  # prosegue fino alla parete destra
 
     # rosa: scrivania 1,05 (attaccata alla colonna centrale) + bancone 1,20
     PINK, PINKD = "#f6b3d4", "#b0346e"
@@ -360,7 +360,7 @@ if MODE == 'a3':
     if FURN:
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
         for i, t in enumerate(["Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)",
-                               "Billy 202: 15 da 80, 4 da 40, 2 da 20 (profondità 40)",
+                               "Billy 202: 15 da 80, 4 da 40, 4 da 20 (profondità 40)",
                                "Arancione: 3 mobili bassi (misure stimate dalla foto)",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
