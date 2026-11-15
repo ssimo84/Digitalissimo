@@ -95,7 +95,9 @@ area = 0.5 * abs(sum(poly[i][0] * poly[(i + 1) % len(poly)][1] - poly[(i + 1) % 
                      for i in range(len(poly))))
 perim = sum(math.dist(poly[i], poly[(i + 1) % len(poly)]) for i in range(len(poly)))
 pillar_area = 0.32 * 1.04
-print(f"area lorda {area:.2f} m2, netta pilastro {area - pillar_area:.2f} m2, perimetro {perim:.2f} m")
+recess_area = 1.34 * 0.80          # rientranza d'ingresso (porta arretrata di 0,80)
+net = area - pillar_area - recess_area
+print(f"area lorda {area:.2f} m2, netta pilastro {net:.2f} m2, perimetro {perim:.2f} m")
 
 add(f'<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" '
     f'font-family="Arial, Helvetica, sans-serif">')
@@ -134,11 +136,15 @@ opening(3.99, -T - 0.01, 7.07, 0.0, [(3.99, -T, 3.99, 0), (7.07, -T, 7.07, 0)])
 for yy in (-T, -T / 2, 0):
     line(3.99, yy, 7.07, yy, "#000", 0.25)
 # porta d'ingresso: X' 2,65 -> 3,99 (1,34 ricavata)
-opening(2.65, -T - 0.01, 3.60, 0.0, [(2.65, -T, 2.65, 0), (3.60, -T, 3.60, 0)])
-# baule 0,70 di profondita' nello spazio tra porta e vetrina larga: X' 3,60 -> 3,99
-rect(3.60, 0.0, 3.99, 0.70, fill="#e8d9b8", stroke="#000", w=0.35)
-line(3.60, 0.0, 3.99, 0.70, "#a08a5a", 0.15)
-line(3.99, 0.0, 3.60, 0.70, "#a08a5a", 0.15)
+opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
+# rientranza d'ingresso: profonda 0,80 (come le basi delle vetrine), porta arretrata
+rect(2.65, 0.0, 3.99, 0.80, fill="#eaeef2", stroke="#000", w=0.3, dash="1.2 0.8")
+# porta d'ingresso 0,95 sul fondo della rientranza (Y' 0,80)
+line(2.65, 0.80, 3.60, 0.80, "#000", 0.6)
+rect(2.65, 0.77, 2.69, 0.83, fill="#000")
+rect(3.56, 0.77, 3.60, 0.83, fill="#000")
+line(3.60, 0.80, 3.99, 0.80, "#000", 0.3)
+# spazio portaombrelli: X' 3,60 -> 3,99 (0,39 ricavata)
 # porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
 opening(W, 1.03, W + T + 0.01, 1.83, [(W, 1.03, W + T, 1.03), (W, 1.83, W + T, 1.83)])
 line(W, 1.03, W - 0.80, 1.03, "#000", 0.5)
@@ -182,8 +188,9 @@ text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
 # ---- etichette ambienti/aperture
 text(1.57, 0.55, "base vetrina 2,16 × 0,80", 2.4, "#000", style="italic")
 text(5.53, 0.55, "base vetrina 3,08 × 0,80", 2.4, "#000", style="italic")
-text(3.125, 0.62, "porta ingresso", 2.4, GREY, style="italic")
-text(3.795, 0.95, "baule 0,70", 2.2, "#000", style="italic")
+text(3.125, 1.12, "porta ingresso 0,95", 2.4, GREY, style="italic")
+text(3.125, 0.40, "rientranza 0,80", 2.0, GREY, style="italic")
+text(3.80, 0.40, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.32, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 text(0.36, 4.80, "elemento 0,51 × 0,25", 2.0, GREY, anchor="start", style="italic")
@@ -191,7 +198,7 @@ text(0.40, 5.02, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="itali
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
-text(2.6, 2.6, f"{area - pillar_area:.1f} m² netti", 3.0, "#999")
+text(2.6, 2.6, f"{net:.1f} m² netti", 3.0, "#999")
 
 # ---------------------------------------------------------------- QUOTE
 # fronte ingresso (in alto)
@@ -238,7 +245,7 @@ dim_h(5.37, 6.17, 6.95, "0,80", yobj=6.5)
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
 ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
-ptext(12, 271, "Ingresso in alto: porta con una vetrina per lato · bagno oltre la parete in basso", 3.2, "#333")
+ptext(12, 271, "Ingresso in alto: porta arretrata tra due vetrine · bagno oltre la parete in basso", 3.2, "#333")
 
 # ---------------------------------------------------------------- pannello note
 px = 262
@@ -254,15 +261,15 @@ ptext(px + 13, 46.5, "colonna (tratteggiata nello schizzo)", 3.2)
 
 ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
 ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
-ptext(px, 72, f"Superficie netta (meno pilastro): {area - pillar_area:.2f} m²".replace(".", ","), 3.2)
+ptext(px, 72, f"Superficie netta (meno pilastro e rientranza): {net:.2f} m²".replace(".", ","), 3.2)
 ptext(px, 77.5, f"Perimetro interno: {perim:.2f} m".replace(".", ","), 3.2)
 ptext(px, 83, "Spessore muri 0,30 m: ipotizzato, non misurato", 3.2, ORANGE)
 
 ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
 notes = [
-    "1. Porta ingresso 0,95 + spazio 0,39° = 1,34° (per",
-    "    differenza: 7,73 − 0,49 − 2,16 − 3,08 − 0,66).",
-    "    Baule 0,70: l'ho messo nello spazio, in profondità.",
+    "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
+    "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
+    "    portaombrelli 0,39°. Profondità 0,80 come le basi.",
     "2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.",
     "3. Quota 3,20 dello schizzo: non so dove",
     "    collocarla, non l'ho usata.",
