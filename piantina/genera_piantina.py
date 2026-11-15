@@ -178,7 +178,7 @@ text(0.32, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 text(0.36, 4.80, "elemento 0,51 × 0,25", 2.0, GREY, anchor="start", style="italic")
 text(0.40, 5.02, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
-text(7.18, 7.92, "porta 0,90*", 2.4, ORANGE, style="italic")
+text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
 text(2.6, 2.6, f"{area - pillar_area:.1f} m² netti", 3.0, "#999")
 
@@ -193,9 +193,8 @@ dim_h(0, 7.73, -1.45, "7,73", yobj=-T - 0.05)
 # lato destro (verso l'esterno)
 xl = 8.55
 for (a, b, lab, k) in [(0, 1.03, "1,03", "m"), (1.03, 1.83, "0,80°", "m"), (1.83, 4.03, "2,20", "m"),
-                       (4.03, 6.13, "2,10°", "m"), (6.13, 7.33, "1,20*", "e")]:
+                       (4.03, 6.13, "2,10°", "m")]:
     dim_v(a, b, xl, lab, xobj=W + T + 0.05, kind=k)
-dim_v(0, 7.33, 9.15, "7,33*", xobj=W + T + 0.05, kind="e")
 
 # lato sinistro
 xl = -0.85
@@ -224,7 +223,6 @@ dim_h(1.05, 2.78, 8.35, "1,73", yobj=7.85)
 
 # porta bagno e nicchia (stima)
 dim_h(5.37, 6.17, 6.95, "0,80", yobj=6.5)
-dim_h(6.47, W, 8.35, "1,26*", yobj=7.70, kind="e")
 
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
@@ -254,19 +252,17 @@ notes = [
     "1. Porta ingresso 1,34°: è per differenza",
     "    (7,73 − 0,49 − 2,16 − 3,08 − 0,66).",
     "2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.",
-    "3. Nicchia in basso a destra: larghezza 1,26*,",
-    "    profondità 1,20*, porta 0,90*: non quotate.",
-    "4. Quota 3,20 dello schizzo: non so dove",
+    "3. Quota 3,20 dello schizzo: non so dove",
     "    collocarla, non l'ho usata.",
-    "5. Lato sinistro: 1,35 + 2,99 = 4,34",
+    "4. Lato sinistro: 1,35 + 2,99 = 4,34",
     "    contro 4,31 scritto (3 cm di scarto).",
-    "6. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:",
+    "5. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:",
     "    31 cm: 25 sono l'elemento da 0,25, 6 cm di scarto.",
-    "7. Rientranza: lati 1,30 e 1,40, il muro",
+    "6. Rientranza: lati 1,30 e 1,40, il muro",
     "    superiore risulta fuori squadra di ~5 cm.",
-    "8. Termosifone e termostato a destra:",
+    "7. Termosifone e termostato a destra:",
     "    solo posizione indicativa.",
-    "9. Sotto il termosifone sinistro c'è un elemento",
+    "8. Sotto il termosifone sinistro c'è un elemento",
     "    0,51 × 0,25 (radiatore? nicchia?): da identificare.",
     "    Profondità del termosifone 0,10* stimata.",
 ]
