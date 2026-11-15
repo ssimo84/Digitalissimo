@@ -268,6 +268,11 @@ if FURN:
     # Billy che chiude il retro tra il bancone e la libreria lato bagno (80 + 20), senza ribalta
     run_y(1.68, 4.73, [0.2])           # chiude l'angolo sotto il bancone: sotto resta il varco da 0,80 per te
 
+    # espositori piccoli trasparenti (circa 40 cm), messi in verticale sul lato sinistro del bancone, rivolti verso il corridoio clienti
+    for k in range(2):
+        y0 = 4.03 + 0.40 * k
+        add(f'<rect x="{f(X(1.78))}" y="{f(Y(y0))}" width="{f(S*0.30)}" height="{f(S*0.40)}" fill="#bfe3f7" fill-opacity="0.55" stroke="#1976d2" stroke-width="0.35" stroke-dasharray="1 0.6"/>')
+        text(1.93 + 0.05, y0 + 0.20, "40", 1.5, "#0d47a1", rot=-90)
     # il tuo passaggio: varco libero tra la colonna di Billy e la parete del bagno
     add('<defs><marker id="arw" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#2e7d32"/></marker></defs>')
     pts_path = [(1.00, 5.33), (1.90, 5.33), (2.60, 5.20), (3.30, 5.05), (3.90, 4.95)]
@@ -388,7 +393,7 @@ if MODE == 'a3':
                                f"Billy 202: {counts.get(80,0)} da 80, {counts.get(40,0)} da 40, {counts.get(20,0)} da 20 (profondità 40)",
                                "Arancione: 3 mobili bassi in orizzontale, ingresso libero",
                                "Stabilo 60 dal lato clienti; tu passi dal varco da 0,80 in basso a sinistra",
-                               "Rosso: espositore Stabilo da 60",
+                               "Rosso: espositore Stabilo da 60 · azzurro trasparente: 2 espositori da 40",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
 else:
