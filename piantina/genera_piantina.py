@@ -247,9 +247,14 @@ if FURN:
     # Billy dalla porta del bagno verso la nicchia: 80 + 20, poi resta libero il passaggio (0,80) verso l'uscita retro
     run_x(5.93, 5.73, [0.8, 0.2])
     dim_h(6.93, W, 5.50, "0,80", kind="m")   # passaggio libero verso l'uscita retro
-    # Billy parete destra: 2 x 80 prima della porta laterale, poi 80 + 80 + 40 fino al termosifone
-    run_y(W - BD, 0.05, [0.8, 0.8])
-    run_y(W - BD, 2.78, [0.8, 0.8, 0.4])
+    # parete destra: al posto dei Billy, espositori Stabilo da 60 (profondita' 0,30)
+    esp_n = 0
+    for (y0, n) in [(0.05, 2), (2.78, 3)]:
+        for k in range(n):
+            yy = y0 + 0.60 * k
+            rect(W - 0.30, yy, W, yy + 0.60, fill="#ffc2c2", stroke="#c62828", w=0.35)
+            text(W - 0.15 + 0.05, yy + 0.30, "60", 1.6, "#7a1010", rot=-90)
+            esp_n += 1
     # Billy continuo (con angoli come i Billy IKEA): parte a filo della scrivania (105), passa davanti alla colonna,
     # gira con un angolo dietro la colonna e prosegue senza interruzioni fino alla parete destra
     run_x(3.28, 3.63, [0.8, 0.4, 0.2])          # davanti alla scrivania e alla colonna: 3,28 -> 4,68
@@ -284,7 +289,7 @@ if FURN:
     dim_h(0.40, 1.30, 1.20, "0,90")                  # parete sinistra - mobile 1
     dim_v(1.50, 2.40, 1.90, "0,90")                  # mobile 1 - mobile 2 (sotto il piccolo)
     dim_h(0.40, 1.30, 2.75, "0,90")                  # libreria sinistra - mobile 2
-    dim_h(6.50, W - 0.40, 3.05, "0,83")              # mobile 3 - libreria destra
+    dim_h(6.50, W - 0.30, 3.05, "0,93")              # mobile 3 - libreria destra
     dim_v(3.50, 4.35, 6.00, "0,85")                  # mobile 3 - libreria
     rect(0.0, 4.90, 0.30, 5.50, fill="#ffc2c2", stroke="#c62828", w=0.4)
     text(0.17, 5.20, "Stabilo 60", 1.7, "#7a1010", weight="bold", rot=-90)
@@ -387,7 +392,7 @@ if MODE == 'a3':
                                f"Billy 202: {counts.get(80,0)} da 80, {counts.get(40,0)} da 40, {counts.get(20,0)} da 20 (profondità 40)",
                                "Arancione: 3 mobili bassi in orizzontale, ingresso libero",
                                "Stabilo 60 dal lato clienti; tu passi dal varco da 0,80 in basso a sinistra",
-                               "Rosso: espositore Stabilo da 60",
+                               "Rosso: espositori Stabilo da 60 (anche 5 sulla parete destra)",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
 else:
