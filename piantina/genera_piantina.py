@@ -84,7 +84,7 @@ poly = [
     (7.73, 7.33),                          # parete lato destro fino in fondo alla nicchia
     (6.22, 7.33), (6.22, 6.13),            # nicchia in basso a destra (larghezza 1,51 stimata)
     (2.53, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
-    (2.53, 7.18), (0.80, 7.57),            # rientranza: 1,05 / 1,73 / 1,49, fondo inclinato come nello schizzo
+    (2.53, 7.62), (0.80, 7.57),            # rientranza: 1,49 / 1,73 / 1,49, fondo quasi dritto
     (0.80, 6.08), (0.00, 6.08),            # gradino 0,80 dalla parete sinistra, parte dritta
     (0.00, 4.85), (0.52, 4.85),            # pilastro a muro: spessore 0,52 x lunghezza 0,51
     (0.52, 4.34), (0.00, 4.34),
@@ -227,10 +227,10 @@ dim_v(5.07, 6.13, 4.49, "1,06")
 dim_h(0.0, 0.80, 5.72, "0,80", yobj=6.08)
 dim_h(2.53, 5.12, 5.85, "2,59", yobj=6.13, txt_x=3.30)
 
-# rientranza (1,49 / 1,05 / 1,73)
+# rientranza (1,49 / 1,49 / 1,73)
 dim_v(6.08, 7.57, 1.17, "1,49", xobj=0.80)
-dim_v(6.13, 7.18, 2.17, "1,05", xobj=2.53)
-dim_h(0.80, 2.53, 8.50, "1,73", yobj=7.95)
+dim_v(6.13, 7.62, 2.17, "1,49", xobj=2.53)
+dim_h(0.80, 2.53, 8.55, "1,73", yobj=7.95)
 
 # porta bagno e nicchia (stima)
 dim_h(5.12, 5.92, 6.95, "0,80", yobj=6.5)
@@ -271,8 +271,8 @@ notes = [
     "    contro 4,31 scritto (3 cm di scarto).",
     "5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:",
     "    21 cm di troppo, la quota 4,02 non torna: rimisurare.",
-    "6. Rientranza: parte alta dritta, fondo inclinato",
-    "    (lati 1,49 e 1,05, come nel tuo schizzo).",
+    "6. Rientranza: entrambi i lati 1,49, base 1,73.",
+    "    Il fondo risulta quasi dritto (5 cm di dislivello).",
     "    Larghezza nicchia a destra 1,51* stimata.",
     "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
     "    lunghezza 1,20 stimata) e termostato: posizione",
