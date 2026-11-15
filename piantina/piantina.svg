@@ -74,7 +74,7 @@
 <text x="108.50" y="70.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta ingresso 0,95</text>
 <text x="108.50" y="57.20" font-size="2.0" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">rientranza 0,70</text>
 <text x="122.00" y="58.00" font-size="1.9" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic" transform="rotate(-90 122.00 58.00)">portaombrelli</text>
-<text x="117.00" y="160.00" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">pilastro 0,32 × 1,04</text>
+<text x="117.00" y="160.00" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">colonna centrale 1,04 × 0,32</text>
 <text x="53.20" y="124.00" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">termosifone 1,35</text>
 <text x="58.40" y="146.60" font-size="2.0" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">pilastro 0,52 × 0,51</text>
 <text x="161.40" y="198.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta bagno</text>
@@ -243,7 +243,7 @@
 <text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">pilastro a muro: 0,52 × 0,51</text>
 <text x="262.00" y="60.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DATI</text>
 <text x="262.00" y="66.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie interna lorda: 50,52 m²</text>
-<text x="262.00" y="72.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie netta (meno pilastro e rientranza): 49,25 m²</text>
+<text x="262.00" y="72.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie netta (meno colonna e rientranza): 49,25 m²</text>
 <text x="262.00" y="77.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Perimetro interno: 33,51 m</text>
 <text x="262.00" y="83.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="normal">Spessore muri 0,30 m: ipotizzato, non misurato</text>
 <text x="262.00" y="97.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DA VERIFICARE IN LOCO</text>
