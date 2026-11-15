@@ -139,8 +139,6 @@
 <rect x="78.67" y="139.17" width="20.00" height="11.67" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
 <text x="88.67" y="144.67" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">bancone</text>
 <text x="88.67" y="148.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,20 × 0,70</text>
-<rect x="72.00" y="150.83" width="6.67" height="3.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="75.33" y="153.67" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
 <rect x="73.67" y="139.17" width="5.00" height="6.67" fill="#bfe3f7" fill-opacity="0.55" stroke="#1976d2" stroke-width="0.35" stroke-dasharray="1 0.6"/>
 <text x="77.00" y="142.50" font-size="1.5" fill="#0d47a1" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 77.00 142.50)">40</text>
 <rect x="73.67" y="145.83" width="5.00" height="6.67" fill="#bfe3f7" fill-opacity="0.55" stroke="#1976d2" stroke-width="0.35" stroke-dasharray="1 0.6"/>
@@ -148,10 +146,10 @@
 <defs><marker id="arw" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#2e7d32"/></marker></defs>
 <polyline points="60.67,160.83 75.67,160.83 87.33,158.67 99.00,156.17 109.00,154.50" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>
 <text x="66.50" y="157.33" font-size="1.9" fill="#2e7d32" text-anchor="middle" font-weight="bold" font-style="normal">tuo passaggio</text>
-<line x1="75.33" y1="154.17" x2="75.33" y2="167.50" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="73.83" y1="155.67" x2="76.83" y2="152.67" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="75.33" y1="152.50" x2="75.33" y2="167.50" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="73.83" y1="154.00" x2="76.83" y2="151.00" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="73.83" y1="169.00" x2="76.83" y2="166.00" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="73.67" y="160.83" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 73.67 160.83)">0,80</text>
+<text x="73.67" y="160.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 73.67 160.00)">0,90</text>
 <rect x="65.67" y="87.00" width="19.17" height="10.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
 <text x="75.25" y="91.67" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
 <text x="75.25" y="95.33" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,15 × 0,60*</text>

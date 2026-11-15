@@ -139,8 +139,6 @@
 <rect x="87.60" y="136.60" width="24.00" height="14.00" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
 <text x="99.60" y="143.20" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">bancone</text>
 <text x="99.60" y="147.20" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,20 × 0,70</text>
-<rect x="79.60" y="150.60" width="8.00" height="4.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="83.60" y="154.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
 <rect x="81.60" y="136.60" width="6.00" height="8.00" fill="#bfe3f7" fill-opacity="0.55" stroke="#1976d2" stroke-width="0.35" stroke-dasharray="1 0.6"/>
 <text x="85.60" y="140.60" font-size="1.5" fill="#0d47a1" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 85.60 140.60)">40</text>
 <rect x="81.60" y="144.60" width="6.00" height="8.00" fill="#bfe3f7" fill-opacity="0.55" stroke="#1976d2" stroke-width="0.35" stroke-dasharray="1 0.6"/>
@@ -148,10 +146,10 @@
 <defs><marker id="arw" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#2e7d32"/></marker></defs>
 <polyline points="66.00,162.60 84.00,162.60 98.00,160.00 112.00,157.00 124.00,155.00" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>
 <text x="73.00" y="158.40" font-size="1.9" fill="#2e7d32" text-anchor="middle" font-weight="bold" font-style="normal">tuo passaggio</text>
-<line x1="83.60" y1="154.60" x2="83.60" y2="170.60" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="81.80" y1="156.40" x2="85.40" y2="152.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="83.60" y1="152.60" x2="83.60" y2="170.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="81.80" y1="154.40" x2="85.40" y2="150.80" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="81.80" y1="172.40" x2="85.40" y2="168.80" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="81.60" y="162.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 81.60 162.60)">0,80</text>
+<text x="81.60" y="161.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 81.60 161.60)">0,90</text>
 <rect x="72.00" y="74.00" width="23.00" height="12.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
 <text x="83.50" y="79.60" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
 <text x="83.50" y="84.00" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,15 × 0,60*</text>
@@ -336,7 +334,7 @@
 <text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    dietro al vetro (profondità 0,70).</text>
 <text x="262.00" y="244.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">ARREDI (dal tuo schizzo)</text>
 <text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + il tuo bancone dritto 1,20 × 0,70</text>
-<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 17 da 80, 4 da 40, 5 da 20 (profondità 40)</text>
+<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 17 da 80, 4 da 40, 4 da 20 (profondità 40)</text>
 <text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Arancione: 3 mobili bassi in orizzontale, ingresso libero</text>
 <text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Stabilo 60 dal lato clienti; tu passi dal varco da 0,80 in basso a sinistra</text>
 <text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosso: espositore Stabilo da 60 · azzurro trasparente: 2 espositori da 40</text>

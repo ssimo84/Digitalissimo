@@ -265,7 +265,6 @@ if FURN:
     text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
     text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
     # Billy che chiude il retro tra il bancone e la libreria lato bagno (80 + 20), senza ribalta
-    run_y(1.68, 4.73, [0.2])           # chiude l'angolo sotto il bancone: sotto resta il varco da 0,80 per te
 
     # espositori piccoli trasparenti (circa 40 cm), messi in verticale sul lato sinistro del bancone, rivolti verso il corridoio clienti
     for k in range(2):
@@ -277,7 +276,7 @@ if FURN:
     pts_path = [(1.00, 5.33), (1.90, 5.33), (2.60, 5.20), (3.30, 5.05), (3.90, 4.95)]
     add('<polyline points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in pts_path) + '" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>')
     text(1.35, 5.12, "tuo passaggio", 1.9, "#2e7d32", weight="bold")
-    dim_v(4.93, 5.73, 1.88, "0,80")
+    dim_v(4.83, 5.73, 1.88, "0,90")
     # arancione: mobili bassi messi in orizzontale (lato lungo parallelo alle vetrine), fuori dalla linea della porta
     for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 2.45, 1.50, "1,15 × 0,60"), (1.30, 2.40, 3.00, 3.10, "1,70 × 0,70"),
                                   (4.60, 1.10, 6.10, 2.00, "1,50 × 0,90")]:
