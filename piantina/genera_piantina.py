@@ -244,6 +244,12 @@ if FURN:
     run_y(0.0, 5.68, [0.4])
     # Billy lungo il muro del bagno, a partire da meta' rientranza: 4 x 80 + 20
     run_x(2.48, 5.73, [0.8, 0.8, 0.8, 0.2])
+    # Billy nella rientranza (spazio ancora libero): parete sinistra e destra 80 + 40 + 20, fondo 1 x 80, corridoio centrale 0,93
+    run_y(0.80, 6.13, [0.8, 0.4, 0.2])
+    run_y(2.13, 6.13, [0.8, 0.4, 0.2])
+    run_x(1.25, 7.17, [0.8])
+    text(1.67, 6.95, "Billy rientranza", 1.7, "#000", style="italic")
+    dim_h(1.20, 2.13, 6.55, "0,93")
     # Billy dalla porta del bagno verso la nicchia: 80 + 20, poi resta libero il passaggio (0,80) verso l'uscita retro
     run_x(5.93, 5.73, [0.8, 0.2])
     dim_h(6.93, W, 5.50, "0,80", kind="m")   # passaggio libero verso l'uscita retro
