@@ -127,8 +127,12 @@ def opening(x1, y1, x2, y2, jambs):
 # ---- aperture
 # vetrina sulla parete d'ingresso: X' 0,49 -> 2,65
 opening(0.49, -T - 0.01, 2.65, 0.0, [(0.49, -T, 0.49, 0), (2.65, -T, 2.65, 0)])
+for yy in (-T, -T / 2, 0):
+    line(0.49, yy, 2.65, yy, "#000", 0.25)
 # seconda vetrina: X' 3,99 -> 7,07 (3,08)
 opening(3.99, -T - 0.01, 7.07, 0.0, [(3.99, -T, 3.99, 0), (7.07, -T, 7.07, 0)])
+for yy in (-T, -T / 2, 0):
+    line(3.99, yy, 7.07, yy, "#000", 0.25)
 # porta d'ingresso: X' 2,65 -> 3,99 (1,34 ricavata)
 opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
 # rientranza della porta FUORI dal vetro (verso la strada): profonda 0,70 come le basi
@@ -154,12 +158,11 @@ opening(5.12, 6.13 - 0.01, 5.92, 6.13 + T + 0.01, [(5.12, 6.13, 5.12, 6.13 + T),
 opening(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, [(6.73, 7.33, 6.73, 7.33 + T), (7.63, 7.33, 7.63, 7.33 + T)])
 rect(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, fill="none")
 
-# ---- basi marroni fuori dal muro (Y' -1,00 -> -0,30) e vetro spostato all'esterno, sul bordo strada (Y' -1,00)
+# ---- basi delle vetrine FUORI dal vetro: lunghe quanto la vetrina, profonde 0,70
 for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
     rect(a, -T - 0.70, b, -T, fill="#ece6d8", stroke="#000", w=0.3)
     line(a, -T - 0.70, b, -T, "#bbb39f", 0.15)
     line(a, -T, b, -T - 0.70, "#bbb39f", 0.15)
-    rect(a, -T - 0.70 - 0.04, b, -T - 0.70 + 0.04, fill="#9fcdea", stroke="#000", w=0.3)
 
 # ---- pilastro centrale 0,32 x 1,04 (X' 4,33-4,65 ; Y' 4,03-5,07)
 rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
@@ -234,7 +237,7 @@ dim_h(5.12, 5.92, 6.95, "0,80", yobj=6.5)
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
 ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
-ptext(12, 271, "Ingresso in alto: porta tra due vetrine (vetro e basi fuori) · bagno oltre la parete in basso", 3.2, "#333")
+ptext(12, 271, "Ingresso in alto: porta tra due vetrine (basi e rientranza fuori dal vetro) · bagno oltre la parete in basso", 3.2, "#333")
 
 # ---------------------------------------------------------------- pannello note
 px = 262
@@ -258,8 +261,8 @@ ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
 notes = [
     "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
     "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
-    "    portaombrelli 0,39°. Vetri, basi e rientranza",
-    "    stanno fuori (strada), profondi 0,70.",
+    "    portaombrelli 0,39°. Basi e rientranza stanno fuori",
+    "    dal vetro (strada), profonde 0,70.",
     "2. Porta lato destro 0,80*: stimata dal disegno",
     "    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).",
     "3. Quota 3,20 dello schizzo: non so dove",
@@ -275,8 +278,7 @@ notes = [
     "    lunghezza 1,20 stimata) e termostato: posizione",
     "    indicativa. Termosifone sinistro:",
     "    profondità 0,10* stimata.",
-    "8. Basi: lunghe come la vetrina, con il vetro",
-    "    spostato sul bordo esterno, verso la strada.",
+    "8. Basi vetrine: lunghe come la vetrina, fuori dal vetro.",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
