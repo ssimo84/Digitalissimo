@@ -6,9 +6,18 @@ Sistema di coordinate del disegno (metri, orientamento "raddrizzato"):
 Lo schizzo originale e' ruotato di 180 gradi rispetto a questo disegno.
 """
 import math
+import os
 
-S = 20.0            # mm di carta per metro reale  -> scala 1:50
-OX, OY = 46.0, 56.0 # origine del disegno sul foglio (mm)
+MODE = os.environ.get('MODE', 'a3')   # 'a3' = tavola completa 1:50, 'a4' = solo piantina 1:60 su A4 verticale
+
+if MODE == 'a4':
+    S = 1000 / 60      # scala 1:60
+    OX, OY = 44.0, 72.0
+    PAGE_W, PAGE_H = 210, 297
+else:
+    S = 20.0           # mm di carta per metro reale  -> scala 1:50
+    OX, OY = 46.0, 56.0
+    PAGE_W, PAGE_H = 420, 297
 T = 0.30            # spessore muri ipotizzato (m)
 
 BLUE, ORANGE, WALL, GREY = "#1f4e8c", "#d2691e", "#3b3b3b", "#666666"
@@ -101,12 +110,12 @@ bases_area = 0.70 * (2.16 + 3.08)
 net = area - pillar_area - bases_area
 print(f"area lorda {area:.2f} m2, netta pilastro {net:.2f} m2, perimetro {perim:.2f} m")
 
-add(f'<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" '
+add(f'<svg xmlns="http://www.w3.org/2000/svg" width="{PAGE_W}mm" height="{PAGE_H}mm" viewBox="0 0 {PAGE_W} {PAGE_H}" '
     f'font-family="Arial, Helvetica, sans-serif">')
 add('<defs><pattern id="hatch" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
     '<line x1="0" y1="0" x2="0" y2="1.6" stroke="#777" stroke-width="0.25"/></pattern></defs>')
-add('<rect width="420" height="297" fill="#ffffff"/>')
-add('<rect x="6" y="6" width="408" height="285" fill="none" stroke="#000" stroke-width="0.5"/>')
+add(f'<rect width="{PAGE_W}" height="{PAGE_H}" fill="#ffffff"/>')
+add(f'<rect x="6" y="6" width="{PAGE_W-12}" height="{PAGE_H-12}" fill="none" stroke="#000" stroke-width="0.5"/>')
 
 # ---- muri: spessore verso l'esterno (trucco: tratto spesso + riempimento bianco sopra)
 add(f'<polygon points="{pts}" fill="none" stroke="{WALL}" stroke-width="{f(2*T*S)}" '
@@ -235,56 +244,62 @@ dim_h(0.80, 2.53, 8.55, "1,73", yobj=7.95)
 # porta bagno e nicchia (stima)
 dim_h(5.12, 5.92, 6.95, "0,80", yobj=6.5)
 
-# ---------------------------------------------------------------- cartiglio
-ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
-ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
-ptext(12, 271, "Ingresso in alto: porta tra due vetrine (basi dentro, muro nero e vetro fuori) · bagno oltre la parete in basso", 3.2, "#333")
+if MODE == 'a3':
+    # ---------------------------------------------------------------- cartiglio
+    ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
+    ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
+    ptext(12, 271, "Ingresso in alto: porta tra due vetrine (basi dentro, muro nero e vetro fuori) · bagno oltre la parete in basso", 3.2, "#333")
 
-# ---------------------------------------------------------------- pannello note
-px = 262
-ptext(px, 22, "LEGENDA", 4.2, "#000", weight="bold")
-add(f'<line x1="{px}" y1="26.5" x2="{px+10}" y2="26.5" stroke="{BLUE}" stroke-width="0.6"/>')
-ptext(px + 13, 27.8, "misura presa dallo schizzo", 3.2)
-ptext(px + 1, 33.8, "1,34°", 3.2, BLUE, weight="bold")
-ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
-ptext(px + 1, 40.0, "0,10*", 3.2, ORANGE, weight="bold")
-ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
-add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>')
-ptext(px + 13, 46.5, "pilastro a muro: 0,52 × 0,51", 3.2)
+    # ---------------------------------------------------------------- pannello note
+    px = 262
+    ptext(px, 22, "LEGENDA", 4.2, "#000", weight="bold")
+    add(f'<line x1="{px}" y1="26.5" x2="{px+10}" y2="26.5" stroke="{BLUE}" stroke-width="0.6"/>')
+    ptext(px + 13, 27.8, "misura presa dallo schizzo", 3.2)
+    ptext(px + 1, 33.8, "1,34°", 3.2, BLUE, weight="bold")
+    ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
+    ptext(px + 1, 40.0, "0,10*", 3.2, ORANGE, weight="bold")
+    ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
+    add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>')
+    ptext(px + 13, 46.5, "pilastro a muro: 0,52 × 0,51", 3.2)
 
-ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
-ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
-ptext(px, 72, f"Superficie netta (meno colonna e basi vetrina): {net:.2f} m²".replace(".", ","), 3.2)
-ptext(px, 77.5, f"Perimetro interno: {perim:.2f} m".replace(".", ","), 3.2)
-ptext(px, 83, "Spessore muri 0,30 m: ipotizzato, non misurato", 3.2, ORANGE)
+    ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
+    ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
+    ptext(px, 72, f"Superficie netta (meno colonna e basi vetrina): {net:.2f} m²".replace(".", ","), 3.2)
+    ptext(px, 77.5, f"Perimetro interno: {perim:.2f} m".replace(".", ","), 3.2)
+    ptext(px, 83, "Spessore muri 0,30 m: ipotizzato, non misurato", 3.2, ORANGE)
 
-ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
-notes = [
-    "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
-    "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
-    "    portaombrelli 0,39°. Le vetrine hanno profondità",
-    "    0,70: basi dentro, muro nero e vetro fuori.",
-    "2. Porta lato destro 0,80*: stimata dal disegno",
-    "    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).",
-    "3. Quota 3,20 dello schizzo: non so dove",
-    "    collocarla, non l'ho usata.",
-    "4. Lato sinistro: 1,35 + 2,99 = 4,34",
-    "    contro 4,31 scritto (3 cm di scarto).",
-    "5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:",
-    "    21 cm di troppo, la quota 4,02 non torna: rimisurare.",
-    "6. Rientranza: entrambi i lati 1,49, base 1,73.",
-    "    Il fondo risulta quasi dritto (5 cm di dislivello).",
-    "    Larghezza nicchia a destra 1,51* stimata.",
-    "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
-    "    lunghezza 1,20 stimata) e termostato: posizione",
-    "    indicativa. Termosifone sinistro:",
-    "    profondità 0,10* stimata.",
-    "8. Basi vetrine: lunghe come la vetrina, dentro,",
-    "    dietro al vetro (profondità 0,70).",
-]
-for i, n in enumerate(notes):
-    ptext(px, 104 + i * 5.6, n, 3.1, "#222")
+    ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
+    notes = [
+        "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
+        "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
+        "    portaombrelli 0,39°. Le vetrine hanno profondità",
+        "    0,70: basi dentro, muro nero e vetro fuori.",
+        "2. Porta lato destro 0,80*: stimata dal disegno",
+        "    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).",
+        "3. Quota 3,20 dello schizzo: non so dove",
+        "    collocarla, non l'ho usata.",
+        "4. Lato sinistro: 1,35 + 2,99 = 4,34",
+        "    contro 4,31 scritto (3 cm di scarto).",
+        "5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:",
+        "    21 cm di troppo, la quota 4,02 non torna: rimisurare.",
+        "6. Rientranza: entrambi i lati 1,49, base 1,73.",
+        "    Il fondo risulta quasi dritto (5 cm di dislivello).",
+        "    Larghezza nicchia a destra 1,51* stimata.",
+        "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
+        "    lunghezza 1,20 stimata) e termostato: posizione",
+        "    indicativa. Termosifone sinistro:",
+        "    profondità 0,10* stimata.",
+        "8. Basi vetrine: lunghe come la vetrina, dentro,",
+        "    dietro al vetro (profondità 0,70).",
+    ]
+    for i, n in enumerate(notes):
+        ptext(px, 104 + i * 5.6, n, 3.1, "#222")
+
+else:
+    ptext(PAGE_W / 2, 24, "PIANTINA", 6.0, "#000", "middle", "bold")
+    ptext(PAGE_W / 2, 31, "Quote in metri · scala 1:60 · ° ricavata per differenza · * stimata", 3.0, "#333", "middle")
+    ptext(PAGE_W / 2, 280, f"Superficie netta {net:.1f} m² (meno colonna e basi vetrina)".replace(".", ","), 3.2, "#333", "middle")
 
 add('</svg>')
-open("piantina.svg", "w", encoding="utf-8").write("\n".join(out))
+open("piantina.svg" if MODE == "a3" else "piantina_A4.svg", "w", encoding="utf-8").write("\n".join(out))
 print("ok")
