@@ -119,12 +119,10 @@
 <text x="198.00" y="147.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 198.00 147.60)">40</text>
 <rect x="111.60" y="128.60" width="16.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="119.60" y="134.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
-<rect x="127.60" y="128.60" width="8.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="133.00" y="132.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 133.00 132.60)">40</text>
-<rect x="135.60" y="128.60" width="4.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="139.00" y="132.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 139.00 132.60)">20</text>
-<rect x="139.60" y="128.60" width="8.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="145.00" y="132.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 145.00 132.60)">40</text>
+<rect x="127.60" y="128.60" width="16.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="135.60" y="134.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
+<rect x="143.60" y="128.60" width="4.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="147.00" y="132.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 147.00 132.60)">20</text>
 <rect x="139.60" y="136.60" width="8.00" height="16.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="145.00" y="144.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 145.00 144.60)">80</text>
 <rect x="147.60" y="143.00" width="16.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
@@ -338,7 +336,7 @@
 <text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    dietro al vetro (profondità 0,70).</text>
 <text x="262.00" y="244.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">ARREDI (dal tuo schizzo)</text>
 <text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + il tuo bancone dritto 1,20 × 0,70</text>
-<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 16 da 80, 6 da 40, 5 da 20 (profondità 40)</text>
+<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 17 da 80, 4 da 40, 5 da 20 (profondità 40)</text>
 <text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Arancione: 3 mobili bassi in orizzontale, ingresso libero</text>
 <text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Stabilo 60 dal lato clienti; tu passi dal varco da 0,80 in basso a sinistra</text>
 <text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosso: espositore Stabilo da 60 · azzurro trasparente: 2 espositori da 40</text>

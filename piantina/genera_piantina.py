@@ -252,8 +252,7 @@ if FURN:
     run_y(W - BD, 2.78, [0.8, 0.8, 0.4])
     # Billy continuo (con angoli come i Billy IKEA): parte a filo della scrivania (105), passa davanti alla colonna,
     # gira con un angolo dietro la colonna e prosegue senza interruzioni fino alla parete destra
-    run_x(3.28, 3.63, [0.8, 0.4, 0.2])          # davanti alla scrivania e alla colonna: 3,28 -> 4,68
-    billy_unit(4.68, 3.63, 5.08, 4.03, 0.4)     # angolo
+    run_x(3.28, 3.63, [0.8, 0.8, 0.2])          # davanti alla scrivania: 2 x 80 + 1 x 20, 3,28 -> 5,08
     run_y(4.68, 4.03, [0.8])                    # scende attorno alla colonna
     run_x(5.08, 4.35, [0.8, 0.8, 0.4, 0.2])     # prosegue fino alla parete destra
 
