@@ -85,8 +85,9 @@ poly = [
     (6.47, 7.33), (6.47, 6.13),            # nicchia in basso a destra
     (2.78, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
     (2.78, 7.43), (1.05, 7.48),            # rientranza 1,30 / 1,73 / 1,40
-    (1.05, 6.08), (0.25, 6.08),            # 0,80 fino al pilastro
-    (0.25, 4.34), (0.00, 4.34),            # colonna stretta 0,51 (muro pieno) + colonna 1,23
+    (1.05, 6.08), (0.00, 6.08),            # muro piano (tratteggio rimosso): 0,80 + 0,25 = 1,05
+    (0.00, 4.85), (0.25, 4.85),            # colonna stretta 0,25 x 0,51 (muro pieno)
+    (0.25, 4.34), (0.00, 4.34),
 ]
 pts = " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in poly)
 
@@ -112,9 +113,7 @@ add(f'<polygon points="{pts}" fill="none" stroke="{WALL}" stroke-width="{f(2*T*S
 add(f'<polygon points="{pts}" fill="#fbfbf8" stroke="none"/>')
 
 # colonna lato sinistro (tratteggiata nello schizzo)
-rect(-T, 4.34, 0.25, 6.38, fill=WALL)
-rect(0.0, 4.85, 0.25, 6.08, fill="#fff")
-rect(0.0, 4.85, 0.25, 6.08, fill="url(#hatch)", stroke="#000", w=0.3)
+rect(-T, 4.34, 0.25, 4.85, fill=WALL)
 
 # bordo interno netto
 add(f'<polygon points="{pts}" fill="none" stroke="#000" stroke-width="0.45" stroke-linejoin="miter"/>')
@@ -190,8 +189,7 @@ text(3.125, 0.36, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, 0.40, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
-text(0.36, 4.83, "colonna 0,51", 2.0, GREY, anchor="start", style="italic")
-text(0.40, 5.05, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="italic")
+text(0.36, 4.83, "colonna 0,25 × 0,51", 2.0, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
@@ -223,12 +221,8 @@ dim_h(0.25, 4.33, 4.60, "4,02")
 dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
-line(0.0, 5.50, 0.25, 5.50, BLUE, 0.3)
-tick(0.0, 5.50, BLUE)
-tick(0.25, 5.50, BLUE)
-text(0.34, 5.48, "0,25", 2.6, BLUE, anchor="start")
 # 0,80 e 2,59 lungo il muro in alto
-dim_h(0.25, 1.05, 5.72, "0,80", yobj=6.08)
+dim_h(0.0, 1.05, 5.72, "1,05°", yobj=6.08)
 dim_h(2.78, 5.37, 5.85, "2,59", yobj=6.13, txt_x=3.55)
 
 # rientranza (1,40 / 1,30 / 1,73)
@@ -253,8 +247,8 @@ ptext(px + 1, 33.8, "1,34°", 3.2, BLUE, weight="bold")
 ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
 ptext(px + 1, 40.0, "0,10*", 3.2, ORANGE, weight="bold")
 ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
-add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>')
-ptext(px + 13, 46.5, "colonna (tratteggiata nello schizzo)", 3.2)
+add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>')
+ptext(px + 13, 46.5, "colonna: muro pieno 0,25 × 0,51", 3.2)
 
 ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
 ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
@@ -279,7 +273,9 @@ notes = [
     "7. Termosifone e termostato a destra:",
     "    solo posizione indicativa. Termosifone sinistro:",
     "    profondità 0,10* stimata.",
-    "8. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
+    "8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°",
+    "    (tratteggio rimosso, 0,25 aggiunto alla quota).",
+    "9. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
     "    A destra restano 33 cm dalla porta laterale aperta.",
 ]
 for i, n in enumerate(notes):
