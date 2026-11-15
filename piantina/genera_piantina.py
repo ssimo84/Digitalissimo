@@ -158,11 +158,13 @@ opening(5.12, 6.13 - 0.01, 5.92, 6.13 + T + 0.01, [(5.12, 6.13, 5.12, 6.13 + T),
 opening(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, [(6.73, 7.33, 6.73, 7.33 + T), (7.63, 7.33, 7.63, 7.33 + T)])
 rect(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, fill="none")
 
-# ---- basi delle vetrine FUORI dal vetro: lunghe quanto la vetrina, profonde 0,70
+# ---- scambio: base marrone DENTRO (Y' 0 -> 0,70), vetrina in vetro FUORI (Y' -1,00 -> -0,30)
 for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
-    rect(a, -T - 0.70, b, -T, fill="#ece6d8", stroke="#000", w=0.3)
-    line(a, -T - 0.70, b, -T, "#bbb39f", 0.15)
-    line(a, -T, b, -T - 0.70, "#bbb39f", 0.15)
+    rect(a, 0.0, b, 0.70, fill="#ece6d8", stroke="#000", w=0.3)
+    line(a, 0.0, b, 0.70, "#bbb39f", 0.15)
+    line(a, 0.70, b, 0.0, "#bbb39f", 0.15)
+    rect(a, -T - 0.70, b, -T, fill="#d6ebf8", stroke="#000", w=0.3)
+    line(a, -T - 0.35, b, -T - 0.35, "#7fb3d9", 0.2)
 
 # ---- pilastro centrale 0,32 x 1,04 (X' 4,33-4,65 ; Y' 4,03-5,07)
 rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
@@ -183,9 +185,11 @@ ptext(X(W - 0.14), Y(6.30) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
 text(W - 0.45, 6.38, "termostato*", 2.0, ORANGE, anchor="end")
 
 # ---- etichette ambienti/aperture
-text(1.57, -0.56, "base vetrina 2,16 × 0,70", 2.4, "#000", style="italic")
-text(5.53, -0.56, "base vetrina 3,08 × 0,70", 2.4, "#000", style="italic")
-text(3.125, 0.45, "porta ingresso 0,95", 2.4, GREY, style="italic")
+text(1.57, 0.42, "base 2,16 × 0,70", 2.4, "#000", style="italic")
+text(1.57, -0.56, "vetrina 2,16 × 0,70", 2.4, "#000", style="italic")
+text(5.53, 0.42, "base 3,08 × 0,70", 2.4, "#000", style="italic")
+text(5.53, -0.56, "vetrina 3,08 × 0,70", 2.4, "#000", style="italic")
+text(3.125, 0.95, "porta ingresso 0,95", 2.4, GREY, style="italic")
 text(3.125, -0.56, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, -0.65, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
@@ -237,7 +241,7 @@ dim_h(5.12, 5.92, 6.95, "0,80", yobj=6.5)
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
 ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
-ptext(12, 271, "Ingresso in alto: porta tra due vetrine (basi e rientranza fuori dal vetro) · bagno oltre la parete in basso", 3.2, "#333")
+ptext(12, 271, "Ingresso in alto: porta tra due vetrine (vetro fuori, basi dentro) · bagno oltre la parete in basso", 3.2, "#333")
 
 # ---------------------------------------------------------------- pannello note
 px = 262
@@ -261,8 +265,8 @@ ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
 notes = [
     "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
     "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
-    "    portaombrelli 0,39°. Basi e rientranza stanno fuori",
-    "    dal vetro (strada), profonde 0,70.",
+    "    portaombrelli 0,39°. Vetrine e rientranza porta",
+    "    fuori (strada), basi marroni dentro, profonde 0,70.",
     "2. Porta lato destro 0,80*: stimata dal disegno",
     "    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).",
     "3. Quota 3,20 dello schizzo: non so dove",
@@ -278,7 +282,8 @@ notes = [
     "    lunghezza 1,20 stimata) e termostato: posizione",
     "    indicativa. Termosifone sinistro:",
     "    profondità 0,10* stimata.",
-    "8. Basi vetrine: lunghe come la vetrina, fuori dal vetro.",
+    "8. Basi: lunghe come la vetrina, dentro il negozio;",
+    "    le vetrine in vetro sono fuori, verso la strada.",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
