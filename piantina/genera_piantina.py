@@ -242,19 +242,21 @@ if FURN:
     # Billy parete destra: 2 x 80 prima della porta laterale, poi 80 + 80 + 40 fino al termosifone
     run_y(W - BD, 0.05, [0.8, 0.8])
     run_y(W - BD, 2.78, [0.8, 0.8, 0.4])
-    # Billy a destra della colonna: parte davanti alla scrivania e continua tutta insieme fino al muro destro
-    run_x(3.70, 3.63, [0.8, 0.2])          # davanti alla scrivania
-    run_y(4.70, 3.63, [0.8, 0.2])          # gira attorno alla colonna (lato opposto)
-    run_x(5.10, 4.35, [0.8, 0.8, 0.4, 0.2])  # prosegue fino alla parete destra
+    # Billy continuo (con angoli come i Billy IKEA): parte a filo della scrivania (105), passa davanti alla colonna,
+    # gira con un angolo dietro la colonna e prosegue senza interruzioni fino alla parete destra
+    run_x(3.28, 3.63, [0.8, 0.4, 0.2])          # davanti alla scrivania e alla colonna: 3,28 -> 4,68
+    billy_unit(4.68, 3.63, 5.08, 4.03, 0.4)     # angolo
+    run_y(4.68, 4.03, [0.8])                    # scende attorno alla colonna
+    run_x(5.08, 4.35, [0.8, 0.8, 0.4, 0.2])     # prosegue fino alla parete destra
 
-    # rosa: scrivania 1,05 (attaccata alla colonna centrale) + bancone 1,20
+    # rosa: scrivania 1,05 (attaccata alla colonna centrale, io sto dietro) + bancone 1,20, fronte a filo con la colonna
     PINK, PINKD = "#f6b3d4", "#b0346e"
-    rect(3.28, 4.25, 4.33, 4.85, fill=PINK, stroke=PINKD, w=0.4)
-    text(3.805, 4.52, "scrivania", 1.9, "#000", weight="bold")
-    text(3.805, 4.72, "1,05 × 0,60", 1.7, "#000")
-    rect(2.08, 4.20, 3.28, 4.90, fill=PINK, stroke=PINKD, w=0.4)
-    text(2.68, 4.52, "bancone", 1.9, "#000", weight="bold")
-    text(2.68, 4.72, "1,20 × 0,70", 1.7, "#000")
+    rect(3.28, 4.03, 4.33, 4.63, fill=PINK, stroke=PINKD, w=0.4)
+    text(3.805, 4.30, "scrivania", 1.9, "#000", weight="bold")
+    text(3.805, 4.50, "1,05 × 0,60", 1.7, "#000")
+    rect(2.08, 4.03, 3.28, 4.73, fill=PINK, stroke=PINKD, w=0.4)
+    text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
+    text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
 
     # arancione: mobili bassi (misure stimate dalla foto) - rosso: espositore Stabilo da 60
     for (x1, y1, x2, y2, lab) in [(0.45, 0.50, 1.05, 1.65, "1,15 × 0,60"), (1.25, 1.10, 1.95, 2.80, "1,70 × 0,70"),
