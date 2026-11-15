@@ -2,12 +2,10 @@
 <defs><pattern id="hatch" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#777" stroke-width="0.25"/></pattern></defs>
 <rect width="420" height="297" fill="#ffffff"/>
 <rect x="6" y="6" width="408" height="285" fill="none" stroke="#000" stroke-width="0.5"/>
-<polygon points="46.00,50.00 200.60,50.00 200.60,196.60 175.40,196.60 175.40,172.60 101.60,172.60 101.60,198.60 67.00,199.60 67.00,171.60 51.00,171.60 51.00,147.00 46.00,147.00" fill="none" stroke="#3b3b3b" stroke-width="12.00" stroke-linejoin="miter" stroke-miterlimit="10"/>
-<polygon points="46.00,50.00 200.60,50.00 200.60,196.60 175.40,196.60 175.40,172.60 101.60,172.60 101.60,198.60 67.00,199.60 67.00,171.60 51.00,171.60 51.00,147.00 46.00,147.00" fill="#fbfbf8" stroke="none"/>
-<rect x="40.00" y="147.00" width="11.00" height="30.60" fill="#3b3b3b" stroke="none" stroke-width="0.25"/>
-<rect x="46.00" y="147.00" width="5.00" height="24.60" fill="#fff" stroke="none" stroke-width="0.25"/>
-<rect x="46.00" y="147.00" width="5.00" height="24.60" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>
-<polygon points="46.00,50.00 200.60,50.00 200.60,196.60 175.40,196.60 175.40,172.60 101.60,172.60 101.60,198.60 67.00,199.60 67.00,171.60 51.00,171.60 51.00,147.00 46.00,147.00" fill="none" stroke="#000" stroke-width="0.45" stroke-linejoin="miter"/>
+<polygon points="46.00,50.00 200.60,50.00 200.60,196.60 175.40,196.60 175.40,172.60 101.60,172.60 101.60,198.60 67.00,199.60 67.00,171.60 51.00,171.60 51.00,109.80 46.00,109.80" fill="none" stroke="#3b3b3b" stroke-width="12.00" stroke-linejoin="miter" stroke-miterlimit="10"/>
+<polygon points="46.00,50.00 200.60,50.00 200.60,196.60 175.40,196.60 175.40,172.60 101.60,172.60 101.60,198.60 67.00,199.60 67.00,171.60 51.00,171.60 51.00,109.80 46.00,109.80" fill="#fbfbf8" stroke="none"/>
+<rect x="40.00" y="109.80" width="11.00" height="67.80" fill="#3b3b3b" stroke="none" stroke-width="0.25"/>
+<polygon points="46.00,50.00 200.60,50.00 200.60,196.60 175.40,196.60 175.40,172.60 101.60,172.60 101.60,198.60 67.00,199.60 67.00,171.60 51.00,171.60 51.00,109.80 46.00,109.80" fill="none" stroke="#000" stroke-width="0.45" stroke-linejoin="miter"/>
 <rect x="55.80" y="43.80" width="43.20" height="6.20" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
 <line x1="55.80" y1="44.00" x2="55.80" y2="50.00" stroke="#000" stroke-width="0.35"/>
 <line x1="99.00" y1="44.00" x2="99.00" y2="50.00" stroke="#000" stroke-width="0.35"/>
@@ -50,27 +48,6 @@
 <rect x="132.60" y="130.60" width="6.40" height="20.80" fill="#d4d4d4" stroke="#000" stroke-width="0.4"/>
 <line x1="132.60" y1="130.60" x2="139.00" y2="151.40" stroke="#555" stroke-width="0.2"/>
 <line x1="139.00" y1="130.60" x2="132.60" y2="151.40" stroke="#555" stroke-width="0.2"/>
-<rect x="46.00" y="109.80" width="2.00" height="27.00" fill="#fff" stroke="#d2691e" stroke-width="0.35"/>
-<line x1="46.00" y1="111.60" x2="48.00" y2="111.60" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="113.40" x2="48.00" y2="113.40" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="115.20" x2="48.00" y2="115.20" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="117.00" x2="48.00" y2="117.00" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="118.80" x2="48.00" y2="118.80" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="120.60" x2="48.00" y2="120.60" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="122.40" x2="48.00" y2="122.40" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="124.20" x2="48.00" y2="124.20" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="126.00" x2="48.00" y2="126.00" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="127.80" x2="48.00" y2="127.80" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="129.60" x2="48.00" y2="129.60" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="131.40" x2="48.00" y2="131.40" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="133.20" x2="48.00" y2="133.20" stroke="#d2691e" stroke-width="0.2"/>
-<line x1="46.00" y1="135.00" x2="48.00" y2="135.00" stroke="#d2691e" stroke-width="0.2"/>
-<rect x="46.00" y="136.80" width="5.00" height="10.20" fill="#fff" stroke="#000" stroke-width="0.35"/>
-<line x1="46.00" y1="138.50" x2="51.00" y2="138.50" stroke="#000" stroke-width="0.2"/>
-<line x1="46.00" y1="140.20" x2="51.00" y2="140.20" stroke="#000" stroke-width="0.2"/>
-<line x1="46.00" y1="141.90" x2="51.00" y2="141.90" stroke="#000" stroke-width="0.2"/>
-<line x1="46.00" y1="143.60" x2="51.00" y2="143.60" stroke="#000" stroke-width="0.2"/>
-<line x1="46.00" y1="145.30" x2="51.00" y2="145.30" stroke="#000" stroke-width="0.2"/>
 <rect x="198.20" y="136.00" width="2.40" height="24.00" fill="#fff" stroke="#d2691e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
 <text x="196.60" y="148.00" font-size="2.2" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 196.60 148.00)">termosifone*</text>
 <circle cx="197.80" cy="170.00" r="1.1" fill="#fff" stroke="#d2691e" stroke-width="0.35"/>
@@ -82,13 +59,12 @@
 <text x="108.50" y="57.20" font-size="2.0" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">rientranza 0,70</text>
 <text x="122.00" y="58.00" font-size="1.9" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic" transform="rotate(-90 122.00 58.00)">portaombrelli</text>
 <text x="117.00" y="160.00" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">pilastro 0,32 × 1,04</text>
-<text x="52.40" y="124.00" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">termosifone 1,35</text>
-<text x="53.20" y="146.00" font-size="2.0" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">elemento 0,51 × 0,25</text>
-<text x="54.00" y="150.40" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">colonna 0,25 × 1,23</text>
+<text x="53.20" y="124.00" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">termosifone 1,35 (sulla colonna)</text>
+<text x="53.20" y="150.00" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">colonna 0,25 × 3,09</text>
 <text x="161.40" y="198.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta bagno</text>
 <text x="189.60" y="208.40" font-size="2.6" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">uscita retro</text>
 <text x="98.00" y="96.00" font-size="4.2" fill="#999" text-anchor="middle" font-weight="bold" font-style="normal">AMBIENTE PRINCIPALE</text>
-<text x="98.00" y="102.00" font-size="3.0" fill="#999" text-anchor="middle" font-weight="normal" font-style="normal">49.6 m² netti</text>
+<text x="98.00" y="102.00" font-size="3.0" fill="#999" text-anchor="middle" font-weight="normal" font-style="normal">49.1 m² netti</text>
 <line x1="46.00" y1="41.80" x2="46.00" y2="30.60" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="55.80" y1="41.80" x2="55.80" y2="30.60" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="46.00" y1="33.00" x2="55.80" y2="33.00" stroke="#1f4e8c" stroke-width="0.25"/>
@@ -201,10 +177,10 @@
 <line x1="134.00" y1="153.20" x2="137.60" y2="149.60" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="134.00" y1="174.40" x2="137.60" y2="170.80" stroke="#1f4e8c" stroke-width="0.4"/>
 <text x="133.80" y="162.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 133.80 162.00)">1,06</text>
-<line x1="46.00" y1="156.00" x2="51.00" y2="156.00" stroke="#1f4e8c" stroke-width="0.3"/>
-<line x1="44.20" y1="157.80" x2="47.80" y2="154.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="49.20" y1="157.80" x2="52.80" y2="154.20" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="52.80" y="155.60" font-size="2.6" fill="#1f4e8c" text-anchor="start" font-weight="normal" font-style="normal">0,25</text>
+<line x1="46.00" y1="105.60" x2="51.00" y2="105.60" stroke="#1f4e8c" stroke-width="0.3"/>
+<line x1="44.20" y1="107.40" x2="47.80" y2="103.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="49.20" y1="107.40" x2="52.80" y2="103.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="52.80" y="105.20" font-size="2.6" fill="#1f4e8c" text-anchor="start" font-weight="normal" font-style="normal">0,25</text>
 <line x1="51.00" y1="170.40" x2="51.00" y2="162.00" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="67.00" y1="170.40" x2="67.00" y2="162.00" stroke="#1f4e8c" stroke-width="0.18"/>
 <line x1="51.00" y1="164.40" x2="67.00" y2="164.40" stroke="#1f4e8c" stroke-width="0.25"/>
@@ -251,11 +227,11 @@
 <text x="275.00" y="33.80" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">ricavata per differenza (calcolata)</text>
 <text x="263.00" y="40.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="bold">0,10*</text>
 <text x="275.00" y="40.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">stimata: nello schizzo non c'era la quota</text>
-<rect x="262" y="43.2" width="10" height="4" fill="url(#hatch)" stroke="#000" stroke-width="0.3"/>
-<text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">colonna (tratteggiata nello schizzo)</text>
+<rect x="262" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>
+<text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">colonna sinistra: muro pieno 0,25 × 3,09</text>
 <text x="262.00" y="60.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DATI</text>
-<text x="262.00" y="66.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie interna lorda: 50,83 m²</text>
-<text x="262.00" y="72.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie netta (meno pilastro e rientranza): 49,56 m²</text>
+<text x="262.00" y="66.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie interna lorda: 50,36 m²</text>
+<text x="262.00" y="72.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie netta (meno pilastro e rientranza): 49,09 m²</text>
 <text x="262.00" y="77.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Perimetro interno: 32,77 m</text>
 <text x="262.00" y="83.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="normal">Spessore muri 0,30 m: ipotizzato, non misurato</text>
 <text x="262.00" y="97.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DA VERIFICARE IN LOCO</text>
@@ -268,14 +244,11 @@
 <text x="262.00" y="137.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">4. Lato sinistro: 1,35 + 2,99 = 4,34</text>
 <text x="262.00" y="143.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    contro 4,31 scritto (3 cm di scarto).</text>
 <text x="262.00" y="148.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">5. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:</text>
-<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono l'elemento da 0,25, 6 cm di scarto.</text>
+<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    31 cm: 25 sono la colonna, 6 cm di scarto.</text>
 <text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. Rientranza: lati 1,30 e 1,40, il muro</text>
 <text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    superiore risulta fuori squadra di ~5 cm.</text>
 <text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Termosifone e termostato a destra:</text>
 <text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    solo posizione indicativa.</text>
-<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Sotto il termosifone sinistro c'è un elemento</text>
-<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    0,51 × 0,25 (radiatore? nicchia?): da identificare.</text>
-<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Profondità del termosifone 0,10* stimata.</text>
-<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">9. Basi vetrine: lunghe come la vetrina, profonde 0,70.</text>
-<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    A destra restano 33 cm dalla porta laterale aperta.</text>
+<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Basi vetrine: lunghe come la vetrina, profonde 0,70.</text>
+<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    A destra restano 33 cm dalla porta laterale aperta.</text>
 </svg>
