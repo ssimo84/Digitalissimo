@@ -101,6 +101,9 @@
 <text x="117.33" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
 <rect x="124.00" y="167.50" width="3.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="126.83" y="170.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 126.83 170.83)">20</text>
+<rect x="142.83" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="149.50" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
+<text x="164.50" y="164.50" font-size="1.8" fill="#2e7d32" text-anchor="middle" font-weight="normal" font-style="italic">passaggio 1,00</text>
 <rect x="166.17" y="72.83" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="170.67" y="79.50" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 170.67 79.50)">80</text>
 <rect x="166.17" y="86.17" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>

@@ -239,6 +239,9 @@ if FURN:
     run_y(0.0, 5.68, [0.4])
     # Billy lungo il muro del bagno, a partire da meta' rientranza: 4 x 80 + 20
     run_x(1.60, 5.73, [0.8, 0.8, 0.8, 0.8, 0.2])
+    # Billy dalla porta del bagno verso la nicchia: 1 x 80, poi resta libero il passaggio (1,00) verso l'uscita retro
+    run_x(5.93, 5.73, [0.8])
+    text(7.23, 5.55, "passaggio 1,00", 1.8, "#2e7d32", style="italic")
     # Billy parete destra: 2 x 80 prima della porta laterale, poi 80 + 80 + 40 fino al termosifone
     run_y(W - BD, 0.05, [0.8, 0.8])
     run_y(W - BD, 2.78, [0.8, 0.8, 0.4])
@@ -362,7 +365,7 @@ if MODE == 'a3':
     if FURN:
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
         for i, t in enumerate(["Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)",
-                               "Billy 202: 15 da 80, 4 da 40, 4 da 20 (profondità 40)",
+                               "Billy 202: 16 da 80, 4 da 40, 4 da 20 (profondità 40)",
                                "Arancione: 3 mobili bassi (misure stimate dalla foto)",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
