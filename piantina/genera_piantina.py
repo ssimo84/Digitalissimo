@@ -257,22 +257,25 @@ if FURN:
     rect(3.28, 4.03, 4.33, 4.63, fill=PINK, stroke=PINKD, w=0.4)
     text(3.805, 4.30, "scrivania", 1.9, "#000", weight="bold")
     text(3.805, 4.50, "1,05 × 0,60", 1.7, "#000")
-    rect(2.08, 4.03, 3.28, 4.73, fill=PINK, stroke=PINKD, w=0.4)
-    text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
-    text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
+    rect(0.52, 4.03, 3.28, 4.73, fill=PINK, stroke=PINKD, w=0.4)      # bancone prolungato fino al pilastro a muro
+    rect(0.95, 4.03, 1.65, 4.73, fill="#fde3f0", stroke=PINKD, w=0.35, dash="1.2 0.8")   # ribalta 0,70
+    text(1.30, 4.40, "ribalta", 1.7, "#000", style="italic")
+    text(1.30, 4.60, "0,70", 1.6, "#000")
+    text(2.38, 4.36, "bancone", 1.9, "#000", weight="bold")
+    text(2.38, 4.56, "1,20 + 1,56 × 0,70", 1.5, "#000")
 
     # arancione: mobili bassi, messi in modo da lasciare corridoi di almeno 0,90 per il passaggio delle persone
-    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 1.90, 2.05, "1,15 × 0,60"), (2.80, 1.00, 3.50, 2.70, "1,70 × 0,70"),
+    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 1.90, 2.05, "1,15 × 0,60"), (1.30, 2.20, 2.00, 3.90, "1,70 × 0,70"),
                                   (5.00, 1.10, 5.90, 2.60, "1,50 × 0,90")]:
         rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2691e", w=0.4)
         text((x1 + x2) / 2 - 0.04, (y1 + y2) / 2, "mobile basso", 1.9, "#8a3b0c", weight="bold", rot=-90)
         text((x1 + x2) / 2 + 0.16, (y1 + y2) / 2, lab + "*", 1.7, "#8a3b0c", rot=-90)
     # corridoi di passaggio (misure libere)
     dim_h(0.40, 1.30, 1.45, "0,90")      # parete sinistra - mobile 1
-    dim_h(1.90, 2.80, 1.45, "0,90")      # mobile 1 - mobile 2
-    dim_h(3.50, 5.00, 1.45, "1,50")      # mobile 2 - mobile 3
+    dim_h(0.10, 1.30, 3.40, "1,20")      # termosifone - mobile 2
+    dim_h(1.90, 5.00, 1.45, "3,10 ingresso libero")   # corridoio centrale davanti alla porta
     dim_h(5.90, 6.95, 2.10, "1,05")      # mobile 3 - porta laterale aperta
-    dim_v(2.70, 3.63, 3.40, "0,93")      # mobile 2 - librerie
+    dim_v(2.60, 3.63, 5.04, "1,03")      # mobile 3 - librerie
     rect(0.0, 4.90, 0.30, 5.50, fill="#ffc2c2", stroke="#c62828", w=0.4)
     text(0.17, 5.20, "Stabilo 60", 1.7, "#7a1010", weight="bold", rot=-90)
 
@@ -370,9 +373,9 @@ if MODE == 'a3':
 
     if FURN:
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
-        for i, t in enumerate(["Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)",
+        for i, t in enumerate(["Rosa: scrivania 1,05 + bancone, prolungato fino al pilastro con ribalta 0,70",
                                "Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)",
-                               "Arancione: 3 mobili bassi, corridoi di passaggio da 0,90 a 1,50",
+                               "Arancione: 3 mobili bassi, ingresso libero (corridoio 3,10)",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
