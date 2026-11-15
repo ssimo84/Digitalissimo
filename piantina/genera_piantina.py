@@ -84,8 +84,8 @@ poly = [
     (7.73, 7.33),                          # parete lato destro fino in fondo alla nicchia
     (6.47, 7.33), (6.47, 6.13),            # nicchia in basso a destra
     (2.78, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
-    (2.78, 7.18), (1.05, 7.57),            # rientranza 1,05 / 1,73 / 1,49
-    (1.05, 6.08), (0.00, 6.08),            # muro piano (tratteggio rimosso): 0,80 + 0,25 = 1,05
+    (2.78, 7.18), (1.05, 7.18),            # rientranza con fondo dritto: 1,05 / 1,73 / 1,49
+    (1.05, 5.69), (0.00, 5.69),            # muro piano (tratteggio rimosso): 0,80 + 0,25 = 1,05
     (0.00, 4.85), (0.52, 4.85),            # pilastro a muro: spessore 0,52 x lunghezza 0,51
     (0.52, 4.34), (0.00, 4.34),
 ]
@@ -213,9 +213,9 @@ for (a, b, lab, k) in [(0, 1.93, "1,93", "m"), (1.93, 2.73, "0,80*", "e"), (2.73
 
 # lato sinistro
 xl = -0.85
-for (a, b, lab) in [(0, 2.99, "2,99"), (2.99, 4.34, "1,35"), (4.34, 4.85, "0,51"), (4.85, 6.08, "1,23")]:
+for (a, b, lab) in [(0, 2.99, "2,99"), (2.99, 4.34, "1,35"), (4.34, 4.85, "0,51"), (4.85, 5.69, "0,84°")]:
     dim_v(a, b, xl, lab, xobj=-T - 0.05)
-dim_v(0, 6.08, -1.45, "6,08°", xobj=-T - 0.05)
+dim_v(0, 5.69, -1.45, "5,69°", xobj=-T - 0.05)
 
 # interno: pilastro e distanze
 dim_h(4.65, W, 4.20, "3,08")
@@ -224,13 +224,13 @@ dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
 # 0,80 e 2,59 lungo il muro in alto
-dim_h(0.0, 1.05, 5.72, "0,80 + 0,25°", yobj=6.08)
+dim_h(0.0, 1.05, 5.35, "0,80 + 0,25°", yobj=5.69)
 dim_h(2.78, 5.37, 5.85, "2,59", yobj=6.13, txt_x=3.55)
 
 # rientranza (1,49 / 1,05 / 1,73)
-dim_v(6.08, 7.57, 1.42, "1,49", xobj=1.05)
+dim_v(5.69, 7.18, 1.42, "1,49", xobj=1.05)
 dim_v(6.13, 7.18, 2.42, "1,05", xobj=2.78)
-dim_h(1.05, 2.78, 8.50, "1,73", yobj=7.95)
+dim_h(1.05, 2.78, 8.10, "1,73", yobj=7.55)
 
 # porta bagno e nicchia (stima)
 dim_h(5.37, 6.17, 6.95, "0,80", yobj=6.5)
@@ -271,8 +271,9 @@ notes = [
     "    contro 4,31 scritto (3 cm di scarto).",
     "5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:",
     "    21 cm di troppo, la quota 4,02 non torna: rimisurare.",
-    "6. Rientranza: lati 1,49 e 1,05, il muro in fondo",
-    "    risulta inclinato (44 cm su 1,73): da verificare.",
+    "6. Rientranza con fondo dritto: lati 1,49 e 1,05.",
+    "    Il livello 5,69 del muro a sinistra è ricavato:",
+    "    7,18 − 1,49. Il vecchio 1,23 diventa 0,84°.",
     "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
     "    lunghezza 1,20 stimata) e termostato: posizione",
     "    indicativa. Termosifone sinistro:",
