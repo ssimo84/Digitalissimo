@@ -168,8 +168,8 @@ text(0.50, 4.12, "termosifone 0,51", 2.2, GREY, anchor="start", style="italic")
 text(0.40, 5.02, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "porta 0,90*", 2.4, ORANGE, style="italic")
-text(1.9, 5.15, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
-text(1.9, 5.43, f"{area - pillar_area:.1f} m² netti", 3.0, "#999")
+text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
+text(2.6, 2.6, f"{area - pillar_area:.1f} m² netti", 3.0, "#999")
 
 # ---------------------------------------------------------------- QUOTE
 # fronte ingresso (in alto)
