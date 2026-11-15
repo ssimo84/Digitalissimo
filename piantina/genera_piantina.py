@@ -199,7 +199,8 @@ text(5.53, -0.30, "base vetrina 3,08 × 0,70", 2.4, "#000", style="italic")
 text(3.125, 0.45, "porta ingresso 0,95", 2.4, GREY, style="italic")
 text(3.125, -0.30, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, -0.35, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
-text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
+if not FURN:
+    text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
 if not FURN:
     text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 if not FURN:
@@ -215,7 +216,10 @@ if FURN:
     WOODD = "#8a6d3b"
     BD = 0.40                         # Billy: profondita' 40 (80 x 40 x 202)
 
+    counts = {}
+
     def billy_unit(x1, y1, x2, y2, w):
+        counts[int(round(w * 100))] = counts.get(int(round(w * 100)), 0) + 1
         rect(x1, y1, x2, y2, fill="#f4efe3", stroke=WOODD, w=0.3)
         if (x2 - x1) > (y2 - y1):
             text((x1 + x2) / 2, (y1 + y2) / 2 + 0.07, f"{int(round(w*100))}", 1.7, "#5b4524")
@@ -239,7 +243,7 @@ if FURN:
     # Billy parete sinistra sotto il pilastro a muro: 1 x 40
     run_y(0.0, 5.68, [0.4])
     # Billy lungo il muro del bagno, a partire da meta' rientranza: 4 x 80 + 20
-    run_x(1.60, 5.73, [0.8, 0.8, 0.8, 0.8, 0.2])
+    run_x(2.48, 5.73, [0.8, 0.8, 0.8, 0.2])
     # Billy dalla porta del bagno verso la nicchia: 80 + 20, poi resta libero il passaggio (0,80) verso l'uscita retro
     run_x(5.93, 5.73, [0.8, 0.2])
     dim_h(6.93, W, 5.50, "0,80", kind="m")   # passaggio libero verso l'uscita retro
@@ -262,8 +266,14 @@ if FURN:
     text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
     text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
     # Billy che chiude il retro tra il bancone e la libreria lato bagno (80 + 20), senza ribalta
-    run_y(1.68, 4.73, [0.8, 0.2])
+    run_y(1.68, 4.73, [0.4, 0.2])      # colonna di Billy dal bancone: lascia il varco per te in basso
 
+    # il tuo passaggio: varco libero tra la colonna di Billy e la parete del bagno
+    add('<defs><marker id="arw" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#2e7d32"/></marker></defs>')
+    pts_path = [(1.05, 5.70), (1.90, 5.60), (2.50, 5.30), (3.30, 5.05), (3.90, 4.95)]
+    add('<polyline points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in pts_path) + '" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>')
+    text(1.00, 5.92, "tuo passaggio", 1.9, "#2e7d32", weight="bold", anchor="start")
+    dim_v(5.33, 6.13, 1.88, "0,80")
     # arancione: mobili bassi messi in orizzontale (lato lungo parallelo alle vetrine), fuori dalla linea della porta
     for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 2.45, 1.50, "1,15 × 0,60"), (3.80, 1.00, 5.50, 1.70, "1,70 × 0,70"),
                                   (5.00, 2.60, 6.50, 3.50, "1,50 × 0,90")]:
@@ -375,9 +385,9 @@ if MODE == 'a3':
     if FURN:
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
         for i, t in enumerate(["Rosa: scrivania 1,05 + il tuo bancone dritto 1,20 × 0,70",
-                               "Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)",
+                               f"Billy 202: {counts.get(80,0)} da 80, {counts.get(40,0)} da 40, {counts.get(20,0)} da 20 (profondità 40)",
                                "Arancione: 3 mobili bassi in orizzontale, ingresso libero",
-                               "Stabilo 60 dal lato clienti; retro chiuso, si entra dall'uscita retro",
+                               "Stabilo 60 dal lato clienti; tu passi dal varco da 0,80 in basso a sinistra",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
