@@ -200,7 +200,8 @@ text(3.125, 0.45, "porta ingresso 0,95", 2.4, GREY, style="italic")
 text(3.125, -0.30, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, -0.35, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
-text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
+if not FURN:
+    text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 if not FURN:
     text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
 text(5.52, 7.42, "porta bagno", 2.4, GREY, style="italic")
