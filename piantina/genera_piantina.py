@@ -147,11 +147,16 @@ rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
 line(4.33, 4.03, 4.65, 5.07, "#555", 0.2)
 line(4.65, 4.03, 4.33, 5.07, "#555", 0.2)
 
-# ---- termosifone lato sinistro (misurato): 0,51 di lunghezza, Y' 4,34 -> 4,85, profondita' 0,31 (ricavata)
-rect(0.0, 4.34, 0.31, 4.85, fill="#fff", stroke="#000", w=0.35)
+# ---- termosifone lato sinistro: lungo 1,35 (Y' 2,99 -> 4,34), profondita' stimata 0,10
+rect(0.0, 2.99, 0.10, 4.34, fill="#fff", stroke=ORANGE, w=0.35)
+for i in range(1, 15):
+    yy = 2.99 + i * 1.35 / 15
+    line(0.0, yy, 0.10, yy, ORANGE, 0.2)
+# elemento 0,51 x 0,25 sotto il termosifone (Y' 4,34 -> 4,85), da identificare
+rect(0.0, 4.34, 0.25, 4.85, fill="#fff", stroke="#000", w=0.35)
 for i in range(1, 6):
     yy = 4.34 + i * 0.51 / 6
-    line(0.0, yy, 0.31, yy, "#000", 0.2)
+    line(0.0, yy, 0.25, yy, "#000", 0.2)
 # termosifone lato destro (stima di posizione)
 rect(W - 0.12, 4.30, W, 5.50, fill="#fff", stroke=ORANGE, w=0.35, dash="1.2 0.8")
 text(W - 0.20, 4.90, "termosifone*", 2.2, ORANGE, anchor="middle", rot=-90)
@@ -164,7 +169,8 @@ text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
 text(1.57, 0.42, "finestre", 2.4, GREY, style="italic")
 text(3.32, 0.42, "porta ingresso", 2.4, GREY, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
-text(0.50, 4.12, "termosifone 0,51", 2.2, GREY, anchor="start", style="italic")
+text(0.32, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
+text(0.36, 4.80, "elemento 0,51 × 0,25", 2.0, GREY, anchor="start", style="italic")
 text(0.40, 5.02, "colonna 0,25 × 1,23", 2.2, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "porta 0,90*", 2.4, ORANGE, style="italic")
@@ -194,7 +200,7 @@ dim_v(0, 6.08, -1.45, "6,08°", xobj=-T - 0.05)
 
 # interno: pilastro e distanze
 dim_h(4.65, W, 4.20, "3,08")
-dim_h(0.31, 4.33, 4.60, "4,02")
+dim_h(0.25, 4.33, 4.60, "4,02")
 dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
@@ -251,11 +257,14 @@ notes = [
     "6. Lato sinistro: 1,35 + 2,99 = 4,34",
     "    contro 4,31 scritto (3 cm di scarto).",
     "7. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:",
-    "    31 cm li ho attribuiti al termosifone (0,31).",
+    "    31 cm: 25 sono l'elemento da 0,25, 6 cm di scarto.",
     "8. Rientranza: lati 1,30 e 1,40, il muro",
     "    superiore risulta fuori squadra di ~5 cm.",
     "9. Termosifone e termostato a destra:",
     "    solo posizione indicativa.",
+    "10. Sotto il termosifone sinistro c'è un elemento",
+    "    0,51 × 0,25 (radiatore? nicchia?): da identificare.",
+    "    Profondità del termosifone 0,10* stimata.",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
