@@ -103,7 +103,12 @@
 <text x="145.40" y="174.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 145.40 174.60)">20</text>
 <rect x="164.60" y="170.60" width="16.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="172.60" y="176.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
-<text x="190.60" y="167.00" font-size="1.8" fill="#2e7d32" text-anchor="middle" font-weight="normal" font-style="italic">passaggio 1,00</text>
+<rect x="180.60" y="170.60" width="4.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="184.00" y="174.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 184.00 174.60)">20</text>
+<line x1="184.60" y1="166.00" x2="200.60" y2="166.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="182.80" y1="167.80" x2="186.40" y2="164.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="198.80" y1="167.80" x2="202.40" y2="164.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="192.60" y="164.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,80</text>
 <rect x="192.60" y="57.00" width="8.00" height="16.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="198.00" y="65.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 198.00 65.00)">80</text>
 <rect x="192.60" y="73.00" width="8.00" height="16.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
@@ -298,7 +303,7 @@
 <text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    dietro al vetro (profondità 0,70).</text>
 <text x="262.00" y="244.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">ARREDI (dal tuo schizzo)</text>
 <text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + bancone 1,20 (in linea con la colonna)</text>
-<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 16 da 80, 4 da 40, 4 da 20 (profondità 40)</text>
+<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)</text>
 <text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Arancione: 3 mobili bassi (misure stimate dalla foto)</text>
 <text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosso: espositore Stabilo da 60</text>
 <text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Quote interne nascoste per leggere meglio</text>
