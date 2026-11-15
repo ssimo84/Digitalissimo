@@ -107,16 +107,16 @@
 <line x1="158.00" y1="165.17" x2="161.00" y2="162.17" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="171.33" y1="165.17" x2="174.33" y2="162.17" stroke="#1f4e8c" stroke-width="0.4"/>
 <text x="166.17" y="162.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,80</text>
-<rect x="167.83" y="72.83" width="5.00" height="10.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.35"/>
-<text x="171.17" y="77.83" font-size="1.6" fill="#7a1010" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 171.17 77.83)">60</text>
-<rect x="167.83" y="82.83" width="5.00" height="10.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.35"/>
-<text x="171.17" y="87.83" font-size="1.6" fill="#7a1010" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 171.17 87.83)">60</text>
-<rect x="167.83" y="118.33" width="5.00" height="10.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.35"/>
-<text x="171.17" y="123.33" font-size="1.6" fill="#7a1010" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 171.17 123.33)">60</text>
-<rect x="167.83" y="128.33" width="5.00" height="10.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.35"/>
-<text x="171.17" y="133.33" font-size="1.6" fill="#7a1010" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 171.17 133.33)">60</text>
-<rect x="167.83" y="138.33" width="5.00" height="10.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.35"/>
-<text x="171.17" y="143.33" font-size="1.6" fill="#7a1010" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 171.17 143.33)">60</text>
+<rect x="166.17" y="72.83" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="170.67" y="79.50" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 170.67 79.50)">80</text>
+<rect x="166.17" y="86.17" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="170.67" y="92.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 170.67 92.83)">80</text>
+<rect x="166.17" y="118.33" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="170.67" y="125.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 170.67 125.00)">80</text>
+<rect x="166.17" y="131.67" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="170.67" y="138.33" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 170.67 138.33)">80</text>
+<rect x="166.17" y="145.00" width="6.67" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="170.67" y="148.33" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 170.67 148.33)">40</text>
 <rect x="98.67" y="132.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="105.33" y="137.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
 <rect x="112.00" y="132.50" width="6.67" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
