@@ -20,6 +20,7 @@ renderer.toneMappingExposure = AERIAL ? 1.0 : 0.72;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 document.body.appendChild(renderer.domElement);
 
+const mgr = new THREE.LoadingManager(); const loader = new THREE.TextureLoader(mgr);
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(AERIAL ? 0xe8ecf1 : 0xcfe0ee);
 
@@ -50,6 +51,10 @@ const O = P.map((p, i) => {
 });
 const lerp = (a, b, t) => [a[0] + (b[0]-a[0])*t, a[1] + (b[1]-a[1])*t];
 const WHITE = mc('#f3f1ec', 0.9), DARK = mc('#2b2b2d', 0.6);
+const wallTex = loader.load('wall.jpg'); wallTex.wrapS = wallTex.wrapT = THREE.MirroredRepeatWrapping; wallTex.colorSpace = THREE.SRGBColorSpace; wallTex.anisotropy = 8;
+const WALLM = new THREE.MeshStandardMaterial({ map: wallTex, roughness: 0.95 });
+const greenTex = loader.load('green.jpg'); greenTex.wrapS = greenTex.wrapT = THREE.MirroredRepeatWrapping; greenTex.colorSpace = THREE.SRGBColorSpace;
+const GREENM = new THREE.MeshStandardMaterial({ map: greenTex, roughness: 0.9 });
 
 function quad(i, t0, t1, y0, y1, mat) {
   if (t1 - t0 < 1e-4 || y1 - y0 < 1e-4) return;
@@ -59,6 +64,7 @@ function quad(i, t0, t1, y0, y1, mat) {
   sh.moveTo(a0[0], a0[1]); sh.lineTo(a1[0], a1[1]); sh.lineTo(o1[0], o1[1]); sh.lineTo(o0[0], o0[1]); sh.closePath();
   const g = new THREE.ExtrudeGeometry(sh, { depth: y1 - y0, bevelEnabled: false });
   g.rotateX(Math.PI / 2);
+  { const pa = g.attributes.position, uv = new Float32Array(pa.count * 2); for (let k = 0; k < pa.count; k++) { uv[2*k] = (pa.getX(k) + pa.getZ(k)) * 0.42; uv[2*k+1] = (pa.getY(k) + y1) * 0.42; } g.setAttribute('uv', new THREE.BufferAttribute(uv, 2)); }
   const m = new THREE.Mesh(g, mat); m.position.y = y1; m.castShadow = true; m.receiveShadow = true; scene.add(m);
 }
 function tOf(i, axis, c) { const A = P[i], Bp = P[(i+1)%P.length]; return (c - A[axis]) / (Bp[axis] - A[axis]); }
@@ -66,12 +72,12 @@ function tOf(i, axis, c) { const A = P[i], Bp = P[(i+1)%P.length]; return (c - A
 const cfg = {
   0:{k:'solid',m:DARK}, 1:{k:'solid',m:DARK}, 2:{k:'glass'}, 3:{k:'glass'},
   4:{k:'door',axis:0,from:2.65,to:3.60,h:2.2,m:DARK,glassDoor:true}, 5:{k:'glass'}, 6:{k:'glass'}, 7:{k:'solid',m:DARK}, 8:{k:'solid',m:DARK},
-  9:{k:'door',axis:1,from:1.93,to:2.73,h:2.1,m:WHITE},
-  10:{k:'door',axis:0,from:6.73,to:7.63,h:2.1,m:WHITE},
-  12:{k:'door',axis:0,from:5.12,to:5.92,h:2.1,m:WHITE},
+  9:{k:'door',axis:1,from:1.93,to:2.73,h:2.1,m:WALLM},
+  10:{k:'door',axis:0,from:6.73,to:7.63,h:2.1,m:WALLM},
+  12:{k:'door',axis:0,from:5.12,to:5.92,h:2.1,m:WALLM},
 };
 for (let i = 0; i < P.length; i++) {
-  const c = cfg[i] || { k: 'solid', m: WHITE };
+  const c = cfg[i] || { k: 'solid', m: WALLM };
   if (c.k === 'solid') quad(i, 0, 1, 0, HW, c.m);
   else if (c.k === 'glass') {
     quad(i, 0, 1, 0, 0.12, DARK);
@@ -95,7 +101,7 @@ for (let i = 0; i < P.length; i++) {
     const mid = (t) => { const a = lerp(A, Bp, t), o = lerp(A2, B2, t); return [(a[0]+o[0])/2, (a[1]+o[1])/2]; };
     const p0 = mid(ta), p1 = mid(tb); const L = Math.hypot(p1[0]-p0[0], p1[1]-p0[1]);
     const hh = Math.min(c.h, HW - 0.05);
-    const leaf = new THREE.Mesh(new THREE.BoxGeometry(L - 0.06, hh - 0.04, c.glassDoor ? 0.03 : 0.05), c.glassDoor ? glassMat : mc('#d9c4a3', 0.6));
+    const leaf = new THREE.Mesh(new THREE.BoxGeometry(L - 0.06, hh - 0.04, c.glassDoor ? 0.03 : 0.05), c.glassDoor ? glassMat : mc('#7a4a26', 0.55));
     leaf.position.set((p0[0]+p1[0])/2, hh / 2, (p0[1]+p1[1])/2); leaf.rotation.y = -Math.atan2(p1[1]-p0[1], p1[0]-p0[0]);
     leaf.castShadow = !c.glassDoor; scene.add(leaf);
     if (c.glassDoor) { // telaio e maniglia
@@ -110,7 +116,13 @@ for (let i = 0; i < P.length; i++) {
 const ground = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), mc('#9a9da3', 0.95)); ground.rotation.x = -Math.PI / 2; ground.position.y = -0.02; ground.receiveShadow = true; scene.add(ground);
 const fsh = new THREE.Shape(); P.forEach((p, i) => i ? fsh.lineTo(p[0], p[1]) : fsh.moveTo(p[0], p[1])); fsh.closePath();
 const fg = new THREE.ShapeGeometry(fsh); fg.rotateX(Math.PI / 2);
-const floorMat = new THREE.MeshStandardMaterial({ color: 0xcfb894, roughness: 0.5, side: THREE.DoubleSide });
+const tcv = document.createElement('canvas'); tcv.width = tcv.height = 512; { const c = tcv.getContext('2d');
+  const g1 = c.createLinearGradient(0, 0, 512, 512); g1.addColorStop(0, '#e2d8ca'); g1.addColorStop(1, '#d6cab9'); c.fillStyle = g1; c.fillRect(0, 0, 512, 512);
+  for (let i = 0; i < 900; i++) { c.fillStyle = `rgba(${150 + (Math.random()*60|0)},${140 + (Math.random()*50|0)},${125 + (Math.random()*40|0)},0.07)`; c.beginPath(); c.arc(Math.random()*512, Math.random()*512, 2 + Math.random()*10, 0, 6.3); c.fill(); }
+  c.strokeStyle = '#7e776c'; c.lineWidth = 7; c.strokeRect(0, 0, 512, 512); }
+const tileTex = new THREE.CanvasTexture(tcv); tileTex.wrapS = tileTex.wrapT = THREE.RepeatWrapping; tileTex.colorSpace = THREE.SRGBColorSpace; tileTex.anisotropy = 8;
+tileTex.repeat.set(2.5, 2.5); tileTex.rotation = Math.PI / 4;
+const floorMat = new THREE.MeshStandardMaterial({ map: tileTex, roughness: 0.35, side: THREE.DoubleSide });
 const floor = new THREE.Mesh(fg, floorMat); floor.position.y = 0.001; floor.receiveShadow = true; scene.add(floor);
 // soglia/rientranza
 B(2.65, -0.70, 3.99, 0.0, -0.01, 0.01, mc('#7d8087', 0.8), false);
@@ -255,7 +267,7 @@ for (const [a, b] of [[0.49, 2.65], [3.99, 7.07]]) {
 { const c = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.11, 0.55, 24), mc('#2f2f33', 0.5, 0.4)); c.position.set(3.80, 0.275, -0.35); c.castShadow = true; scene.add(c); }
 B(3.60, -1.0, 3.99, -0.70, 0, HW, DARK);   // chiusura verso la strada
 // colonna centrale 0,32 x 1,04 e termosifoni
-B(4.33, 4.03, 4.65, 5.07, 0, HW, WHITE);
+B(4.33, 4.03, 4.65, 5.07, 0, HW, GREENM);
 B(0.0, 2.99, 0.10, 4.34, 0.12, 0.72, mc('#ffffff', 0.4));
 B(7.63, 4.93, 7.73, 6.13, 0.12, 0.72, mc('#ffffff', 0.4));
 
@@ -270,6 +282,11 @@ B(7.63, 4.93, 7.73, 6.13, 0.12, 0.72, mc('#ffffff', 0.4));
   sg.position.set(5.53, Math.min(2.88, HW - 0.12), -1.012); sg.rotation.y = Math.PI; scene.add(sg);
 }
 
+if (!AERIAL) {
+  const st = loader.load('street.jpg'); st.colorSpace = THREE.SRGBColorSpace;
+  const pl = new THREE.Mesh(new THREE.PlaneGeometry(14, 14 * 670 / 859), new THREE.MeshBasicMaterial({ map: st, toneMapped: false }));
+  pl.position.set(3.9, 14 * 670 / 859 / 2, -9.5); pl.rotation.y = Math.PI; scene.add(pl);
+}
 // ---------- camera
 const cam = new THREE.PerspectiveCamera(60, W / H, 0.05, 100);
 if (VIEW === '1') { cam.fov = 72; cam.position.set(3.15, 1.55, -0.25); cam.lookAt(3.9, 1.05, 4.2); }
@@ -277,7 +294,7 @@ else if (VIEW === '2') { cam.fov = 38; cam.position.set(3.9, 12.0, -5.2); cam.lo
 else if (VIEW === '3') { cam.fov = 72; cam.position.set(6.5, 1.55, 3.05); cam.lookAt(1.2, 1.0, 4.4); }
 else if (VIEW === '4') { cam.fov = 74; cam.position.set(6.2, 1.6, 0.45); cam.lookAt(1.5, 1.0, 2.7); }
 cam.updateProjectionMatrix();
-renderer.render(scene, cam);
-window.__done = true;
+mgr.onLoad = () => { renderer.render(scene, cam); window.__done = true; };
+if (mgr.itemEnd && false) {}
 </script>
 </body></html>
