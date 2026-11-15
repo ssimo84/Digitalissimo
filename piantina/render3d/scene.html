@@ -16,7 +16,7 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.autoUpdate = true;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = AERIAL ? 1.0 : 0.72;
+renderer.toneMappingExposure = AERIAL ? 1.0 : 0.85;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 document.body.appendChild(renderer.domElement);
 
@@ -52,9 +52,9 @@ const O = P.map((p, i) => {
 const lerp = (a, b, t) => [a[0] + (b[0]-a[0])*t, a[1] + (b[1]-a[1])*t];
 const WHITE = mc('#f3f1ec', 0.9), DARK = mc('#2b2b2d', 0.6);
 const wallTex = loader.load('wall.jpg'); wallTex.wrapS = wallTex.wrapT = THREE.MirroredRepeatWrapping; wallTex.colorSpace = THREE.SRGBColorSpace; wallTex.anisotropy = 8;
-const WALLM = new THREE.MeshStandardMaterial({ map: wallTex, roughness: 0.95 });
+const WALLM = new THREE.MeshStandardMaterial({ color: 0xf6f3ec, bumpMap: wallTex, bumpScale: 0.9, roughness: 0.92 });
 const greenTex = loader.load('green.jpg'); greenTex.wrapS = greenTex.wrapT = THREE.MirroredRepeatWrapping; greenTex.colorSpace = THREE.SRGBColorSpace;
-const GREENM = new THREE.MeshStandardMaterial({ map: greenTex, roughness: 0.9 });
+const GREENM = new THREE.MeshStandardMaterial({ color: 0xf6f3ec, bumpMap: greenTex, bumpScale: 0.9, roughness: 0.92 });
 
 function quad(i, t0, t1, y0, y1, mat) {
   if (t1 - t0 < 1e-4 || y1 - y0 < 1e-4) return;
