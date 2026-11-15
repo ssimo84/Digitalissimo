@@ -86,8 +86,8 @@ poly = [
     (2.78, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
     (2.78, 6.93), (1.05, 7.57),            # rientranza 0,80 / 1,73 / 1,49
     (1.05, 6.08), (0.00, 6.08),            # muro piano (tratteggio rimosso): 0,80 + 0,25 = 1,05
-    (0.00, 4.85), (0.25, 4.85),            # colonna stretta 0,25 x 0,51 (muro pieno)
-    (0.25, 4.34), (0.00, 4.34),
+    (0.00, 4.85), (0.52, 4.85),            # pilastro a muro: spessore 0,52 x lunghezza 0,51
+    (0.52, 4.34), (0.00, 4.34),
 ]
 pts = " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in poly)
 
@@ -113,7 +113,7 @@ add(f'<polygon points="{pts}" fill="none" stroke="{WALL}" stroke-width="{f(2*T*S
 add(f'<polygon points="{pts}" fill="#fbfbf8" stroke="none"/>')
 
 # colonna lato sinistro (tratteggiata nello schizzo)
-rect(-T, 4.34, 0.25, 4.85, fill=WALL)
+rect(-T, 4.34, 0.52, 4.85, fill=WALL)
 
 # bordo interno netto
 add(f'<polygon points="{pts}" fill="none" stroke="#000" stroke-width="0.45" stroke-linejoin="miter"/>')
@@ -191,7 +191,7 @@ text(3.125, 0.36, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, 0.40, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
-text(0.36, 4.83, "colonna 0,25 × 0,51", 2.0, GREY, anchor="start", style="italic")
+text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
 text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
@@ -219,7 +219,7 @@ dim_v(0, 6.08, -1.45, "6,08°", xobj=-T - 0.05)
 
 # interno: pilastro e distanze
 dim_h(4.65, W, 4.20, "3,08")
-dim_h(0.25, 4.33, 4.60, "4,02")
+dim_h(0.52, 4.33, 4.60, "4,02")
 dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
@@ -250,7 +250,7 @@ ptext(px + 13, 33.8, "ricavata per differenza (calcolata)", 3.2)
 ptext(px + 1, 40.0, "0,10*", 3.2, ORANGE, weight="bold")
 ptext(px + 13, 40.0, "stimata: nello schizzo non c'era la quota", 3.2)
 add(f'<rect x="{px}" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>')
-ptext(px + 13, 46.5, "colonna: muro pieno 0,25 × 0,51", 3.2)
+ptext(px + 13, 46.5, "pilastro a muro: 0,52 × 0,51", 3.2)
 
 ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
 ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
@@ -269,8 +269,8 @@ notes = [
     "    collocarla, non l'ho usata.",
     "4. Lato sinistro: 1,35 + 2,99 = 4,34",
     "    contro 4,31 scritto (3 cm di scarto).",
-    "5. 3,08 + 0,32 + 4,02 = 7,42 contro 7,73:",
-    "    31 cm: 25 sono la colonna, 6 cm di scarto.",
+    "5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:",
+    "    21 cm di troppo, la quota 4,02 non torna: rimisurare.",
     "6. Rientranza: lati 1,49 e 0,80, il muro in fondo",
     "    risulta inclinato (69 cm su 1,73): da verificare.",
     "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
