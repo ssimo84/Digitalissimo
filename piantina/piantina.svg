@@ -27,6 +27,7 @@
 <line x1="99.00" y1="64.00" x2="118.00" y2="64.00" stroke="#000" stroke-width="0.6"/>
 <rect x="99.00" y="63.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
 <rect x="117.20" y="63.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
+<rect x="118.00" y="44.00" width="7.80" height="6.00" fill="#3b3b3b" stroke="none" stroke-width="0.25"/>
 <rect x="200.60" y="70.60" width="6.20" height="16.00" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
 <line x1="200.60" y1="70.60" x2="206.60" y2="70.60" stroke="#000" stroke-width="0.35"/>
 <line x1="200.60" y1="86.60" x2="206.60" y2="86.60" stroke="#000" stroke-width="0.35"/>

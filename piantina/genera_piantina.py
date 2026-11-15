@@ -146,6 +146,8 @@ line(2.65, 0.70, 3.60, 0.70, "#000", 0.6)
 rect(2.65, 0.67, 2.69, 0.73, fill="#000")
 rect(3.56, 0.67, 3.60, 0.73, fill="#000")
 # spazio portaombrelli: X' 3,60 -> 3,99 (0,39 ricavata)
+# chiuso verso la strada: muro pieno sul fronte (X' 3,60 -> 3,99)
+rect(3.60, -T, 3.99, 0.0, fill=WALL)
 # porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
 opening(W, 1.03, W + T + 0.01, 1.83, [(W, 1.03, W + T, 1.03), (W, 1.83, W + T, 1.83)])
 line(W, 1.03, W - 0.80, 1.03, "#000", 0.5)
