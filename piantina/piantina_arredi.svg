@@ -139,12 +139,16 @@
 <rect x="111.60" y="136.60" width="21.00" height="12.00" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
 <text x="122.10" y="142.00" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">scrivania</text>
 <text x="122.10" y="146.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,05 × 0,60</text>
-<rect x="56.40" y="136.60" width="55.20" height="14.00" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
-<rect x="65.00" y="136.60" width="14.00" height="14.00" fill="#fde3f0" stroke="#b0346e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
-<text x="72.00" y="144.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">ribalta</text>
-<text x="72.00" y="148.00" font-size="1.6" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">0,70</text>
-<text x="93.60" y="143.20" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">bancone</text>
-<text x="93.60" y="147.20" font-size="1.5" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,20 + 1,56 × 0,70</text>
+<polygon points="73.60,136.60 111.60,136.60 111.60,150.60 87.60,150.60 87.60,157.60 73.60,157.60" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
+<rect x="93.60" y="136.60" width="14.00" height="14.00" fill="#fde3f0" stroke="#b0346e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
+<text x="100.60" y="143.60" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">ribalta</text>
+<text x="100.60" y="147.60" font-size="1.6" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">0,70</text>
+<text x="80.60" y="146.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 80.60 146.00)">bancone a L</text>
+<text x="85.00" y="146.00" font-size="1.5" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 85.00 146.00)">1,20 + 1,05 × 0,70</text>
+<rect x="73.60" y="157.60" width="8.00" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="79.00" y="161.60" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 79.00 161.60)">40</text>
+<rect x="73.60" y="165.60" width="8.00" height="4.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="77.60" y="169.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
 <rect x="72.00" y="74.00" width="12.00" height="23.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
 <text x="77.20" y="85.50" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 77.20 85.50)">mobile basso</text>
 <text x="81.20" y="85.50" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 81.20 85.50)">1,15 × 0,60*</text>
@@ -324,9 +328,10 @@
 <text x="262.00" y="210.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Basi vetrine: lunghe come la vetrina, dentro,</text>
 <text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    dietro al vetro (profondità 0,70).</text>
 <text x="262.00" y="244.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">ARREDI (dal tuo schizzo)</text>
-<text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + bancone, prolungato fino al pilastro con ribalta 0,70</text>
+<text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosa: scrivania 1,05 + bancone a L 1,20 + 1,05 con ribalta 0,70</text>
 <text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)</text>
 <text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Arancione: 3 mobili bassi, ingresso libero (corridoio 3,10)</text>
-<text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosso: espositore Stabilo da 60</text>
-<text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Quote interne nascoste per leggere meglio</text>
+<text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Stabilo 60 dal lato clienti, retro chiuso (accesso dalla ribalta)</text>
+<text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Rosso: espositore Stabilo da 60</text>
+<text x="262.00" y="279.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Quote interne nascoste per leggere meglio</text>
 </svg>

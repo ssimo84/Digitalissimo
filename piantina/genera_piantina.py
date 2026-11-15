@@ -258,12 +258,15 @@ if FURN:
     rect(3.28, 4.03, 4.33, 4.63, fill=PINK, stroke=PINKD, w=0.4)
     text(3.805, 4.30, "scrivania", 1.9, "#000", weight="bold")
     text(3.805, 4.50, "1,05 × 0,60", 1.7, "#000")
-    rect(0.52, 4.03, 3.28, 4.73, fill=PINK, stroke=PINKD, w=0.4)      # bancone prolungato fino al pilastro a muro
-    rect(0.95, 4.03, 1.65, 4.73, fill="#fde3f0", stroke=PINKD, w=0.35, dash="1.2 0.8")   # ribalta 0,70
-    text(1.30, 4.40, "ribalta", 1.7, "#000", style="italic")
-    text(1.30, 4.60, "0,70", 1.6, "#000")
-    text(2.38, 4.36, "bancone", 1.9, "#000", weight="bold")
-    text(2.38, 4.56, "1,20 + 1,56 × 0,70", 1.5, "#000")
+    lpts = [(1.38, 4.03), (3.28, 4.03), (3.28, 4.73), (2.08, 4.73), (2.08, 5.08), (1.38, 5.08)]
+    add('<polygon points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in lpts) + f'" fill="{PINK}" stroke="{PINKD}" stroke-width="0.4"/>')
+    rect(2.38, 4.03, 3.08, 4.73, fill="#fde3f0", stroke=PINKD, w=0.35, dash="1.2 0.8")   # ribalta 0,70 per entrare nel retro
+    text(2.73, 4.38, "ribalta", 1.7, "#000", style="italic")
+    text(2.73, 4.58, "0,70", 1.6, "#000")
+    text(1.73, 4.50, "bancone a L", 1.7, "#000", weight="bold", rot=-90)
+    text(1.95, 4.50, "1,20 + 1,05 × 0,70", 1.5, "#000", rot=-90)
+    # Billy che chiude il retro tra il ritorno del bancone e la libreria lato bagno (40 + 20)
+    run_y(1.38, 5.08, [0.4, 0.2])
 
     # arancione: mobili bassi, messi in modo da lasciare corridoi di almeno 0,90 per il passaggio delle persone
     for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 1.90, 2.05, "1,15 × 0,60"), (1.30, 2.20, 2.00, 3.90, "1,70 × 0,70"),
@@ -374,9 +377,10 @@ if MODE == 'a3':
 
     if FURN:
         ptext(px, 244, "ARREDI (dal tuo schizzo)", 4.2, "#000", weight="bold")
-        for i, t in enumerate(["Rosa: scrivania 1,05 + bancone, prolungato fino al pilastro con ribalta 0,70",
+        for i, t in enumerate(["Rosa: scrivania 1,05 + bancone a L 1,20 + 1,05 con ribalta 0,70",
                                "Billy 202: 16 da 80, 4 da 40, 5 da 20 (profondità 40)",
                                "Arancione: 3 mobili bassi, ingresso libero (corridoio 3,10)",
+                               "Stabilo 60 dal lato clienti, retro chiuso (accesso dalla ribalta)",
                                "Rosso: espositore Stabilo da 60",
                                "Quote interne nascoste per leggere meglio"]):
             ptext(px, 251 + i * 5.6, t, 3.1, "#222")
