@@ -244,12 +244,6 @@ if FURN:
     run_y(0.0, 5.68, [0.4])
     # Billy lungo il muro del bagno, a partire da meta' rientranza: 4 x 80 + 20
     run_x(2.48, 5.73, [0.8, 0.8, 0.8, 0.2])
-    # Billy nella rientranza (spazio ancora libero): parete sinistra e destra 80 + 40 + 20, fondo 1 x 80, corridoio centrale 0,93
-    run_y(0.80, 6.13, [0.8, 0.4, 0.2])
-    run_y(2.13, 6.13, [0.8, 0.4, 0.2])
-    run_x(1.25, 7.17, [0.8])
-    text(1.67, 6.95, "Billy rientranza", 1.7, "#000", style="italic")
-    dim_h(1.20, 2.13, 6.55, "0,93")
     # Billy dalla porta del bagno verso la nicchia: 80 + 20, poi resta libero il passaggio (0,80) verso l'uscita retro
     run_x(5.93, 5.73, [0.8, 0.2])
     dim_h(6.93, W, 5.50, "0,80", kind="m")   # passaggio libero verso l'uscita retro
@@ -281,18 +275,17 @@ if FURN:
     text(1.00, 5.92, "tuo passaggio", 1.9, "#2e7d32", weight="bold", anchor="start")
     dim_v(5.33, 6.13, 1.88, "0,80")
     # arancione: mobili bassi messi in orizzontale (lato lungo parallelo alle vetrine), fuori dalla linea della porta
-    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 2.45, 1.50, "1,15 × 0,60"), (3.80, 1.00, 5.50, 1.70, "1,70 × 0,70"),
+    for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 2.45, 1.50, "1,15 × 0,60"), (1.30, 2.40, 3.00, 3.10, "1,70 × 0,70"),
                                   (5.00, 2.60, 6.50, 3.50, "1,50 × 0,90")]:
         rect(x1, y1, x2, y2, fill="#ffd9c2", stroke="#d2691e", w=0.4)
         text((x1 + x2) / 2, (y1 + y2) / 2 - 0.02, "mobile basso", 1.9, "#8a3b0c", weight="bold")
         text((x1 + x2) / 2, (y1 + y2) / 2 + 0.20, lab + "*", 1.7, "#8a3b0c")
     # corridoi di passaggio
     dim_h(0.40, 1.30, 1.20, "0,90")                  # parete sinistra - mobile 1
-    dim_h(2.45, 3.80, 1.30, "1,35")                  # corridoio d'ingresso tra i due mobili
-    dim_v(1.70, 2.60, 5.20, "0,90")                  # mobile 2 - mobile 3
+    dim_v(1.50, 2.40, 1.90, "0,90")                  # mobile 1 - mobile 2 (sotto il piccolo)
+    dim_h(0.40, 1.30, 2.75, "0,90")                  # libreria sinistra - mobile 2
     dim_h(6.50, W - 0.40, 3.05, "0,83")              # mobile 3 - libreria destra
     dim_v(3.50, 4.35, 6.00, "0,85")                  # mobile 3 - libreria
-    dim_v(0.0, 1.00, 4.50, "1,00")                   # vetrina - mobile 2
     rect(0.0, 4.90, 0.30, 5.50, fill="#ffc2c2", stroke="#c62828", w=0.4)
     text(0.17, 5.20, "Stabilo 60", 1.7, "#7a1010", weight="bold", rot=-90)
 

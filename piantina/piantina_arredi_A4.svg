@@ -97,25 +97,6 @@
 <text x="118.67" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
 <rect x="125.33" y="167.50" width="3.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="128.17" y="170.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 128.17 170.83)">20</text>
-<rect x="57.33" y="174.17" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="61.83" y="180.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 61.83 180.83)">80</text>
-<rect x="57.33" y="187.50" width="6.67" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="61.83" y="190.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 61.83 190.83)">40</text>
-<rect x="57.33" y="194.17" width="6.67" height="3.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="60.67" y="197.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
-<rect x="79.50" y="174.17" width="6.67" height="13.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="84.00" y="180.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 84.00 180.83)">80</text>
-<rect x="79.50" y="187.50" width="6.67" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="84.00" y="190.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 84.00 190.83)">40</text>
-<rect x="79.50" y="194.17" width="6.67" height="3.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="82.83" y="197.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
-<rect x="64.83" y="191.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="71.50" y="196.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
-<text x="71.83" y="187.83" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">Billy rientranza</text>
-<line x1="64.00" y1="181.17" x2="79.50" y2="181.17" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="62.50" y1="182.67" x2="65.50" y2="179.67" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="78.00" y1="182.67" x2="81.00" y2="179.67" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="71.75" y="179.50" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,93</text>
 <rect x="142.83" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="149.50" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
 <rect x="156.17" y="167.50" width="3.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
@@ -172,9 +153,9 @@
 <rect x="65.67" y="87.00" width="19.17" height="10.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
 <text x="75.25" y="91.67" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
 <text x="75.25" y="95.33" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,15 × 0,60*</text>
-<rect x="107.33" y="88.67" width="28.33" height="11.67" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
-<text x="121.50" y="94.17" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
-<text x="121.50" y="97.83" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,70 × 0,70*</text>
+<rect x="65.67" y="112.00" width="28.33" height="11.67" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
+<text x="79.83" y="117.50" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
+<text x="79.83" y="121.17" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,70 × 0,70*</text>
 <rect x="127.33" y="115.33" width="25.00" height="15.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
 <text x="139.83" y="122.50" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
 <text x="139.83" y="126.17" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,50 × 0,90*</text>
@@ -182,14 +163,14 @@
 <line x1="49.17" y1="93.50" x2="52.17" y2="90.50" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="64.17" y1="93.50" x2="67.17" y2="90.50" stroke="#1f4e8c" stroke-width="0.4"/>
 <text x="58.17" y="90.33" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,90</text>
-<line x1="84.83" y1="93.67" x2="107.33" y2="93.67" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="83.33" y1="95.17" x2="86.33" y2="92.17" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="105.83" y1="95.17" x2="108.83" y2="92.17" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="96.08" y="92.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">1,35</text>
-<line x1="130.67" y1="100.33" x2="130.67" y2="115.33" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="129.17" y1="101.83" x2="132.17" y2="98.83" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="129.17" y1="116.83" x2="132.17" y2="113.83" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="129.00" y="107.83" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 129.00 107.83)">0,90</text>
+<line x1="75.67" y1="97.00" x2="75.67" y2="112.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="74.17" y1="98.50" x2="77.17" y2="95.50" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="74.17" y1="113.50" x2="77.17" y2="110.50" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="74.00" y="104.50" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 74.00 104.50)">0,90</text>
+<line x1="50.67" y1="117.83" x2="65.67" y2="117.83" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="49.17" y1="119.33" x2="52.17" y2="116.33" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="64.17" y1="119.33" x2="67.17" y2="116.33" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="58.17" y="116.17" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,90</text>
 <line x1="152.33" y1="122.83" x2="166.17" y2="122.83" stroke="#1f4e8c" stroke-width="0.25"/>
 <line x1="150.83" y1="124.33" x2="153.83" y2="121.33" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="164.67" y1="124.33" x2="167.67" y2="121.33" stroke="#1f4e8c" stroke-width="0.4"/>
@@ -198,10 +179,6 @@
 <line x1="142.50" y1="131.83" x2="145.50" y2="128.83" stroke="#1f4e8c" stroke-width="0.4"/>
 <line x1="142.50" y1="146.00" x2="145.50" y2="143.00" stroke="#1f4e8c" stroke-width="0.4"/>
 <text x="142.33" y="137.42" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 142.33 137.42)">0,85</text>
-<line x1="119.00" y1="72.00" x2="119.00" y2="88.67" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="117.50" y1="73.50" x2="120.50" y2="70.50" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="117.50" y1="90.17" x2="120.50" y2="87.17" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="117.33" y="80.33" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 117.33 80.33)">1,00</text>
 <rect x="44.00" y="153.67" width="5.00" height="10.00" fill="#ffc2c2" stroke="#c62828" stroke-width="0.4"/>
 <text x="46.83" y="158.67" font-size="1.7" fill="#7a1010" text-anchor="middle" font-weight="bold" font-style="normal" transform="rotate(-90 46.83 158.67)">Stabilo 60</text>
 <line x1="44.00" y1="53.50" x2="44.00" y2="45.00" stroke="#1f4e8c" stroke-width="0.18"/>
