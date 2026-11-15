@@ -125,10 +125,14 @@ def opening(x1, y1, x2, y2, jambs):
 
 
 # ---- aperture
-# finestre sulla parete d'ingresso: X' 0,49 -> 2,65
+# vetrina sulla parete d'ingresso: X' 0,49 -> 2,65
 opening(0.49, -T - 0.01, 2.65, 0.0, [(0.49, -T, 0.49, 0), (2.65, -T, 2.65, 0)])
 for yy in (-T, -T / 2, 0):
     line(0.49, yy, 2.65, yy, "#000", 0.25)
+# seconda vetrina: X' 3,99 -> 7,07 (3,08)
+opening(3.99, -T - 0.01, 7.07, 0.0, [(3.99, -T, 3.99, 0), (7.07, -T, 7.07, 0)])
+for yy in (-T, -T / 2, 0):
+    line(3.99, yy, 7.07, yy, "#000", 0.25)
 # porta d'ingresso: X' 2,65 -> 3,99 (1,34 ricavata)
 opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
 # porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
@@ -166,7 +170,8 @@ ptext(X(W - 0.14), Y(6.00) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
 text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
 
 # ---- etichette ambienti/aperture
-text(1.57, 0.42, "finestre", 2.4, GREY, style="italic")
+text(1.57, 0.42, "vetrina", 2.4, GREY, style="italic")
+text(5.53, 0.42, "vetrina", 2.4, GREY, style="italic")
 text(3.32, 0.42, "porta ingresso", 2.4, GREY, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.32, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
@@ -224,7 +229,7 @@ dim_h(6.47, W, 8.35, "1,26*", yobj=7.70, kind="e")
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
 ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
-ptext(12, 271, "Ingresso con porta e finestre in alto · bagno oltre la parete in basso", 3.2, "#333")
+ptext(12, 271, "Ingresso in alto: porta con una vetrina per lato · bagno oltre la parete in basso", 3.2, "#333")
 
 # ---------------------------------------------------------------- pannello note
 px = 262
