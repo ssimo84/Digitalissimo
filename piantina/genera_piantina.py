@@ -80,7 +80,8 @@ def dim_v(y1, y2, xl, label, xobj=None, kind="m"):
 # ------------------------------------------------------------------ geometria
 W = 7.73
 poly = [
-    (0.00, 0.00), (7.73, 0.00),            # parete ingresso (finestre + porta)
+    (0.00, 0.00), (0.49, 0.00), (0.49, -0.70), (2.65, -0.70), (2.65, 0.00),   # fronte: il muro nero e il vetro sono fuori,
+    (3.99, 0.00), (3.99, -0.70), (7.07, -0.70), (7.07, 0.00), (7.73, 0.00),   # le basi stanno dentro (0,70)
     (7.73, 7.33),                          # parete lato destro fino in fondo alla nicchia
     (6.22, 7.33), (6.22, 6.13),            # nicchia in basso a destra (larghezza 1,51 stimata)
     (2.53, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
@@ -96,7 +97,8 @@ area = 0.5 * abs(sum(poly[i][0] * poly[(i + 1) % len(poly)][1] - poly[(i + 1) % 
                      for i in range(len(poly))))
 perim = sum(math.dist(poly[i], poly[(i + 1) % len(poly)]) for i in range(len(poly)))
 pillar_area = 0.32 * 1.04
-net = area - pillar_area
+bases_area = 0.70 * (2.16 + 3.08)
+net = area - pillar_area - bases_area
 print(f"area lorda {area:.2f} m2, netta pilastro {net:.2f} m2, perimetro {perim:.2f} m")
 
 add(f'<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" '
@@ -125,28 +127,26 @@ def opening(x1, y1, x2, y2, jambs):
 
 
 # ---- aperture
-# vetrina sulla parete d'ingresso: X' 0,49 -> 2,65
-opening(0.49, -T - 0.01, 2.65, 0.0, [(0.49, -T, 0.49, 0), (2.65, -T, 2.65, 0)])
-for yy in (-T, -T / 2, 0):
-    line(0.49, yy, 2.65, yy, "#000", 0.25)
-# seconda vetrina: X' 3,99 -> 7,07 (3,08)
-opening(3.99, -T - 0.01, 7.07, 0.0, [(3.99, -T, 3.99, 0), (7.07, -T, 7.07, 0)])
-for yy in (-T, -T / 2, 0):
-    line(3.99, yy, 7.07, yy, "#000", 0.25)
-# porta d'ingresso: X' 2,65 -> 3,99 (1,34 ricavata)
+# vetrine: il muro nero resta sul bordo esterno (Y' -1,00 -> -0,70) e il vetro sta li'
+for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
+    opening(a, -1.0 - 0.01, b, -0.70 + 0.01, [(a, -1.0, a, -0.70), (b, -1.0, b, -0.70)])
+    for yy in (-1.0, -0.85, -0.70):
+        line(a, yy, b, yy, "#000", 0.25)
+# rientranza della porta (aperta verso la strada): tolgo i pilastri neri laterali, restano vetrate
+rect(2.65, -0.70, 2.96, 0.0, fill="#fbfbf8")
+rect(3.68, -0.70, 3.99, 0.0, fill="#fbfbf8")
+# porta d'ingresso: apertura nello spessore del muro sulla linea Y' 0
 opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
-# rientranza della porta FUORI dal vetro (verso la strada): profonda 0,70 come le basi
-rect(2.65, -T - 0.70, 3.99, -T, fill="#eaeef2")
+rect(2.65, -0.70, 3.99, 0.0, fill="#eaeef2")
 # vetrate: una a sinistra della porta e una tra porta e spazio portaombrelli
 for xg in (2.65, 3.60):
-    rect(xg - 0.03, -T - 0.70, xg + 0.03, -T, fill="#bfdcf2", stroke="#000", w=0.3)
-# porta d'ingresso 0,95 sulla linea del vetro (Y' 0)
+    rect(xg - 0.03, -0.70, xg + 0.03, 0.0, fill="#bfdcf2", stroke="#000", w=0.3)
+# porta d'ingresso 0,95 sulla linea Y' 0
 line(2.65, 0.0, 3.60, 0.0, "#000", 0.6)
 rect(2.65, -0.03, 2.69, 0.03, fill="#000")
 rect(3.56, -0.03, 3.60, 0.03, fill="#000")
-# spazio portaombrelli X' 3,60 -> 3,99 (0,39 ricavata): chiuso verso il negozio (muro) e verso la strada
-rect(3.60, -T, 3.99, 0.0, fill=WALL)
-rect(3.60, -T - 0.73, 3.99, -T - 0.67, fill=WALL)
+# spazio portaombrelli X' 3,60 -> 3,99 (0,39 ricavata): chiuso verso la strada dal muro nero esterno
+rect(3.60, -1.0, 3.99, -0.70, fill=WALL)
 # porta lato destro: Y' 1,93 -> 2,73 (0,80 stimata), cerniera lato ingresso, apre verso l'interno
 opening(W, 1.93, W + T + 0.01, 2.73, [(W, 1.93, W + T, 1.93), (W, 2.73, W + T, 2.73)])
 line(W, 1.93, W - 0.80, 1.93, "#000", 0.5)
@@ -158,11 +158,11 @@ opening(5.12, 6.13 - 0.01, 5.92, 6.13 + T + 0.01, [(5.12, 6.13, 5.12, 6.13 + T),
 opening(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, [(6.73, 7.33, 6.73, 7.33 + T), (7.63, 7.33, 7.63, 7.33 + T)])
 rect(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, fill="none")
 
-# ---- basi delle vetrine FUORI dal vetro: lunghe quanto la vetrina, profonde 0,70
+# ---- basi marroni DENTRO la vetrina: lunghe quanto la vetrina, profonde 0,70
 for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
-    rect(a, -T - 0.70, b, -T, fill="#ece6d8", stroke="#000", w=0.3)
-    line(a, -T - 0.70, b, -T, "#bbb39f", 0.15)
-    line(a, -T, b, -T - 0.70, "#bbb39f", 0.15)
+    rect(a, -0.70, b, 0.0, fill="#ece6d8", stroke="#000", w=0.3)
+    line(a, -0.70, b, 0.0, "#bbb39f", 0.15)
+    line(a, 0.0, b, -0.70, "#bbb39f", 0.15)
 
 # ---- pilastro centrale 0,32 x 1,04 (X' 4,33-4,65 ; Y' 4,03-5,07)
 rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
@@ -183,11 +183,11 @@ ptext(X(W - 0.14), Y(6.30) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
 text(W - 0.45, 6.38, "termostato*", 2.0, ORANGE, anchor="end")
 
 # ---- etichette ambienti/aperture
-text(1.57, -0.56, "base vetrina 2,16 × 0,70", 2.4, "#000", style="italic")
-text(5.53, -0.56, "base vetrina 3,08 × 0,70", 2.4, "#000", style="italic")
+text(1.57, -0.30, "base vetrina 2,16 × 0,70", 2.4, "#000", style="italic")
+text(5.53, -0.30, "base vetrina 3,08 × 0,70", 2.4, "#000", style="italic")
 text(3.125, 0.45, "porta ingresso 0,95", 2.4, GREY, style="italic")
-text(3.125, -0.56, "rientranza 0,70", 2.0, GREY, style="italic")
-text(3.80, -0.65, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
+text(3.125, -0.30, "rientranza 0,70", 2.0, GREY, style="italic")
+text(3.80, -0.35, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
 text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
@@ -201,8 +201,8 @@ text(2.6, 2.6, f"{net:.1f} m² netti", 3.0, "#999")
 yl = -1.50
 for (a, b, lab, k) in [(0, 0.49, "0,49", "m"), (0.49, 2.65, "2,16", "m"), (2.65, 3.60, "0,95", "m"), (3.60, 3.99, "0,39°", "m"),
                        (3.99, 7.07, "3,08", "m"), (7.07, 7.73, "0,66", "m")]:
-    dim_h(a, b, yl, lab, yobj=-T - 0.75, kind=k)
-dim_h(0, 7.73, -2.05, "7,73", yobj=-T - 0.75)
+    dim_h(a, b, yl, lab, yobj=-1.05, kind=k)
+dim_h(0, 7.73, -2.05, "7,73", yobj=-1.05)
 
 # lato destro (verso l'esterno)
 xl = 8.55
@@ -237,7 +237,7 @@ dim_h(5.12, 5.92, 6.95, "0,80", yobj=6.5)
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
 ptext(12, 264, "Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)", 3.2, "#333")
-ptext(12, 271, "Ingresso in alto: porta tra due vetrine (basi e rientranza fuori dal vetro) · bagno oltre la parete in basso", 3.2, "#333")
+ptext(12, 271, "Ingresso in alto: porta tra due vetrine (basi dentro, muro nero e vetro fuori) · bagno oltre la parete in basso", 3.2, "#333")
 
 # ---------------------------------------------------------------- pannello note
 px = 262
@@ -253,7 +253,7 @@ ptext(px + 13, 46.5, "pilastro a muro: 0,52 × 0,51", 3.2)
 
 ptext(px, 60, "DATI", 4.2, "#000", weight="bold")
 ptext(px, 66.5, f"Superficie interna lorda: {area:.2f} m²".replace(".", ","), 3.2)
-ptext(px, 72, f"Superficie netta (meno colonna centrale): {net:.2f} m²".replace(".", ","), 3.2)
+ptext(px, 72, f"Superficie netta (meno colonna e basi vetrina): {net:.2f} m²".replace(".", ","), 3.2)
 ptext(px, 77.5, f"Perimetro interno: {perim:.2f} m".replace(".", ","), 3.2)
 ptext(px, 83, "Spessore muri 0,30 m: ipotizzato, non misurato", 3.2, ORANGE)
 
@@ -261,8 +261,8 @@ ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
 notes = [
     "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
     "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
-    "    portaombrelli 0,39°. Basi e rientranza stanno fuori",
-    "    dal vetro (strada), profonde 0,70.",
+    "    portaombrelli 0,39°. Le vetrine hanno profondità",
+    "    0,70: basi dentro, muro nero e vetro fuori.",
     "2. Porta lato destro 0,80*: stimata dal disegno",
     "    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).",
     "3. Quota 3,20 dello schizzo: non so dove",
@@ -278,7 +278,8 @@ notes = [
     "    lunghezza 1,20 stimata) e termostato: posizione",
     "    indicativa. Termosifone sinistro:",
     "    profondità 0,10* stimata.",
-    "8. Basi vetrine: lunghe come la vetrina, fuori dal vetro.",
+    "8. Basi vetrine: lunghe come la vetrina, dentro,",
+    "    dietro al vetro (profondità 0,70).",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
