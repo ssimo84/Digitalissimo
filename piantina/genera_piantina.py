@@ -82,10 +82,10 @@ W = 7.73
 poly = [
     (0.00, 0.00), (7.73, 0.00),            # parete ingresso (finestre + porta)
     (7.73, 7.33),                          # parete lato destro fino in fondo alla nicchia
-    (6.47, 7.33), (6.47, 6.13),            # nicchia in basso a destra
-    (2.78, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
-    (2.78, 7.18), (1.05, 7.18),            # rientranza con fondo dritto: 1,05 / 1,73 / 1,49
-    (1.05, 5.69), (0.00, 5.69),            # muro piano (tratteggio rimosso): 0,80 + 0,25 = 1,05
+    (6.22, 7.33), (6.22, 6.13),            # nicchia in basso a destra (larghezza 1,51 stimata)
+    (2.53, 6.13),                          # parete lato bagno (2,59 + porta bagno + muretto)
+    (2.53, 7.18), (0.80, 7.57),            # rientranza: 1,05 / 1,73 / 1,49, fondo inclinato come nello schizzo
+    (0.80, 6.08), (0.00, 6.08),            # gradino 0,80 dalla parete sinistra, parte dritta
     (0.00, 4.85), (0.52, 4.85),            # pilastro a muro: spessore 0,52 x lunghezza 0,51
     (0.52, 4.34), (0.00, 4.34),
 ]
@@ -154,7 +154,7 @@ line(W, 1.93, W - 0.80, 1.93, "#000", 0.5)
 add(f'<path d="M {f(X(W-0.80))} {f(Y(1.93))} A {f(S*0.8)} {f(S*0.8)} 0 0 0 {f(X(W))} {f(Y(2.73))}" '
     f'fill="none" stroke="#000" stroke-width="0.2" stroke-dasharray="1 0.8"/>')
 # porta bagno: X' 5,37 -> 6,17 (stima)
-opening(5.37, 6.13 - 0.01, 6.17, 6.13 + T + 0.01, [(5.37, 6.13, 5.37, 6.13 + T), (6.17, 6.13, 6.17, 6.13 + T)])
+opening(5.12, 6.13 - 0.01, 5.92, 6.13 + T + 0.01, [(5.12, 6.13, 5.12, 6.13 + T), (5.92, 6.13, 5.92, 6.13 + T)])
 # porta della nicchia: X' 6,73 -> 7,63 (stima)
 opening(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, [(6.73, 7.33, 6.73, 7.33 + T), (7.63, 7.33, 7.63, 7.33 + T)])
 rect(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, fill="none")
@@ -192,7 +192,7 @@ text(3.80, 0.40, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
 text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
 text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
-text(5.77, 7.42, "porta bagno", 2.4, GREY, style="italic")
+text(5.52, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
 text(2.6, 2.6, f"{net:.1f} m² netti", 3.0, "#999")
@@ -213,9 +213,9 @@ for (a, b, lab, k) in [(0, 1.93, "1,93", "m"), (1.93, 2.73, "0,80*", "e"), (2.73
 
 # lato sinistro
 xl = -0.85
-for (a, b, lab) in [(0, 2.99, "2,99"), (2.99, 4.34, "1,35"), (4.34, 4.85, "0,51"), (4.85, 5.69, "0,84°")]:
+for (a, b, lab) in [(0, 2.99, "2,99"), (2.99, 4.34, "1,35"), (4.34, 4.85, "0,51"), (4.85, 6.08, "1,23")]:
     dim_v(a, b, xl, lab, xobj=-T - 0.05)
-dim_v(0, 5.69, -1.45, "5,69°", xobj=-T - 0.05)
+dim_v(0, 6.08, -1.45, "6,08°", xobj=-T - 0.05)
 
 # interno: pilastro e distanze
 dim_h(4.65, W, 4.20, "3,08")
@@ -224,16 +224,16 @@ dim_v(0.0, 4.03, 4.49, "4,03")
 dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
 # 0,80 e 2,59 lungo il muro in alto
-dim_h(0.0, 1.05, 5.35, "0,80 + 0,25°", yobj=5.69)
-dim_h(2.78, 5.37, 5.85, "2,59", yobj=6.13, txt_x=3.55)
+dim_h(0.0, 0.80, 5.72, "0,80", yobj=6.08)
+dim_h(2.53, 5.12, 5.85, "2,59", yobj=6.13, txt_x=3.30)
 
 # rientranza (1,49 / 1,05 / 1,73)
-dim_v(5.69, 7.18, 1.42, "1,49", xobj=1.05)
-dim_v(6.13, 7.18, 2.42, "1,05", xobj=2.78)
-dim_h(1.05, 2.78, 8.10, "1,73", yobj=7.55)
+dim_v(6.08, 7.57, 1.17, "1,49", xobj=0.80)
+dim_v(6.13, 7.18, 2.17, "1,05", xobj=2.53)
+dim_h(0.80, 2.53, 8.50, "1,73", yobj=7.95)
 
 # porta bagno e nicchia (stima)
-dim_h(5.37, 6.17, 6.95, "0,80", yobj=6.5)
+dim_h(5.12, 5.92, 6.95, "0,80", yobj=6.5)
 
 # ---------------------------------------------------------------- cartiglio
 ptext(12, 256, "PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO", 6.0, "#000", weight="bold")
@@ -271,16 +271,14 @@ notes = [
     "    contro 4,31 scritto (3 cm di scarto).",
     "5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:",
     "    21 cm di troppo, la quota 4,02 non torna: rimisurare.",
-    "6. Rientranza con fondo dritto: lati 1,49 e 1,05.",
-    "    Il livello 5,69 del muro a sinistra è ricavato:",
-    "    7,18 − 1,49. Il vecchio 1,23 diventa 0,84°.",
+    "6. Rientranza: parte alta dritta, fondo inclinato",
+    "    (lati 1,49 e 1,05, come nel tuo schizzo).",
+    "    Larghezza nicchia a destra 1,51* stimata.",
     "7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,",
     "    lunghezza 1,20 stimata) e termostato: posizione",
     "    indicativa. Termosifone sinistro:",
     "    profondità 0,10* stimata.",
-    "8. Muro in basso a sinistra: 0,80 + 0,25 = 1,05°",
-    "    (tratteggio rimosso, 0,25 aggiunto alla quota).",
-    "9. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
+    "8. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
     "    Dalla porta laterale aperta restano 1,23 m di spazio.",
 ]
 for i, n in enumerate(notes):
