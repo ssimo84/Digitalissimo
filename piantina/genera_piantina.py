@@ -95,7 +95,7 @@ area = 0.5 * abs(sum(poly[i][0] * poly[(i + 1) % len(poly)][1] - poly[(i + 1) % 
                      for i in range(len(poly))))
 perim = sum(math.dist(poly[i], poly[(i + 1) % len(poly)]) for i in range(len(poly)))
 pillar_area = 0.32 * 1.04
-recess_area = 1.34 * 0.80          # rientranza d'ingresso (porta arretrata di 0,80)
+recess_area = 1.34 * 0.70          # rientranza d'ingresso (porta arretrata di 0,70)
 net = area - pillar_area - recess_area
 print(f"area lorda {area:.2f} m2, netta pilastro {net:.2f} m2, perimetro {perim:.2f} m")
 
@@ -138,12 +138,12 @@ for yy in (-T, -T / 2, 0):
 # porta d'ingresso: X' 2,65 -> 3,99 (1,34 ricavata)
 opening(2.65, -T - 0.01, 3.99, 0.0, [(2.65, -T, 2.65, 0), (3.99, -T, 3.99, 0)])
 # rientranza d'ingresso: profonda 0,80 (come le basi delle vetrine), porta arretrata
-rect(2.65, 0.0, 3.99, 0.80, fill="#eaeef2", stroke="#000", w=0.3, dash="1.2 0.8")
+rect(2.65, 0.0, 3.99, 0.70, fill="#eaeef2", stroke="#000", w=0.3, dash="1.2 0.8")
 # porta d'ingresso 0,95 sul fondo della rientranza (Y' 0,80)
-line(2.65, 0.80, 3.60, 0.80, "#000", 0.6)
-rect(2.65, 0.77, 2.69, 0.83, fill="#000")
-rect(3.56, 0.77, 3.60, 0.83, fill="#000")
-line(3.60, 0.80, 3.99, 0.80, "#000", 0.3)
+line(2.65, 0.70, 3.60, 0.70, "#000", 0.6)
+rect(2.65, 0.67, 2.69, 0.73, fill="#000")
+rect(3.56, 0.67, 3.60, 0.73, fill="#000")
+line(3.60, 0.70, 3.99, 0.70, "#000", 0.3)
 # spazio portaombrelli: X' 3,60 -> 3,99 (0,39 ricavata)
 # porta lato destro: Y' 1,03 -> 1,83 (0,80), cerniera lato ingresso, apre verso l'interno
 opening(W, 1.03, W + T + 0.01, 1.83, [(W, 1.03, W + T, 1.03), (W, 1.83, W + T, 1.83)])
@@ -158,9 +158,9 @@ rect(6.73, 7.33 - 0.01, 7.63, 7.33 + T + 0.01, fill="none")
 
 # ---- basi delle vetrine: lunghe quanto la vetrina, profonde 0,80
 for (a, b) in [(0.49, 2.65), (3.99, 7.07)]:
-    rect(a, 0.0, b, 0.8, fill="#ece6d8", stroke="#000", w=0.3)
-    line(a, 0.0, b, 0.8, "#bbb39f", 0.15)
-    line(a, 0.8, b, 0.0, "#bbb39f", 0.15)
+    rect(a, 0.0, b, 0.7, fill="#ece6d8", stroke="#000", w=0.3)
+    line(a, 0.0, b, 0.7, "#bbb39f", 0.15)
+    line(a, 0.7, b, 0.0, "#bbb39f", 0.15)
 
 # ---- pilastro centrale 0,32 x 1,04 (X' 4,33-4,65 ; Y' 4,03-5,07)
 rect(4.33, 4.03, 4.65, 5.07, fill="#d4d4d4", stroke="#000", w=0.4)
@@ -186,10 +186,10 @@ ptext(X(W - 0.14), Y(6.00) + 0.8, "T", 1.9, ORANGE, "middle", "bold")
 text(W - 0.45, 5.88, "termostato*", 2.0, ORANGE, anchor="end")
 
 # ---- etichette ambienti/aperture
-text(1.57, 0.55, "base vetrina 2,16 × 0,80", 2.4, "#000", style="italic")
-text(5.53, 0.55, "base vetrina 3,08 × 0,80", 2.4, "#000", style="italic")
-text(3.125, 1.12, "porta ingresso 0,95", 2.4, GREY, style="italic")
-text(3.125, 0.40, "rientranza 0,80", 2.0, GREY, style="italic")
+text(1.57, 0.55, "base vetrina 2,16 × 0,70", 2.4, "#000", style="italic")
+text(5.53, 0.55, "base vetrina 3,08 × 0,70", 2.4, "#000", style="italic")
+text(3.125, 1.02, "porta ingresso 0,95", 2.4, GREY, style="italic")
+text(3.125, 0.36, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, 0.40, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.55, 5.50, "pilastro 0,32 × 1,04", 2.4, GREY, style="italic")
 text(0.32, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
@@ -269,7 +269,7 @@ ptext(px, 97, "DA VERIFICARE IN LOCO", 4.2, "#000", weight="bold")
 notes = [
     "1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −",
     "    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio",
-    "    portaombrelli 0,39°. Profondità 0,80 come le basi.",
+    "    portaombrelli 0,39°. Profondità 0,70 come le basi.",
     "2. Porta lato destro 0,80°: 4,03 − 1,03 − 2,20.",
     "3. Quota 3,20 dello schizzo: non so dove",
     "    collocarla, non l'ho usata.",
@@ -284,8 +284,8 @@ notes = [
     "8. Sotto il termosifone sinistro c'è un elemento",
     "    0,51 × 0,25 (radiatore? nicchia?): da identificare.",
     "    Profondità del termosifone 0,10* stimata.",
-    "9. Basi vetrine: lunghe come la vetrina, profonde 0,80.",
-    "    A destra restano 23 cm dalla porta laterale aperta.",
+    "9. Basi vetrine: lunghe come la vetrina, profonde 0,70.",
+    "    A destra restano 33 cm dalla porta laterale aperta.",
 ]
 for i, n in enumerate(notes):
     ptext(px, 104 + i * 5.6, n, 3.1, "#222")
