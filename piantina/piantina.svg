@@ -23,7 +23,9 @@
 <rect x="99.00" y="43.80" width="26.80" height="6.20" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
 <line x1="99.00" y1="44.00" x2="99.00" y2="50.00" stroke="#000" stroke-width="0.35"/>
 <line x1="125.80" y1="44.00" x2="125.80" y2="50.00" stroke="#000" stroke-width="0.35"/>
-<rect x="99.00" y="50.00" width="26.80" height="14.00" fill="#eaeef2" stroke="#000" stroke-width="0.3" stroke-dasharray="1.2 0.8"/>
+<rect x="99.00" y="50.00" width="26.80" height="14.00" fill="#eaeef2" stroke="none" stroke-width="0.25"/>
+<rect x="98.40" y="50.00" width="1.20" height="14.00" fill="#bfdcf2" stroke="#000" stroke-width="0.3"/>
+<rect x="125.20" y="50.00" width="1.20" height="14.00" fill="#bfdcf2" stroke="#000" stroke-width="0.3"/>
 <line x1="99.00" y1="64.00" x2="118.00" y2="64.00" stroke="#000" stroke-width="0.6"/>
 <rect x="99.00" y="63.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
 <rect x="117.20" y="63.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
