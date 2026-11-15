@@ -160,6 +160,25 @@ function billy(x1, z1, x2, z2, front) {
       lx += iw + 0.003;
     }
   });
+  // zaini e cartelline sopra la libreria
+  const bx = (cx, cy, cz, sx, sy, sz, col, rough = 0.7, ry = 0) => { const m = new THREE.Mesh(new THREE.BoxGeometry(sx, sy, sz), mc(col, rough)); m.position.set(cx, cy, cz); m.rotation.y = ry; m.castShadow = true; m.receiveShadow = true; g.add(m); return m; };
+  const backpack = (cx, col) => {
+    const z0 = d / 2 - 0.20;
+    bx(cx, Hh + 0.21, z0, 0.30, 0.42, 0.16, col);                         // corpo
+    bx(cx, Hh + 0.43, z0, 0.26, 0.04, 0.12, col);                        // parte alta
+    bx(cx, Hh + 0.13, z0 + 0.10, 0.22, 0.20, 0.05, col);                 // tasca frontale
+    bx(cx, Hh + 0.13, z0 + 0.128, 0.23, 0.012, 0.01, '#222222');         // zip tasca
+    bx(cx, Hh + 0.34, z0 + 0.082, 0.18, 0.012, 0.01, '#222222');         // zip principale
+    bx(cx - 0.10, Hh + 0.26, z0 + 0.086, 0.025, 0.30, 0.012, '#1e1e20'); // spallacci
+    bx(cx + 0.10, Hh + 0.26, z0 + 0.086, 0.025, 0.30, 0.012, '#1e1e20');
+    bx(cx, Hh + 0.47, z0, 0.10, 0.025, 0.02, '#1e1e20');                 // maniglia
+  };
+  const folders = (cx, n) => {
+    for (let i = 0; i < n; i++) bx(cx + rr(-0.012, 0.012), Hh + 0.008 + i * 0.016, d / 2 - 0.20 + rr(-0.012, 0.012), 0.24, 0.014, 0.32, PAL[(rnd() * PAL.length) | 0], 0.6, rr(-0.12, 0.12));
+  };
+  if (w > 0.7) { backpack(-0.26, PAL[(rnd() * PAL.length) | 0]); folders(0.01, 5); backpack(0.26, PAL[(rnd() * PAL.length) | 0]); }
+  else if (w > 0.35) { backpack(0, PAL[(rnd() * PAL.length) | 0]); }
+  else { folders(0, 4); }
   g.position.set((x1 + x2) / 2, 0, (z1 + z2) / 2);
   g.rotation.y = { N: Math.PI, S: 0, E: Math.PI / 2, W: -Math.PI / 2 }[front];
   scene.add(g);
