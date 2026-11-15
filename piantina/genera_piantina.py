@@ -8,6 +8,7 @@ Lo schizzo originale e' ruotato di 180 gradi rispetto a questo disegno.
 import math
 import os
 
+FURN = os.environ.get('FURN', '0') == '1'   # 1 = aggiunge gli arredi (proposta)
 MODE = os.environ.get('MODE', 'a3')   # 'a3' = tavola completa 1:50, 'a4' = solo piantina 1:60 su A4 verticale
 
 if MODE == 'a4':
@@ -200,11 +201,45 @@ text(3.125, -0.30, "rientranza 0,70", 2.0, GREY, style="italic")
 text(3.80, -0.35, "portaombrelli", 1.9, "#000", rot=-90, style="italic")
 text(3.20, 5.50, "colonna centrale 1,04 × 0,32", 2.4, GREY, style="italic")
 text(0.36, 3.70, "termosifone 1,35", 2.2, GREY, anchor="start", style="italic")
-text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
+if not FURN:
+    text(0.62, 4.83, "pilastro 0,52 × 0,51", 2.0, GREY, anchor="start", style="italic")
 text(5.52, 7.42, "porta bagno", 2.4, GREY, style="italic")
 text(7.18, 7.92, "uscita retro", 2.6, "#000", weight="bold")
 text(2.6, 2.3, "AMBIENTE PRINCIPALE", 4.2, "#999", weight="bold")
 text(2.6, 2.6, f"{net:.1f} m² netti", 3.0, "#999")
+
+# ---------------------------------------------------------------- ARREDI (proposta)
+if FURN:
+    WOOD, WOODD = "#d9c3a0", "#8a6d3b"
+
+    def billy(x1, y1, x2, y2):
+        rect(x1, y1, x2, y2, fill="#f4efe3", stroke=WOODD, w=0.35)
+        if (x2 - x1) > (y2 - y1):
+            line(x1, (y1 + y2) / 2, x2, (y1 + y2) / 2, "#c9b48a", 0.15)
+        else:
+            line((x1 + x2) / 2, y1, (x1 + x2) / 2, y2, "#c9b48a", 0.15)
+
+    # scrivania 1,20 x 0,60 attaccata alla parete sinistra, sotto il pilastro a muro
+    rect(0.0, 4.88, 0.60, 6.08, fill=WOOD, stroke=WOODD, w=0.35)
+    text(0.30, 5.48, "scrivania 1,20 × 0,60", 2.0, "#000", rot=-90)
+    # bancone a L (1,05 + 1,20, profondo 0,70) davanti a scrivania e pilastro
+    lpts = [(1.00, 4.05), (2.05, 4.05), (2.05, 5.25), (1.35, 5.25), (1.35, 4.75), (1.00, 4.75)]
+    add('<polygon points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in lpts) + f'" fill="{WOOD}" stroke="{WOODD}" stroke-width="0.4"/>')
+    text(1.70, 5.55, "bancone a L", 2.3, "#000", weight="bold")
+    text(1.70, 5.80, "1,05 + 1,20 × 0,70", 2.0, "#000")
+    # Billy nella rientranza (2 moduli da 80 x 28 contro il fondo)
+    billy(0.88, 7.27, 1.68, 7.55)
+    billy(1.68, 7.27, 2.48, 7.55)
+    text(1.68, 7.05, "Billy ×2", 2.2, "#000")
+    # Billy lungo il muro lato bagno (3 moduli da 80)
+    for k in range(3):
+        billy(2.58 + 0.80 * k, 5.85, 3.38 + 0.80 * k, 6.13)
+    text(3.78, 5.65, "Billy ×3", 2.2, "#000")
+    # Billy lungo la parete destra, fino al termosifone (80 + 80 + 40)
+    billy(7.45, 2.80, 7.73, 3.60)
+    billy(7.45, 3.60, 7.73, 4.40)
+    billy(7.45, 4.40, 7.73, 4.80)
+    text(7.30, 3.80, "Billy 80 + 80 + 40", 2.0, "#000", rot=-90)
 
 # ---------------------------------------------------------------- QUOTE
 # fronte ingresso (in alto)
@@ -227,18 +262,21 @@ for (a, b, lab) in [(0, 2.99, "2,99"), (2.99, 4.34, "1,35"), (4.34, 4.85, "0,51"
 dim_v(0, 6.08, -1.45, "6,08°", xobj=-T - 0.05)
 
 # interno: pilastro e distanze
-dim_h(4.65, W, 4.20, "3,08")
-dim_h(0.52, 4.33, 4.60, "4,02")
-dim_v(0.0, 4.03, 4.49, "4,03")
-dim_v(5.07, 6.13, 4.49, "1,06")
+if not FURN:
+    dim_h(4.65, W, 4.20, "3,08")
+    dim_h(0.52, 4.33, 4.60, "4,02")
+    dim_v(0.0, 4.03, 4.49, "4,03")
+    dim_v(5.07, 6.13, 4.49, "1,06")
 # colonna lato sinistro: sporgenza 0,25
 # 0,80 e 2,59 lungo il muro in alto
-dim_h(0.0, 0.80, 5.72, "0,80", yobj=6.08)
-dim_h(2.53, 5.12, 5.85, "2,59", yobj=6.13, txt_x=3.30)
+if not FURN:
+    dim_h(0.0, 0.80, 5.72, "0,80", yobj=6.08)
+    dim_h(2.53, 5.12, 5.85, "2,59", yobj=6.13, txt_x=3.30)
 
 # rientranza (1,49 / 1,49 / 1,73)
-dim_v(6.08, 7.57, 1.17, "1,49", xobj=0.80)
-dim_v(6.13, 7.62, 2.17, "1,49", xobj=2.53)
+if not FURN:
+    dim_v(6.08, 7.57, 1.17, "1,49", xobj=0.80)
+    dim_v(6.13, 7.62, 2.17, "1,49", xobj=2.53)
 dim_h(0.80, 2.53, 8.55, "1,73", yobj=7.95)
 
 # porta bagno e nicchia (stima)
@@ -295,11 +333,19 @@ if MODE == 'a3':
     for i, n in enumerate(notes):
         ptext(px, 104 + i * 5.6, n, 3.1, "#222")
 
+    if FURN:
+        ptext(px, 244, "ARREDI (proposta)", 4.2, "#000", weight="bold")
+        for i, t in enumerate(["Bancone a L 1,05 + 1,20, profondità 0,70",
+                               "Scrivania 1,20 × 0,60 attaccata al pilastro",
+                               "Billy 80 × 28: 2 in rientranza, 3 lato bagno,",
+                               "    80 + 80 + 40 sulla parete destra",
+                               "Quote interne nascoste per leggere meglio"]):
+            ptext(px, 251 + i * 5.6, t, 3.1, "#222")
 else:
     ptext(PAGE_W / 2, 24, "PIANTINA", 6.0, "#000", "middle", "bold")
     ptext(PAGE_W / 2, 31, "Quote in metri · scala 1:60 · ° ricavata per differenza · * stimata", 3.0, "#333", "middle")
     ptext(PAGE_W / 2, 280, f"Superficie netta {net:.1f} m² (meno colonna e basi vetrina)".replace(".", ","), 3.2, "#333", "middle")
 
 add('</svg>')
-open("piantina.svg" if MODE == "a3" else "piantina_A4.svg", "w", encoding="utf-8").write("\n".join(out))
+open(("piantina_arredi" if FURN else "piantina") + (".svg" if MODE == "a3" else "_A4.svg"), "w", encoding="utf-8").write("\n".join(out))
 print("ok")

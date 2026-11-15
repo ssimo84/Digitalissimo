@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Arial, Helvetica, sans-serif">
+<defs><pattern id="hatch" width="1.6" height="1.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="1.6" stroke="#777" stroke-width="0.25"/></pattern></defs>
+<rect width="420" height="297" fill="#ffffff"/>
+<rect x="6" y="6" width="408" height="285" fill="none" stroke="#000" stroke-width="0.5"/>
+<polygon points="46.00,56.00 55.80,56.00 55.80,42.00 99.00,42.00 99.00,56.00 125.80,56.00 125.80,42.00 187.40,42.00 187.40,56.00 200.60,56.00 200.60,202.60 170.40,202.60 170.40,178.60 96.60,178.60 96.60,208.40 62.00,207.40 62.00,177.60 46.00,177.60 46.00,153.00 56.40,153.00 56.40,142.80 46.00,142.80" fill="none" stroke="#3b3b3b" stroke-width="12.00" stroke-linejoin="miter" stroke-miterlimit="10"/>
+<polygon points="46.00,56.00 55.80,56.00 55.80,42.00 99.00,42.00 99.00,56.00 125.80,56.00 125.80,42.00 187.40,42.00 187.40,56.00 200.60,56.00 200.60,202.60 170.40,202.60 170.40,178.60 96.60,178.60 96.60,208.40 62.00,207.40 62.00,177.60 46.00,177.60 46.00,153.00 56.40,153.00 56.40,142.80 46.00,142.80" fill="#fbfbf8" stroke="none"/>
+<rect x="40.00" y="142.80" width="16.40" height="10.20" fill="#3b3b3b" stroke="none" stroke-width="0.25"/>
+<polygon points="46.00,56.00 55.80,56.00 55.80,42.00 99.00,42.00 99.00,56.00 125.80,56.00 125.80,42.00 187.40,42.00 187.40,56.00 200.60,56.00 200.60,202.60 170.40,202.60 170.40,178.60 96.60,178.60 96.60,208.40 62.00,207.40 62.00,177.60 46.00,177.60 46.00,153.00 56.40,153.00 56.40,142.80 46.00,142.80" fill="none" stroke="#000" stroke-width="0.45" stroke-linejoin="miter"/>
+<rect x="55.80" y="35.80" width="43.20" height="6.40" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="55.80" y1="36.00" x2="55.80" y2="42.00" stroke="#000" stroke-width="0.35"/>
+<line x1="99.00" y1="36.00" x2="99.00" y2="42.00" stroke="#000" stroke-width="0.35"/>
+<line x1="55.80" y1="36.00" x2="99.00" y2="36.00" stroke="#000" stroke-width="0.25"/>
+<line x1="55.80" y1="39.00" x2="99.00" y2="39.00" stroke="#000" stroke-width="0.25"/>
+<line x1="55.80" y1="42.00" x2="99.00" y2="42.00" stroke="#000" stroke-width="0.25"/>
+<rect x="125.80" y="35.80" width="61.60" height="6.40" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="125.80" y1="36.00" x2="125.80" y2="42.00" stroke="#000" stroke-width="0.35"/>
+<line x1="187.40" y1="36.00" x2="187.40" y2="42.00" stroke="#000" stroke-width="0.35"/>
+<line x1="125.80" y1="36.00" x2="187.40" y2="36.00" stroke="#000" stroke-width="0.25"/>
+<line x1="125.80" y1="39.00" x2="187.40" y2="39.00" stroke="#000" stroke-width="0.25"/>
+<line x1="125.80" y1="42.00" x2="187.40" y2="42.00" stroke="#000" stroke-width="0.25"/>
+<rect x="99.00" y="42.00" width="6.20" height="14.00" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<rect x="99.10" y="35.80" width="6.30" height="6.30" fill="#ffffff" stroke="none" stroke-width="0.25"/>
+<rect x="119.60" y="42.00" width="6.20" height="14.00" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<rect x="99.00" y="49.80" width="26.80" height="6.20" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="99.00" y1="50.00" x2="99.00" y2="56.00" stroke="#000" stroke-width="0.35"/>
+<line x1="125.80" y1="50.00" x2="125.80" y2="56.00" stroke="#000" stroke-width="0.35"/>
+<rect x="99.00" y="42.00" width="26.80" height="14.00" fill="#eaeef2" stroke="none" stroke-width="0.25"/>
+<rect x="98.40" y="42.00" width="1.20" height="14.00" fill="#bfdcf2" stroke="#000" stroke-width="0.3"/>
+<rect x="117.40" y="42.00" width="1.20" height="14.00" fill="#bfdcf2" stroke="#000" stroke-width="0.3"/>
+<line x1="99.00" y1="56.00" x2="118.00" y2="56.00" stroke="#000" stroke-width="0.6"/>
+<rect x="99.00" y="55.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
+<rect x="117.20" y="55.40" width="0.80" height="1.20" fill="#000" stroke="none" stroke-width="0.25"/>
+<rect x="118.00" y="36.00" width="7.80" height="6.00" fill="#3b3b3b" stroke="none" stroke-width="0.25"/>
+<rect x="200.60" y="94.60" width="6.20" height="16.00" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="200.60" y1="94.60" x2="206.60" y2="94.60" stroke="#000" stroke-width="0.35"/>
+<line x1="200.60" y1="110.60" x2="206.60" y2="110.60" stroke="#000" stroke-width="0.35"/>
+<line x1="200.60" y1="94.60" x2="184.60" y2="94.60" stroke="#000" stroke-width="0.5"/>
+<path d="M 184.60 94.60 A 16.00 16.00 0 0 0 200.60 110.60" fill="none" stroke="#000" stroke-width="0.2" stroke-dasharray="1 0.8"/>
+<rect x="148.40" y="178.40" width="16.00" height="6.40" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="148.40" y1="178.60" x2="148.40" y2="184.60" stroke="#000" stroke-width="0.35"/>
+<line x1="164.40" y1="178.60" x2="164.40" y2="184.60" stroke="#000" stroke-width="0.35"/>
+<rect x="180.60" y="202.40" width="18.00" height="6.40" fill="#fbfbf8" stroke="none" stroke-width="0.25"/>
+<line x1="180.60" y1="202.60" x2="180.60" y2="208.60" stroke="#000" stroke-width="0.35"/>
+<line x1="198.60" y1="202.60" x2="198.60" y2="208.60" stroke="#000" stroke-width="0.35"/>
+<rect x="180.60" y="202.40" width="18.00" height="6.40" fill="none" stroke="none" stroke-width="0.25"/>
+<rect x="55.80" y="42.00" width="43.20" height="14.00" fill="#ece6d8" stroke="#000" stroke-width="0.3"/>
+<line x1="55.80" y1="42.00" x2="99.00" y2="56.00" stroke="#bbb39f" stroke-width="0.15"/>
+<line x1="55.80" y1="56.00" x2="99.00" y2="42.00" stroke="#bbb39f" stroke-width="0.15"/>
+<rect x="125.80" y="42.00" width="61.60" height="14.00" fill="#ece6d8" stroke="#000" stroke-width="0.3"/>
+<line x1="125.80" y1="42.00" x2="187.40" y2="56.00" stroke="#bbb39f" stroke-width="0.15"/>
+<line x1="125.80" y1="56.00" x2="187.40" y2="42.00" stroke="#bbb39f" stroke-width="0.15"/>
+<rect x="132.60" y="136.60" width="6.40" height="20.80" fill="#d4d4d4" stroke="#000" stroke-width="0.4"/>
+<line x1="132.60" y1="136.60" x2="139.00" y2="157.40" stroke="#555" stroke-width="0.2"/>
+<line x1="139.00" y1="136.60" x2="132.60" y2="157.40" stroke="#555" stroke-width="0.2"/>
+<rect x="46.00" y="115.80" width="2.00" height="27.00" fill="#fff" stroke="#d2691e" stroke-width="0.35"/>
+<line x1="46.00" y1="117.60" x2="48.00" y2="117.60" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="119.40" x2="48.00" y2="119.40" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="121.20" x2="48.00" y2="121.20" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="123.00" x2="48.00" y2="123.00" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="124.80" x2="48.00" y2="124.80" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="126.60" x2="48.00" y2="126.60" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="128.40" x2="48.00" y2="128.40" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="130.20" x2="48.00" y2="130.20" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="132.00" x2="48.00" y2="132.00" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="133.80" x2="48.00" y2="133.80" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="135.60" x2="48.00" y2="135.60" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="137.40" x2="48.00" y2="137.40" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="139.20" x2="48.00" y2="139.20" stroke="#d2691e" stroke-width="0.2"/>
+<line x1="46.00" y1="141.00" x2="48.00" y2="141.00" stroke="#d2691e" stroke-width="0.2"/>
+<rect x="198.20" y="154.60" width="2.40" height="24.00" fill="#fff" stroke="#d2691e" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
+<text x="196.60" y="166.60" font-size="2.2" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 196.60 166.60)">termosifone*</text>
+<circle cx="197.80" cy="182.00" r="1.1" fill="#fff" stroke="#d2691e" stroke-width="0.35"/>
+<text x="197.80" y="182.80" font-size="1.9" fill="#d2691e" text-anchor="middle" font-weight="bold">T</text>
+<text x="191.60" y="183.60" font-size="2.0" fill="#d2691e" text-anchor="end" font-weight="normal" font-style="normal">termostato*</text>
+<text x="77.40" y="50.00" font-size="2.4" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">base vetrina 2,16 × 0,70</text>
+<text x="156.60" y="50.00" font-size="2.4" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic">base vetrina 3,08 × 0,70</text>
+<text x="108.50" y="65.00" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta ingresso 0,95</text>
+<text x="108.50" y="50.00" font-size="2.0" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">rientranza 0,70</text>
+<text x="122.00" y="49.00" font-size="1.9" fill="#000" text-anchor="middle" font-weight="normal" font-style="italic" transform="rotate(-90 122.00 49.00)">portaombrelli</text>
+<text x="110.00" y="166.00" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">colonna centrale 1,04 × 0,32</text>
+<text x="53.20" y="130.00" font-size="2.2" fill="#666666" text-anchor="start" font-weight="normal" font-style="italic">termosifone 1,35</text>
+<text x="156.40" y="204.40" font-size="2.4" fill="#666666" text-anchor="middle" font-weight="normal" font-style="italic">porta bagno</text>
+<text x="189.60" y="214.40" font-size="2.6" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">uscita retro</text>
+<text x="98.00" y="102.00" font-size="4.2" fill="#999" text-anchor="middle" font-weight="bold" font-style="normal">AMBIENTE PRINCIPALE</text>
+<text x="98.00" y="108.00" font-size="3.0" fill="#999" text-anchor="middle" font-weight="normal" font-style="normal">51.1 m² netti</text>
+<rect x="46.00" y="153.60" width="12.00" height="24.00" fill="#d9c3a0" stroke="#8a6d3b" stroke-width="0.35"/>
+<text x="52.00" y="165.60" font-size="2.0" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 52.00 165.60)">scrivania 1,20 × 0,60</text>
+<polygon points="66.00,137.00 87.00,137.00 87.00,161.00 73.00,161.00 73.00,151.00 66.00,151.00" fill="#d9c3a0" stroke="#8a6d3b" stroke-width="0.4"/>
+<text x="80.00" y="167.00" font-size="2.3" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">bancone a L</text>
+<text x="80.00" y="172.00" font-size="2.0" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,05 + 1,20 × 0,70</text>
+<rect x="63.60" y="201.40" width="16.00" height="5.60" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="63.60" y1="204.20" x2="79.60" y2="204.20" stroke="#c9b48a" stroke-width="0.15"/>
+<rect x="79.60" y="201.40" width="16.00" height="5.60" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="79.60" y1="204.20" x2="95.60" y2="204.20" stroke="#c9b48a" stroke-width="0.15"/>
+<text x="79.60" y="197.00" font-size="2.2" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">Billy ×2</text>
+<rect x="97.60" y="173.00" width="16.00" height="5.60" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="97.60" y1="175.80" x2="113.60" y2="175.80" stroke="#c9b48a" stroke-width="0.15"/>
+<rect x="113.60" y="173.00" width="16.00" height="5.60" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="113.60" y1="175.80" x2="129.60" y2="175.80" stroke="#c9b48a" stroke-width="0.15"/>
+<rect x="129.60" y="173.00" width="16.00" height="5.60" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="129.60" y1="175.80" x2="145.60" y2="175.80" stroke="#c9b48a" stroke-width="0.15"/>
+<text x="121.60" y="169.00" font-size="2.2" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">Billy ×3</text>
+<rect x="195.00" y="112.00" width="5.60" height="16.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="197.80" y1="112.00" x2="197.80" y2="128.00" stroke="#c9b48a" stroke-width="0.15"/>
+<rect x="195.00" y="128.00" width="5.60" height="16.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="197.80" y1="128.00" x2="197.80" y2="144.00" stroke="#c9b48a" stroke-width="0.15"/>
+<rect x="195.00" y="144.00" width="5.60" height="8.00" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.35"/>
+<line x1="197.80" y1="144.00" x2="197.80" y2="152.00" stroke="#c9b48a" stroke-width="0.15"/>
+<text x="192.00" y="132.00" font-size="2.0" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 192.00 132.00)">Billy 80 + 80 + 40</text>
+<line x1="46.00" y1="33.80" x2="46.00" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="55.80" y1="33.80" x2="55.80" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="46.00" y1="26.00" x2="55.80" y2="26.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="44.20" y1="27.80" x2="47.80" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="54.00" y1="27.80" x2="57.60" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="50.90" y="24.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,49</text>
+<line x1="55.80" y1="33.80" x2="55.80" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="99.00" y1="33.80" x2="99.00" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="55.80" y1="26.00" x2="99.00" y2="26.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="54.00" y1="27.80" x2="57.60" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="97.20" y1="27.80" x2="100.80" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="77.40" y="24.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">2,16</text>
+<line x1="99.00" y1="33.80" x2="99.00" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="118.00" y1="33.80" x2="118.00" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="99.00" y1="26.00" x2="118.00" y2="26.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="97.20" y1="27.80" x2="100.80" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="116.20" y1="27.80" x2="119.80" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="108.50" y="24.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,95</text>
+<line x1="118.00" y1="33.80" x2="118.00" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="125.80" y1="33.80" x2="125.80" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="118.00" y1="26.00" x2="125.80" y2="26.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="116.20" y1="27.80" x2="119.80" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="124.00" y1="27.80" x2="127.60" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="121.90" y="24.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,39°</text>
+<line x1="125.80" y1="33.80" x2="125.80" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="187.40" y1="33.80" x2="187.40" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="125.80" y1="26.00" x2="187.40" y2="26.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="124.00" y1="27.80" x2="127.60" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="185.60" y1="27.80" x2="189.20" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="156.60" y="24.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">3,08</text>
+<line x1="187.40" y1="33.80" x2="187.40" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="200.60" y1="33.80" x2="200.60" y2="23.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="187.40" y1="26.00" x2="200.60" y2="26.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="185.60" y1="27.80" x2="189.20" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="198.80" y1="27.80" x2="202.40" y2="24.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="194.00" y="24.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,66</text>
+<line x1="46.00" y1="33.80" x2="46.00" y2="12.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="200.60" y1="33.80" x2="200.60" y2="12.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="46.00" y1="15.00" x2="200.60" y2="15.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="44.20" y1="16.80" x2="47.80" y2="13.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="198.80" y1="16.80" x2="202.40" y2="13.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="123.30" y="13.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">7,73</text>
+<line x1="208.80" y1="56.00" x2="219.40" y2="56.00" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="208.80" y1="94.60" x2="219.40" y2="94.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="217.00" y1="56.00" x2="217.00" y2="94.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="215.20" y1="57.80" x2="218.80" y2="54.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="215.20" y1="96.40" x2="218.80" y2="92.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="215.00" y="75.30" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 75.30)">1,93</text>
+<line x1="208.80" y1="94.60" x2="219.40" y2="94.60" stroke="#d2691e" stroke-width="0.18"/>
+<line x1="208.80" y1="110.60" x2="219.40" y2="110.60" stroke="#d2691e" stroke-width="0.18"/>
+<line x1="217.00" y1="94.60" x2="217.00" y2="110.60" stroke="#d2691e" stroke-width="0.25"/>
+<line x1="215.20" y1="96.40" x2="218.80" y2="92.80" stroke="#d2691e" stroke-width="0.4"/>
+<line x1="215.20" y1="112.40" x2="218.80" y2="108.80" stroke="#d2691e" stroke-width="0.4"/>
+<text x="215.00" y="102.60" font-size="2.6" fill="#d2691e" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 102.60)">0,80*</text>
+<line x1="208.80" y1="110.60" x2="219.40" y2="110.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="208.80" y1="154.60" x2="219.40" y2="154.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="217.00" y1="110.60" x2="217.00" y2="154.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="215.20" y1="112.40" x2="218.80" y2="108.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="215.20" y1="156.40" x2="218.80" y2="152.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="215.00" y="132.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 132.60)">2,20</text>
+<line x1="208.80" y1="154.60" x2="219.40" y2="154.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="208.80" y1="178.60" x2="219.40" y2="178.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="217.00" y1="154.60" x2="217.00" y2="178.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="215.20" y1="156.40" x2="218.80" y2="152.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="215.20" y1="180.40" x2="218.80" y2="176.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="215.00" y="166.60" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 215.00 166.60)">1,20°</text>
+<line x1="37.80" y1="56.00" x2="26.60" y2="56.00" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="37.80" y1="115.80" x2="26.60" y2="115.80" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="29.00" y1="56.00" x2="29.00" y2="115.80" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="27.20" y1="57.80" x2="30.80" y2="54.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="27.20" y1="117.60" x2="30.80" y2="114.00" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="27.00" y="85.90" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 27.00 85.90)">2,99</text>
+<line x1="37.80" y1="115.80" x2="26.60" y2="115.80" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="37.80" y1="142.80" x2="26.60" y2="142.80" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="29.00" y1="115.80" x2="29.00" y2="142.80" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="27.20" y1="117.60" x2="30.80" y2="114.00" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="27.20" y1="144.60" x2="30.80" y2="141.00" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="27.00" y="129.30" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 27.00 129.30)">1,35</text>
+<line x1="37.80" y1="142.80" x2="26.60" y2="142.80" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="37.80" y1="153.00" x2="26.60" y2="153.00" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="29.00" y1="142.80" x2="29.00" y2="153.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="27.20" y1="144.60" x2="30.80" y2="141.00" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="27.20" y1="154.80" x2="30.80" y2="151.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="27.00" y="147.90" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 27.00 147.90)">0,51</text>
+<line x1="37.80" y1="153.00" x2="26.60" y2="153.00" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="37.80" y1="177.60" x2="26.60" y2="177.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="29.00" y1="153.00" x2="29.00" y2="177.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="27.20" y1="154.80" x2="30.80" y2="151.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="27.20" y1="179.40" x2="30.80" y2="175.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="27.00" y="165.30" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 27.00 165.30)">1,23</text>
+<line x1="37.80" y1="56.00" x2="14.60" y2="56.00" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="37.80" y1="177.60" x2="14.60" y2="177.60" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="17.00" y1="56.00" x2="17.00" y2="177.60" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="15.20" y1="57.80" x2="18.80" y2="54.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="15.20" y1="179.40" x2="18.80" y2="175.80" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="15.00" y="116.80" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 15.00 116.80)">6,08°</text>
+<line x1="62.00" y1="216.20" x2="62.00" y2="229.40" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="96.60" y1="216.20" x2="96.60" y2="229.40" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="62.00" y1="227.00" x2="96.60" y2="227.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="60.20" y1="228.80" x2="63.80" y2="225.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="94.80" y1="228.80" x2="98.40" y2="225.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="79.30" y="225.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">1,73</text>
+<line x1="148.40" y1="187.20" x2="148.40" y2="197.40" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="164.40" y1="187.20" x2="164.40" y2="197.40" stroke="#1f4e8c" stroke-width="0.18"/>
+<line x1="148.40" y1="195.00" x2="164.40" y2="195.00" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="146.60" y1="196.80" x2="150.20" y2="193.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="162.60" y1="196.80" x2="166.20" y2="193.20" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="156.40" y="193.00" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal">0,80</text>
+<text x="12.00" y="256.00" font-size="6.0" fill="#000" text-anchor="start" font-weight="bold">PIANTINA – RILIEVO RICOSTRUITO DA SCHIZZO A MANO</text>
+<text x="12.00" y="264.00" font-size="3.2" fill="#333" text-anchor="start" font-weight="normal">Quote in metri · scala 1:50 su foglio A3 · schizzo ruotato di 180° (così le scritte si leggono dritte)</text>
+<text x="12.00" y="271.00" font-size="3.2" fill="#333" text-anchor="start" font-weight="normal">Ingresso in alto: porta tra due vetrine (basi dentro, muro nero e vetro fuori) · bagno oltre la parete in basso</text>
+<text x="262.00" y="22.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">LEGENDA</text>
+<line x1="262" y1="26.5" x2="272" y2="26.5" stroke="#1f4e8c" stroke-width="0.6"/>
+<text x="275.00" y="27.80" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">misura presa dallo schizzo</text>
+<text x="263.00" y="33.80" font-size="3.2" fill="#1f4e8c" text-anchor="start" font-weight="bold">1,34°</text>
+<text x="275.00" y="33.80" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">ricavata per differenza (calcolata)</text>
+<text x="263.00" y="40.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="bold">0,10*</text>
+<text x="275.00" y="40.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">stimata: nello schizzo non c'era la quota</text>
+<rect x="262" y="43.2" width="10" height="4" fill="#3b3b3b" stroke="#000" stroke-width="0.3"/>
+<text x="275.00" y="46.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">pilastro a muro: 0,52 × 0,51</text>
+<text x="262.00" y="60.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DATI</text>
+<text x="262.00" y="66.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie interna lorda: 55,09 m²</text>
+<text x="262.00" y="72.00" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Superficie netta (meno colonna e basi vetrina): 51,09 m²</text>
+<text x="262.00" y="77.50" font-size="3.2" fill="#000" text-anchor="start" font-weight="normal">Perimetro interno: 36,89 m</text>
+<text x="262.00" y="83.00" font-size="3.2" fill="#d2691e" text-anchor="start" font-weight="normal">Spessore muri 0,30 m: ipotizzato, non misurato</text>
+<text x="262.00" y="97.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">DA VERIFICARE IN LOCO</text>
+<text x="262.00" y="104.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">1. Rientranza d'ingresso 1,34° (per differenza: 7,73 −</text>
+<text x="262.00" y="109.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    0,49 − 2,16 − 3,08 − 0,66): porta 0,95 + spazio</text>
+<text x="262.00" y="115.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    portaombrelli 0,39°. Le vetrine hanno profondità</text>
+<text x="262.00" y="120.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    0,70: basi dentro, muro nero e vetro fuori.</text>
+<text x="262.00" y="126.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">2. Porta lato destro 0,80*: stimata dal disegno</text>
+<text x="262.00" y="132.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    (1,93 + 0,80 + 2,20 = 4,93 dal lato ingresso).</text>
+<text x="262.00" y="137.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">3. Quota 3,20 dello schizzo: non so dove</text>
+<text x="262.00" y="143.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    collocarla, non l'ho usata.</text>
+<text x="262.00" y="148.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">4. Lato sinistro: 1,35 + 2,99 = 4,34</text>
+<text x="262.00" y="154.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    contro 4,31 scritto (3 cm di scarto).</text>
+<text x="262.00" y="160.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">5. 3,08 + 0,32 + 4,02 = 7,42, ma 7,73 − 0,52 = 7,21:</text>
+<text x="262.00" y="165.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    21 cm di troppo, la quota 4,02 non torna: rimisurare.</text>
+<text x="262.00" y="171.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">6. Rientranza: entrambi i lati 1,49, base 1,73.</text>
+<text x="262.00" y="176.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Il fondo risulta quasi dritto (5 cm di dislivello).</text>
+<text x="262.00" y="182.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    Larghezza nicchia a destra 1,51* stimata.</text>
+<text x="262.00" y="188.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">7. Termosifone a destra dopo il 2,20 (4,93 → 6,13,</text>
+<text x="262.00" y="193.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    lunghezza 1,20 stimata) e termostato: posizione</text>
+<text x="262.00" y="199.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    indicativa. Termosifone sinistro:</text>
+<text x="262.00" y="204.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    profondità 0,10* stimata.</text>
+<text x="262.00" y="210.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">8. Basi vetrine: lunghe come la vetrina, dentro,</text>
+<text x="262.00" y="216.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    dietro al vetro (profondità 0,70).</text>
+<text x="262.00" y="244.00" font-size="4.2" fill="#000" text-anchor="start" font-weight="bold">ARREDI (proposta)</text>
+<text x="262.00" y="251.00" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Bancone a L 1,05 + 1,20, profondità 0,70</text>
+<text x="262.00" y="256.60" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Scrivania 1,20 × 0,60 attaccata al pilastro</text>
+<text x="262.00" y="262.20" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Billy 80 × 28: 2 in rientranza, 3 lato bagno,</text>
+<text x="262.00" y="267.80" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">    80 + 80 + 40 sulla parete destra</text>
+<text x="262.00" y="273.40" font-size="3.1" fill="#222" text-anchor="start" font-weight="normal">Quote interne nascoste per leggere meglio</text>
+</svg>
