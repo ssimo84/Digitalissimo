@@ -243,7 +243,7 @@ if FURN:
     # Billy parete sinistra sotto il pilastro a muro: 1 x 40
     run_y(0.0, 5.68, [0.4])
     # Billy lungo il muro del bagno, a partire da meta' rientranza: 4 x 80 + 20
-    run_x(2.48, 5.73, [0.8, 0.8, 0.8, 0.2])
+    run_x(1.60, 5.73, [0.8, 0.8, 0.8, 0.8, 0.2])   # chiude un po' la nicchia, come prima
     # Billy dalla porta del bagno verso la nicchia: 80 + 20, poi resta libero il passaggio (0,80) verso l'uscita retro
     run_x(5.93, 5.73, [0.8, 0.2])
     dim_h(6.93, W, 5.50, "0,80", kind="m")   # passaggio libero verso l'uscita retro
@@ -266,14 +266,14 @@ if FURN:
     text(2.68, 4.36, "bancone", 1.9, "#000", weight="bold")
     text(2.68, 4.56, "1,20 × 0,70", 1.7, "#000")
     # Billy che chiude il retro tra il bancone e la libreria lato bagno (80 + 20), senza ribalta
-    run_y(1.68, 4.73, [0.4, 0.2])      # colonna di Billy dal bancone: lascia il varco per te in basso
+    run_y(1.68, 4.73, [0.2])           # chiude l'angolo sotto il bancone: sotto resta il varco da 0,80 per te
 
     # il tuo passaggio: varco libero tra la colonna di Billy e la parete del bagno
     add('<defs><marker id="arw" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#2e7d32"/></marker></defs>')
-    pts_path = [(1.05, 5.70), (1.90, 5.60), (2.50, 5.30), (3.30, 5.05), (3.90, 4.95)]
+    pts_path = [(1.00, 5.33), (1.90, 5.33), (2.60, 5.20), (3.30, 5.05), (3.90, 4.95)]
     add('<polyline points="' + " ".join(f"{f(X(x))},{f(Y(y))}" for x, y in pts_path) + '" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>')
-    text(1.00, 5.92, "tuo passaggio", 1.9, "#2e7d32", weight="bold", anchor="start")
-    dim_v(5.33, 6.13, 1.88, "0,80")
+    text(1.35, 5.12, "tuo passaggio", 1.9, "#2e7d32", weight="bold")
+    dim_v(4.93, 5.73, 1.88, "0,80")
     # arancione: mobili bassi messi in orizzontale (lato lungo parallelo alle vetrine), fuori dalla linea della porta
     for (x1, y1, x2, y2, lab) in [(1.30, 0.90, 2.45, 1.50, "1,15 × 0,60"), (1.30, 2.40, 3.00, 3.10, "1,70 × 0,70"),
                                   (5.00, 2.60, 6.50, 3.50, "1,50 × 0,90")]:

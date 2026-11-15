@@ -89,14 +89,16 @@
 <text x="47.33" y="118.17" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">40</text>
 <rect x="44.00" y="166.67" width="6.67" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="48.50" y="170.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 48.50 170.00)">40</text>
-<rect x="85.33" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="92.00" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
-<rect x="98.67" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="105.33" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
-<rect x="112.00" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="118.67" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
-<rect x="125.33" y="167.50" width="3.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="128.17" y="170.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 128.17 170.83)">20</text>
+<rect x="70.67" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="77.33" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
+<rect x="84.00" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="90.67" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
+<rect x="97.33" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="104.00" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
+<rect x="110.67" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="117.33" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
+<rect x="124.00" y="167.50" width="3.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="126.83" y="170.83" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 126.83 170.83)">20</text>
 <rect x="142.83" y="167.50" width="13.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
 <text x="149.50" y="172.00" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">80</text>
 <rect x="156.17" y="167.50" width="3.33" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
@@ -139,17 +141,15 @@
 <rect x="78.67" y="139.17" width="20.00" height="11.67" fill="#f6b3d4" stroke="#b0346e" stroke-width="0.4"/>
 <text x="88.67" y="144.67" font-size="1.9" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">bancone</text>
 <text x="88.67" y="148.00" font-size="1.7" fill="#000" text-anchor="middle" font-weight="normal" font-style="normal">1,20 × 0,70</text>
-<rect x="72.00" y="150.83" width="6.67" height="6.67" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="76.50" y="154.17" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 76.50 154.17)">40</text>
-<rect x="72.00" y="157.50" width="6.67" height="3.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
-<text x="75.33" y="160.33" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
+<rect x="72.00" y="150.83" width="6.67" height="3.33" fill="#f4efe3" stroke="#8a6d3b" stroke-width="0.3"/>
+<text x="75.33" y="153.67" font-size="1.7" fill="#5b4524" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
 <defs><marker id="arw" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#2e7d32"/></marker></defs>
-<polyline points="61.50,167.00 75.67,165.33 85.67,160.33 99.00,156.17 109.00,154.50" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>
-<text x="60.67" y="170.67" font-size="1.9" fill="#2e7d32" text-anchor="start" font-weight="bold" font-style="normal">tuo passaggio</text>
-<line x1="75.33" y1="160.83" x2="75.33" y2="174.17" stroke="#1f4e8c" stroke-width="0.25"/>
-<line x1="73.83" y1="162.33" x2="76.83" y2="159.33" stroke="#1f4e8c" stroke-width="0.4"/>
-<line x1="73.83" y1="175.67" x2="76.83" y2="172.67" stroke="#1f4e8c" stroke-width="0.4"/>
-<text x="73.67" y="167.50" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 73.67 167.50)">0,80</text>
+<polyline points="60.67,160.83 75.67,160.83 87.33,158.67 99.00,156.17 109.00,154.50" fill="none" stroke="#2e7d32" stroke-width="0.7" stroke-dasharray="2 1.2" marker-end="url(#arw)"/>
+<text x="66.50" y="157.33" font-size="1.9" fill="#2e7d32" text-anchor="middle" font-weight="bold" font-style="normal">tuo passaggio</text>
+<line x1="75.33" y1="154.17" x2="75.33" y2="167.50" stroke="#1f4e8c" stroke-width="0.25"/>
+<line x1="73.83" y1="155.67" x2="76.83" y2="152.67" stroke="#1f4e8c" stroke-width="0.4"/>
+<line x1="73.83" y1="169.00" x2="76.83" y2="166.00" stroke="#1f4e8c" stroke-width="0.4"/>
+<text x="73.67" y="160.83" font-size="2.6" fill="#1f4e8c" text-anchor="middle" font-weight="normal" font-style="normal" transform="rotate(-90 73.67 160.83)">0,80</text>
 <rect x="65.67" y="87.00" width="19.17" height="10.00" fill="#ffd9c2" stroke="#d2691e" stroke-width="0.4"/>
 <text x="75.25" y="91.67" font-size="1.9" fill="#8a3b0c" text-anchor="middle" font-weight="bold" font-style="normal">mobile basso</text>
 <text x="75.25" y="95.33" font-size="1.7" fill="#8a3b0c" text-anchor="middle" font-weight="normal" font-style="normal">1,15 × 0,60*</text>
